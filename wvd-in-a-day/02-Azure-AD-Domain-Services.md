@@ -107,15 +107,15 @@ Click on **Next**
 
 1. After deployment completes, go back to Azure portal home, and search for resource group and click on **Resource Groups**.
     
-    <kbd>![ws name.](media/15.png)</kbd>
+   ![ws name.](media/15.png)
     
 2. Now click on your **WVD-RG** resource group.
 
-    <kbd>![ws name.](media/16.png)</kbd>
+   ![ws name.](media/16.png)
     
 3. Click on **first NIC card**.
 
-    <kbd>![ws name.](media/17.png)</kbd>
+   ![ws name.](media/17.png)
     
 4. Note down the **Private IP** of first NIC card.
 
