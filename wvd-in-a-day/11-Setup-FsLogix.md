@@ -196,3 +196,102 @@
 5. Click on **Save**.
 
    ![ws name.](media/177.png)
+
+
+
+## Task 3: Configure Session Hosts
+
+
+
+1. In your Azure portal search for *virtual machines* and click on it.
+
+   ![ws name.](media/178.png)
+   
+   
+   
+2. Click on **WVD-SH-0**.
+
+   ![ws name.](media/179.png)
+   
+   
+   
+3. On left side under Operations tab click on **Run command**.
+
+   ![ws name.](media/180.png)
+   
+   
+   
+4. Now click on **RunPowerShellScript**.
+
+   ![ws name.](media/181.png)
+   
+   
+5. A similar window will open.
+
+   ![ws name.](media/182.png)
+   
+   
+   
+6. **Copy** the complete Script below and **paste** it in the powershell window in the Azure portal.
+
+   
+       #Variables
+       $storageAccountName = "<NameofStorageAccount>"
+
+ 
+
+       #Create Directories
+       $LabFilesDirectory = "C:\LabFiles"
+       New-Item -Path $LabFilesDirectory -ItemType Directory |Out-Null
+       New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
+
+ 
+
+       #Download FSLogix Installation bundle
+       Invoke-WebRequest -Uri "https://akipersistantstg.blob.core.windows.net/fslogix/FSLogix_Apps_Installation.zip" -OutFile "$LabFilesDirectory\FSLogix_Apps_Installation.zip"
+
+ 
+
+       #Extract the downloaded FSLogix bundle
+       function Expand-ZIPFile($file, $destination){
+       $shell = new-object -com shell.application
+       $zip = $shell.NameSpace($file)
+       foreach($item in $zip.items()){
+        $shell.Namespace($destination).copyhere($item)
+       }
+      }
+      
+       Expand-ZIPFile -File "$LabFilesDirectory\FSLogix_Apps_Installation.zip" -Destination "$LabFilesDirectory\FSLogix"
+
+ 
+
+       #Install FSLogix
+       $pathvargs = {C:\LabFiles\FSLogix\x64\Release\FSLogixAppsSetup.exe /quiet /install }
+       Invoke-Command -ScriptBlock $pathvargs
+
+ 
+
+       #Create registry key 'Profiles' under 'HKLM:\SOFTWARE\FSLogix'
+       $registryPath = "HKLM:\SOFTWARE\FSLogix\Profiles"
+       if(!(Test-path $registryPath)){
+       New-Item -Path $registryPath -Force | Out-Null
+}
+
+ 
+
+    #Add registry values to enable FSLogix profiles, add VHD Locations, Delete local profile and FlipFlop Directory name
+    New-ItemProperty -Path $registryPath -Name "VHDLocations" -Value "\\$storageAccountName.file.core.windows.net\userprofile" -PropertyType String -Force | Out-Null
+    New-ItemProperty -Path $registryPath -Name "Enabled" -Value 1 -PropertyType DWord -Force | Out-Null
+    New-ItemProperty -Path $registryPath -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -PropertyType DWord -Force | Out-Null
+    New-ItemProperty -Path $registryPath -Name "FlipFlopProfileDirectoryName" -Value 1 -PropertyType DWord -Force | Out-Null
+
+ 
+
+    #Display script completion in console
+    Write-Host "Script Executed successfully"
+    
+    
+    
+7. Click on **Run**.
+
+   ![ws name.](media/183.png)
