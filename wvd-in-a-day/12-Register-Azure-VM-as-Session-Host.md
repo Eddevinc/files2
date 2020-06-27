@@ -43,43 +43,50 @@
 6. Click on the downloaded file to open.
 
    ![ws name.](media/06.png)
+   
+   
+7. Click on **More choices**.
 
+   ![ws name.](media/06.1.png)
+   
+   
+8. Click on **Use a different account**.
 
-7. A new window will open, click on Connect.
+   ![ws name.](media/06.2.png)
+   
+   
+9. Enter your credentials.
 
-
-   ![ws name.](media/07.png)
+   ![ws name.](media/06.3.png)
+   
+   Click on **OK**.
    
    
    
-8. Enter your Credentials.
-
-   ![ws name.](media/08.png)
-   
-   **Username**:
-   
-   **Password**:
-   
-   
- 9. A new pop up window will open,click on **Yes**.
+10. A new pop up window will open,click on **Yes**.
  
     ![ws name.](media/09.png)
     
     A RDP Connection with your VM will be established.
     
     
- 8. In your VM desktop double click on **Microsoft edge** icon to open it.
+ 11. In your Vm window click on **Accept**.
+ 
+     ![ws name.](media/09.png)
+    
+    
+12. In your VM desktop double click on **Microsoft edge** icon to open it.
  
     ![ws name.](media/010.png)
     
     
- 9. **Copy** and **Paste** the following URL in your VM browser and **hit enter** to download *Windows Virtual Desktop Agent*.
+13. **Copy** and **Paste** the following URL in your VM browser and **hit enter** to download *Windows Virtual Desktop Agent*.
  
         https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv
  
     ![ws name.](media/011.png)
     
     
- 10. Below your browser a popup will be displayed, Click on **Run**.
+14. Below your browser a popup will be displayed, Click on **Run**.
  
      ![ws name.](media/012.png)
