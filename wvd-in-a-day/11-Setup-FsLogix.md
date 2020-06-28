@@ -232,9 +232,9 @@
    
    
    
-6. **Copy** the complete Script below and **paste** it in the powershell window in the Azure portal.
+6. **Copy** the complete Script below and **paste** it by pressing **Ctrl + V** in the powershell window in the Azure portal.
 
-   *Replace* ***NameofStorageAccount*** *with the name of storage account you created in the second line of following script*
+ 
 
    
        #Variables
@@ -280,6 +280,10 @@
     
     
     
-7. Click on **Run**.
+8. Now scroll up on the script you pasted and replace ***NameofStorageAccount*** with the name of storage account you created in the second line of following script.
 
    ![ws name.](media/183.png)
+   
+   Now Click on **Run** to execute the script.
+   
+   
