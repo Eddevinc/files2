@@ -81,8 +81,10 @@
     ![ws name.](media/010.png)
    
    
-    
-13. **Copy** and **Paste** the following URL in your VM browser and **hit enter** to download *Windows Virtual Desktop Agent*.
+
+
+
+13. **Copy** and **Paste** the following URL in your VM browser and **hit enter** to download ***Windows Virtual Desktop Agent***.
  
         https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv
  
@@ -165,7 +167,7 @@
     
     
     
-27. Open your browser and **paste** the following URL in your browser and hit **enter**.
+27. Open your browser and **paste** the following URL in your browser and hit **enter** to download the  ***Windows Virtual Desktop Agent Bootloader***.
 
 
         https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH
