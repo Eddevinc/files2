@@ -84,3 +84,4 @@ Host pools are a collection of one or more identical virtual machines within Win
  
     ![ws name.](media/52.png)
      
+8. Click on **Next** button.
