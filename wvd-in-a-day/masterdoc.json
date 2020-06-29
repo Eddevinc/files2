@@ -1,0 +1,60 @@
+[
+  {
+    "Name": "WVD in a Day",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/01-Overview.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/02-Azure-AD-Domain-Services.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/03-Create-Host-Pools.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/04-Create-Session-Hosts.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/05-Create-Application-Groups.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/06-Create-Workspaces.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/07-Register-Application-Groups.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/08-Publish-Applications.md",
+        "Order": 8
+      },
+            {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/09-Assign-Users-to-Application-Groups.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/10-Access-Applications.md",
+        "Order": 10
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/11-Setup-FsLogix.md",
+        "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/12-Register-Azure-VM-as-Session-Host.md",
+        "Order": 12
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/13-Load-Balancing-methods.md",
+        "Order": 13
+      }
+    ]
+  }
+]
