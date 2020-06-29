@@ -115,13 +115,13 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Virtual machine size**: Standard D1_V2 
 
-   - **Number of VMs**: *1* 
+   - **Number of VMs**: **1** 
    
-   - **Name prefix**: *WVD-SH* 
+   - **Name prefix**: **WVD-SH**
 
    - **Image type**: Gallery 
 
-   - **Image**: Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus (choose from dropdown) 
+   - **Image**: **Windows 10 Enterprise multi-session, version 1909(choose from dropdown)** 
 
    - **OS disk type**: Standard SSD 
 
