@@ -38,9 +38,9 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Virtual machine size**: Standard D1_V2 
 
-   - **Number of VMs**: *2*
+   - **Number of VMs**: **2**
    
-   - **Name prefix**: *WVD-SH* 
+   - **Name prefix**: **WVD-SH** 
 
    - **Image type**: Gallery 
 
@@ -65,9 +65,9 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **AD domain join UPN**: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
 
-   - **Password**: *Azure1234567*
+   - **Password**: **Azure1234567**
 
-   - **Confirm Password**: *Azure1234567*
+   - **Confirm Password**: **Azure1234567**
    
    - Click on **Review + create**
 
