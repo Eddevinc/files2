@@ -1,144 +1,106 @@
 # Exercise 4: Create Session Hosts
 
-
-## Task 1: Deploy 2 Windows 10 Enterprise multi-session Session Hosts to ‘Pooled’ Host Pool
-
+### **Task 1: Deploy 2 Windows 10 Enterprise multi-session Session Hosts to ‘Pooled’ Host Pool**
 
 1. In the search bar of Azure Portal, search for ‘Windows Virtual Desktop” and you will see a resource that shows up in the same name. Click on it.
 
    ![ws name.](media/53.png)
-   
-   
+     
 2. Click on **Host pools**.
 
    ![ws name.](media/54.png)
-   
-   
+     
 3. Click on the Host pool **WVD-HP-01**.
 
    ![ws name.](media/55.png)
-   
-   
+     
 4. In the Host pool page under **Manage** blade click on **Session hosts**.
 
    ![ws name.](media/56.png)
-   
-   
+     
 5. Click on **+ Add**.
 
    ![ws name.](media/57.png)
-   
-   
+    
 6. In the Session host creation page, leave the value at default and click on **Next: Virtual Macines**.
 
    ![ws name.](media/58.png)
-   
-   
-   
+  
 7. Configure the session hosts with following configuration.
 
    **A**. Session Host Specifications
 
-   In this section, we provide the details of the VMs to be created as session Hosts. 
+In this section, we provide the details of the VMs to be created as session Hosts.    
+
+   - **Resource Group**: Choose the default pre-created Resource Group
+
+   - **Virtual machine location**: Choose the location of the pre-created resource Group
+
+   - **Virtual machine size**: Standard D1_V2 
+
+   - **Number of VMs**: *2*
    
-   ![ws name.](media/59.png)
+   - **Name prefix**: *WVD-SH* 
+
+   - **Image type**: Gallery 
+
+   - **Image**: Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus (choose from dropdown) 
+
+   - **OS disk type**: Standard SSD 
+
+   - **Use managed disks**: Yes 
    
-
-   **Resource Group**: Choose the default pre-created Resource Group
-
-   **Virtual machine location**: Choose the location of the pre-created resource Group
-
-   **Virtual machine size**: Standard D1_V2 
-
-   **Number of VMs**: *2*
-   
-   **Name prefix**: *WVD-SH* 
-
-   **Image type**: Gallery 
-
-   **Image**: Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus (choose from dropdown) 
-
-   **OS disk type**: Standard SSD 
-
-   **Use managed disks**: Yes 
-   
-   
+    ![ws name.](media/59.png)
    
   **B**. Network and Security 
+   - Leave all values on default.
  
    ![ws name.](media/60.png)
-   
-  
-  **Virtual Network**: Default value
-
-  **Subnet**: Default value
-
-  **Public IP**: Default value
-
-  **Network security Group**: Default value
-
-  **Public inbound ports**: Default value
- 
- 
  
  **C**. Domain and Administrator account 
 
   ![ws name.](media/61.png)
  
+   - **Specify Domain or Unit**: No 
 
-   **Specify Domain or Unit**: No 
+   - **AD domain join UPN**: *DomainJoinAdminUser@azurehol1055.onmicrosoft.com*
 
-   **AD domain join UPN**: *DomainJoinAdminUser@azurehol1055.onmicrosoft.com*
+   - **Password**: *Azure1234567*
 
-   **Password**: *Azure1234567*
+   - **Confirm Password**: *Azure1234567*
+   
+   - Click on **Review + create**
 
-   **Confirm Password**: *Azure1234567*
-   
-   Click on **Review + create**
-   
-   
-   
-8. Click on **Create**
+8. Click on **Create**.
 
    ![ws name.](media/62.png)
-   
-   
-   
-## Task 2: Deploy a Windows 10 Enterprise Session Hosts to ‘Personal’ Host Pool
-
-
+  
+### **Task 2: Deploy a Windows 10 Enterprise Session Hosts to ‘Personal’ Host Pool**
 
 1. In the search bar of Azure Portal, search for ‘Windows Virtual Desktop” and you will see a resource that shows up in the same name. Click on it.
 
    ![ws name.](media/63.png)
-   
-   
+  
 2. Click on **Host pools**.
 
    ![ws name.](media/64.png)
    
-   
 3. Click on the Host pool **WVD-HP-02**.
 
    ![ws name.](media/65.png)
-   
-   
+  
 4. In the Host pool page under Manage blade click on **Session hosts**.
 
    ![ws name.](media/66.png)
-   
-   
+  
 5. Click on **+ Add**.
 
    ![ws name.](media/67.png)
-   
-   
+  
 6. In the Session host creation page, leave the value at default and click on **Next: Virtual Macines**.
 
    ![ws name.](media/68.png)
-   
-   
-   
+ 
 7. Configure the session hosts with following configuration.
 
    **A**. Session Host Specifications
@@ -146,62 +108,44 @@
    In this section, we provide the details of the VMs to be created as session Hosts. 
    
    ![ws name.](media/69.png)
+
+   - **Resource Group**: Choose the default pre-created Resource Group
+
+   - **Virtual machine location**: Choose the location of the pre-created resource Group
+
+   - **Virtual machine size**: Standard D1_V2 
+
+   - **Number of VMs**: *1* 
    
+   - **Name prefix**: *WVD-SH* 
 
-   **Resource Group**: Choose the default pre-created Resource Group
+   - **Image type**: Gallery 
 
-   **Virtual machine location**: Choose the location of the pre-created resource Group
+   - **Image**: Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus (choose from dropdown) 
 
-   **Virtual machine size**: Standard D1_V2 
+   - **OS disk type**: Standard SSD 
 
-   **Number of VMs**: *1* 
-   
-   **Name prefix**: *WVD-SH* 
+   - **Use managed disks**: Yes 
 
-   **Image type**: Gallery 
-
-   **Image**: Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus (choose from dropdown) 
-
-   **OS disk type**: Standard SSD 
-
-   **Use managed disks**: Yes 
-   
-   
-   
   **B**. Network and Security 
+    - Leave all values on default.
  
-   ![ws name.](media/70.png)
-   
-  
-  **Virtual Network**: Default value
-
-  **Subnet**: Default value
-
-  **Public IP**: Default value
-
-  **Network security Group**: Default value
-
-  **Public inbound ports**: Default value
- 
- 
+    ![ws name.](media/70.png)
  
  **C**. Domain and Administrator account 
 
+   - **Specify Domain or Unit**: No 
+
+   - **AD domain join UPN**: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
+
+   - **Password**: **Azure1234567**
+
+   - **Confirm Password**: **Azure1234567**
+   
+   - Click on **Review + create**
+    
   ![ws name.](media/71.png)
- 
-
-   **Specify Domain or Unit**: No 
-
-   **AD domain join UPN**: *DomainJoinAdminUser@azurehol1055.onmicrosoft.com*
-
-   **Password**: *Azure1234567*
-
-   **Confirm Password**: *Azure1234567*
-   
-   Click on **Review + create**
-   
-   
-   
+  
 8. Click on **Create**
 
    ![ws name.](media/72.png)
