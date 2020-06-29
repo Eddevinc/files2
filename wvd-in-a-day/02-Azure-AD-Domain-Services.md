@@ -40,7 +40,7 @@
 
    ![ws name.](media/4.png)
    
-> In case the **Microsoft.AAD is not registred** then follow the **step 11** *.
+> In case the **Microsoft.AAD is not registred** then follow the **step 10** *.
 
 10. Click on **Microsoft.AAD** Resource Provider and click on **Register**.
 
