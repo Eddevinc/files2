@@ -12,7 +12,7 @@
   
 4. Click on **+ Add** to create a workspace.
 
-   ![ws name.](media/81.png)
+  ![](media/81.png)
 
 5. Configure the worspace with following parameters.
 
