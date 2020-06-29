@@ -242,7 +242,9 @@ Click on **Next**.
     ![ws name.](media/37.png)
     
 18. Leave remaining values at default and click on **Create**.
-   
+
+19. Go back to **All Users (Preview)** and copy username of all the three users and paste it in notepad.
+
 ### **Task 5: Change passwords for the users created**
 
 1. In your azure portal, click on the **cloud Shell** icon.
@@ -259,8 +261,8 @@ Click on **Next**.
 
 4. Use exisiting hands-on-lab-SUFFIX resource group and for:
 
-    - **storage account:** Create new and enter **sa{uniqueid}**, for example: sa176667.
-    - **file share:** Create new and enter **fs{uniqueid}**, for example: fs176667.
+    - **storage account:** Create new and enter **sa{uniqueid}**, for example: sa204272.
+    - **file share:** Create new and enter **fs{uniqueid}**, for example: fs204272.
     
    ![ws name.](media/wvd12.png)
 
