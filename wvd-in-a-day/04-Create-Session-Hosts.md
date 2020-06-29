@@ -50,7 +50,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Use managed disks**: Yes 
    
-    ![ws name.](media/59.png)
+   ![ws name.](media/59.png)
    
   **B**. Network and Security 
    - Leave all values on default.
@@ -130,7 +130,7 @@ In this section, we provide the details of the VMs to be created as session Host
   **B**. Network and Security 
     - Leave all values on default.
  
-    ![ws name.](media/70.png)
+   ![ws name.](media/70.png)
  
  **C**. Domain and Administrator account 
 
