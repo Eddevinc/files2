@@ -1,7 +1,7 @@
 # Exercise 3: Create Host Pools 
 
 
-## Task 1: Create a Host Pool of ‘Pooled’ type
+## **Task 1: Create a Host Pool of ‘Pooled’ type**
 
 
 Host pools are a collection of one or more identical virtual machines within Windows Virtual Desktop environments. Each host pool can contain an app group that users can interact with as they would on a physical desktop. 
@@ -22,13 +22,8 @@ Host pools are a collection of one or more identical virtual machines within Win
 
    ![ws name.](media/45.png)
 
-
-
-
 6. Under Basics configure Host pool with following values.
- 
-   ![ws name.](media/46.png)
-   
+    
    **A.** Project Details – Defines the environment 
 
       **Subscription**: Choose the default subscription
@@ -39,7 +34,7 @@ Host pools are a collection of one or more identical virtual machines within Win
 
       **Location**: Choose the location of the pre-created resource Group
    
-   
+   ![ws name.](media/46.png)
    
    
    **B.** Host Pool Type – Defines the type of host pool. 
