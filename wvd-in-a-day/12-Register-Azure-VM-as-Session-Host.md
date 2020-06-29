@@ -21,23 +21,23 @@
        
  3. Now in Azure portal search for *azure active directory* and click on it.
  
-     ![ws name.](media/0.02png)
+     ![ws name.](media/184.png)
      
      
      
   4. Click on **Users**.
   
-     ![ws name.](media/0.03.png)
+     ![ws name.](media/185.png)
       
       
  5. Click on **DomainJoinAdminUser**.
  
-     ![ws name.](media/0.04.png)
+     ![ws name.](media/186.png)
      
      
  6. Copy the username of *DomainJoinAdminUser*.
  
-    ![ws name.](media/0.05.png)
+    ![ws name.](media/187.png)
     
     
     
@@ -46,7 +46,7 @@
 
 8. Replace the **DomainJoinAdminUser** with the username you copied in  *step 6*.
 
-    ![ws name.](media/0.06.ng)
+    ![ws name.](media/188.png)
     
     
 9. Copy this script from the notepad.
@@ -54,12 +54,12 @@
 
 10. In Azure portal click on the **cloud shell button** on top and wait for the cloud shell to connect.
 
-   ![ws name.](media/0.01.png)
+   ![ws name.](media/189.png)
 
 
 11. Paste the script in the cloud shell and press **Enter** to run the script.
 
-   ![ws name.](media/0.07.png)
+   ![ws name.](media/190.png)
    
    wait for sometime for the script to execute.
    
@@ -67,7 +67,7 @@
    
 12. After the execution completes the output will look as following.
 
-    ![ws name.](media/0.08.png)
+    ![ws name.](media/191.png)
 
     wait for few more minutes for the deployment of virtual machine to complete.
 
@@ -78,30 +78,30 @@
 
 1. In search bar of your Azure portal search for *virtual machines* and click on it.
 
-   ![ws name.](media/01.png)
+   ![ws name.](media/192.png)
    
    
    
 2. Click on **WVD-VM-01**.
 
-   ![ws name.](media/02.png)
+   ![ws name.](media/193.png)
    
    
    
 3. Click on **Connect**.
 
-   ![ws name.](media/03.png)
+   ![ws name.](media/194.png)
    
    
 
 4. Select **RDP**.
 
-   ![ws name.](media/04.png)
+   ![ws name.](media/195.png)
    
    
 5. Click on **Download RDP File**.
 
-   ![ws name.](media/05.png)
+   ![ws name.](media/196.png)
    
    A file named ***WVD-VM-01*** will download.
    
@@ -109,22 +109,27 @@
    
 6. Click on the downloaded file to open.
 
-   ![ws name.](media/06.png)
+   ![ws name.](media/197.png)
+   
+   
+7. RDP window will open, click on **Connect**.
+
+   ![ws name.](media/198.png)
    
    
 7. Click on **More choices**.
 
-   ![ws name.](media/06.1.png)
+   ![ws name.](media/199.png)
    
    
 8. Click on **Use a different account**.
 
-   ![ws name.](media/06.2.png)
+   ![ws name.](media/200.png)
    
    
 9. Enter your credentials.
 
-   ![ws name.](media/06.3.png)
+   ![ws name.](media/201.png)
    
    Click on **OK**.
    
@@ -132,20 +137,20 @@
    
 10. A new pop up window will open,click on **Yes**.
  
-    ![ws name.](media/09.png)
+    ![ws name.](media/202.png)
     
     A RDP Connection with your VM will be established.
     
     
  11. In your Vm window click on **Accept**.
  
-     ![ws name.](media/09.png)
+     ![ws name.](media/203.png)
     
     
     
 12. In your VM desktop double click on **Microsoft edge** icon to open it.
  
-    ![ws name.](media/010.png)
+    ![ws name.](media/204.png)
    
    
 
@@ -155,25 +160,25 @@
  
         https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv
  
-    ![ws name.](media/011.png)
+    ![ws name.](media/205.png)
     
     
     
 14. Below your browser a popup will be displayed, Click on **Run**.
  
-     ![ws name.](media/012.png)
+     ![ws name.](media/206.png)
 
 
 
 15. A installer will open, Click on **Next**.
 
-    ![ws name.](media/13.png)
+    ![ws name.](media/207.png)
     
     
     
 16. Click on the **check Box** saying *I accepting the terms in the License Agreement* and click on **Next**.
 
-    ![ws name.](media/14.png)
+    ![ws name.](media/208.png)
     
     
     
@@ -182,31 +187,31 @@
 
 18. In Azure portal search for *host pools* and click on it.
 
-    ![ws name.](media/15.png)
+    ![ws name.](media/209.png)
     
     
     
 19. Click on **WVD-HP-01**.
  
-    ![ws name.](media/16.png)
+    ![ws name.](media/210.png)
      
      
      
 20. Click on **Registration Key**.
 
-    ![ws name.](media/17.png)
+    ![ws name.](media/211.png)
     
     
     
 21. Copy the registration key by clicking on the **copy button** on the right corner.
 
-    ![ws name.](media/18.png)
+    ![ws name.](media/212.png)
     
     
     
 22. Go back to the VM RDP window, and click inside the box opened in the installer.
 
-    ![ws name.](media/19.png)
+    ![ws name.](media/213.png)
      
 
 23. On your keyboard press the following combination of keys.
@@ -218,19 +223,19 @@
     
 24. Click on **Next**.
 
-    ![ws name.](media/20.png)
+    ![ws name.](media/214.png)
      
      
      
 25. Click on **Install**.
 
-    ![ws name.](media/21.png)
+    ![ws name.](media/215.png)
     
     
     
 26. Click on **Finish**.
 
-    ![ws name.](media/22.png)
+    ![ws name.](media/216.png)
     
     
     
@@ -240,37 +245,37 @@
         https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH
         
 
-    ![ws name.](media/23.png)
+    ![ws name.](media/217.png)
     
     
  
  
 28. A popup will open below your browser,click on **Run**
 
-    ![ws name.](media/24.png)
+    ![ws name.](media/218.png)
     
     
     
 29. A installer will open, Click on **Next**.
 
-    ![ws name.](media/25.png)
+    ![ws name.](media/219.png)
     
     
     
 30. Click on the **check Box** saying *I accepting the terms in the License Agreement* and click on **Next**.
 
-    ![ws name.](media/26.png)
+    ![ws name.](media/220.png)
     
     
     
 31. Click on **Install*.
 
-    ![ws name.](media/27.png)
+    ![ws name.](media/221.png)
     
     
 32. Click on **Finish**.
 
-    ![ws name.](media/28.png)
+    ![ws name.](media/222.png)
     
   
   
@@ -279,21 +284,21 @@
 
 01. In your local machine visit Azure portal and search for *host pools* and click on it.
 
-    ![ws name.](media/29.png)
+    ![ws name.](media/223.png)
 
 
 
 02. Click on **WVD-HP-01**.
 
-    ![ws name.](media/30.png)
+    ![ws name.](media/224.png)
     
     
 03. Under manage blade click on **Session hosts**.
 
-    ![ws name.](media/31.png)
+    ![ws name.](media/225.png)
     
     
   
 04. Verify that WVD-VM-01 is added to the WVD-HP-01 hostpool.
 
-    ![ws name.](media/32.png) 
+    ![ws name.](media/226.png) 
