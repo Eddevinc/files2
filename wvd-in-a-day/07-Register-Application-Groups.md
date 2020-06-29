@@ -26,48 +26,32 @@
    
    
    
-5. On the WVD-WS-01 window under manage blade, click on **Application groups**.
+5. On the **WVD-WS-01** window under manage blade, click on **Application groups**.
 
    ![ws name.](media/90.png)
-   
-   
-   
+
 6. Click on **+ Add**.
 
    ![ws name.](media/91.png)
    
    
    
-7. Click on **WVD-HP-01-DAG** this will automatically select all Application groups.
+7. Click on **+** and add **WVD-HP-01-DAG** and **WVD-AG-01** Application groups.
 
-   ![ws name.](media/92.png)
-   
-   
-   
-8. Now click on **delete icon** next to ***WVD-HP-02-DAG*** to remove it from selected list.
-   
-   ![ws name.](media/93.png)
-   
-   
+   ![ws name.](media/wvd16.png)
    
 8. Click on **Select**.
 
    ![ws name.](media/94.png)
 
-
-
 9. Click on the **X** icon to go back to workspaces.
 
-   ![ws name.](media/95.png)
-   
-   
+   ![ws name.](media/95.png)   
    
 10. Now click on **WVD-WS-02** workspace.
 
     ![ws name.](media/96.png)
     
-    
-     
 11. On the WVD-WS-01 window under manage blade, click on **Application groups**.
 
     ![ws name.](media/97.png)
@@ -79,9 +63,9 @@
    ![ws name.](media/98.png)
    
    
-13. Click on **WVD-HP-02-DAG** to add it to the *WVD-WS-02* workspace.
+13. Click on **WVD-HP-02-DAG** to add it to the **WVD-WS-02** workspace.
 
-   ![ws name.](media/99.png)
+   ![ws name.](media/wvd17.png)
    
    
    
