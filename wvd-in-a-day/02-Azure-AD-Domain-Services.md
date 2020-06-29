@@ -112,7 +112,7 @@ Click on **Next**.
     Wait for the Deployment to complete, It will take approx 30 minutes to deploy.
 
 
-## Task 3: Update Virtual Network DNS
+### **Task 3: Update Virtual Network DNS**
 
 1. After deployment completes, go back to Azure portal home, and search for resource group and click on **Resource Groups**.
     
@@ -142,11 +142,11 @@ Click on **Next**.
 
     ![ws name.](media/21.png)
     
-8. Now under settings bade click on **DNS servers**.
+8. Now under **Settings** bade click on **DNS servers**.
 
     ![ws name.](media/22.png)
     
-9. Under DNS server select **custom** and add the IP address of first and second NIC card noted in step 19 and 21.
+9. Under DNS server select **custom** and paste the IP address of first and second NIC card noted in step 19 and 21.
     
     ![ws name.](media/23.png)
      
@@ -154,7 +154,7 @@ Click on **Next**.
      
     ![ws name.](media/wvd9.png)
 
-## Task 4: Create new AD users
+### **Task 4: Create new AD users**
 
 1. In you Azure portal search bar, search for **Azure Active Directory** and click on it.
 
@@ -243,18 +243,27 @@ Click on **Next**.
     
 18. Leave remaining values at default and click on **Create**.
    
-### Task 5: Change passwords for the users created
+### **Task 5: Change passwords for the users created**
 
 1. In your azure portal, click on the **cloud Shell** icon.
 
    ![ws name.](media/38.png)
    
-2. Cloud shell was ask you to create a storage account, Click on **Create storage**.
+2. In the Cloud Shell window that opens at the bottom of your browser window, select PowerShell.
 
-   ![ws name.](media/39.png)
-   
-   Wait for few seconds for the cloud shell to launch.
-   
+   ![ws name.](media/wvd10.png)
+
+3. Click on **Show Advanced Settings**.
+
+   ![ws name.](media/wvd11.png)
+
+4. Use exisiting hands-on-lab-SUFFIX resource group and for:
+
+    - **storage account:** Create new and enter **sa{uniqueid}**, for example: sa176667.
+    - **file share:** Create new and enter **fs{uniqueid}**, for example: fs176667.
+    
+   ![ws name.](media/wvd12.png)
+
 3. After the terminal launches it will look like this.
 
    ![ws name.](media/40.png)
