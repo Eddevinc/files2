@@ -73,12 +73,13 @@
 
 8. In Networking tab under **Virtual network**, Click on **Create new**.
         
-   ![ws name.](media/9.png)
+   ![ws name.](media/wvd8.png)
 
 9. Configure your new virtual network with following settings and then click **Ok**.
 
    - **Name**: **aaddss-vnet-01**
    - **Address range**: **10.1.0.0/16**
+
 Add following subnets:
    - **Subnet name**: **aadds-subnet**
    - **Address range**: **10.1.0.0/24**
@@ -92,15 +93,15 @@ Add following subnets:
    - **Virtual network**: **(new)aadds-vnet-01** 
    - **Subnet**: **(new)aads-subnet-01 (10.0.0.0/24)**
 
-Click on **Next**.
-
    ![ws name.](media/11.png)
+
+Click on **Next**.
 
 11. Click on **Review + Create** button.
 
     ![ws name.](media/12.png)
 
-12. click on **Create** Button.
+12. Now click on **Create** Button.
 
     ![ws name.](media/13.png)
     
@@ -112,7 +113,6 @@ Click on **Next**.
 
 
 ## Task 3: Update Virtual Network DNS
-
 
 1. After deployment completes, go back to Azure portal home, and search for resource group and click on **Resource Groups**.
     
@@ -130,7 +130,7 @@ Click on **Next**.
 
     ![ws name.](media/18.png)
     
-5. Now go back to your **WVD-RG* resource group** and click on **second NIC card**.
+5. Now go back to your **WVD-RG** resource group and click on **second NIC card**.
 
     ![ws name.](media/19.png)
     
@@ -148,11 +148,13 @@ Click on **Next**.
     
 9. Under DNS server select **custom** and add the IP address of first and second NIC card noted in step 19 and 21.
     
-     ![ws name.](media/23.png)
+    ![ws name.](media/23.png)
      
-     click on **Save**.
+10. click on **Save**.
+     
+    ![ws name.](media/wvd9.png)
 
-## Create new AD users
+## Task 4: Create new AD users
 
 1. In you Azure portal search bar, search for **Azure Active Directory** and click on it.
 
@@ -170,9 +172,9 @@ Click on **Next**.
    
    ![ws name.](media/27.png)   
  
-   - **Username**: *WVDUser-01*
+   - **Username**: **WVDUser-01**
    
-   - **Name**: *WVDUser-01*
+   - **Name**: **WVDUser-01**
    
 5. Under pasword section use following configuration.
 
@@ -207,7 +209,7 @@ Click on **Next**.
    
 11. To create another user click on **+ New user**.
 
-    ![ws name.](media/32.png)  
+   ![ws name.](media/32.png)  
 
 12. Under identity section enter following configuration.
       
@@ -219,32 +221,29 @@ Click on **Next**.
    
 13. Under pasword section use following configuration.
    
-   **Password**: Select **Let me create the password**
+   - **Password**: Select **Let me create the password**
    
-   **Initial Passowrd**: **Azure1234567**
+   - **Initial Passowrd**: **Azure1234567**
    
 14. Leave remaining values at default and click on **Create**.
    
    ![ws name.](media/34.png)
  
-14. Under Groups and roles section click on **0 groups selected**
+15. Under Groups and roles section click on **0 groups selected**
 
    ![ws name.](media/35.png)
    
-15. Click on **AAD DC Administrators**.
+16. Click on **AAD DC Administrators**.
 
     ![ws name.](media/36.png)
     
-16. Click on **Select** 
+17. Click on **Select** 
 
     ![ws name.](media/37.png)
     
-    Leave remaining values at default.
+18. Leave remaining values at default and click on **Create**.
    
-    Click on **Create**.
-
-### Task 6: Change passwords for the users created
-
+### Task 5: Change passwords for the users created
 
 1. In your azure portal, click on the **cloud Shell** icon.
 
