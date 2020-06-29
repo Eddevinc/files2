@@ -63,7 +63,7 @@ In this section, we provide the details of the VMs to be created as session Host
  
    - **Specify Domain or Unit**: No 
 
-   - **AD domain join UPN**: *DomainJoinAdminUser@azurehol1055.onmicrosoft.com*
+   - **AD domain join UPN**: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
 
    - **Password**: *Azure1234567*
 
