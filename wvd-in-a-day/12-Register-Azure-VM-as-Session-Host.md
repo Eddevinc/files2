@@ -5,6 +5,73 @@
 
 
 
+1 **Copy** the following script and **paste** it in a notepad.
+
+
+       #Parameters
+       $adminUserName = "DomainAdminJoinID"
+       $adminPassword = "Azure12345678"
+
+       #Deploy Template
+       $UserPasswordhash = ConvertTo-SecureString $adminPassword -AsPlainText -Force
+       New-AzResourceGroupDeployment -ResourceGroupName "WVD-RG" `
+       -TemplateUri "https://akipersistantstg.blob.core.windows.net/wvdinaday/deployVM.json" `
+       -existingVNETName "aadds-vnet" -existingSubnetName "aadds-subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
+       
+       
+ 3. Now in Azure portal search for *azure active directory* and click on it.
+ 
+     ![ws name.](media/0.02png)
+     
+     
+     
+  4. Click on **Users**.
+  
+     ![ws name.](media/0.03.png)
+      
+      
+ 5. Click on **DomainJoinAdminUser**.
+ 
+     ![ws name.](media/0.04.png)
+     
+     
+ 6. Copy the username of *DomainJoinAdminUser*.
+ 
+    ![ws name.](media/0.05.png)
+    
+    
+    
+7. Go to the Notepad where you copied script in *step 2*.
+
+
+8. Replace the **DomainJoinAdminUser** with the username you copied in  *step 6*.
+
+    ![ws name.](media/0.06.ng)
+    
+    
+9. Copy this script from the notepad.
+
+
+10. In Azure portal click on the **cloud shell button** on top and wait for the cloud shell to connect.
+
+   ![ws name.](media/0.01.png)
+
+
+11. Paste the script in the cloud shell and press **Enter** to run the script.
+
+   ![ws name.](media/0.07.png)
+   
+   wait for sometime for the script to execute.
+   
+   
+   
+12. After the execution completes the output will look as following.
+
+    ![ws name.](media/0.08.png)
+
+    wait for few more minutes for the deployment of virtual machine to complete.
+
+
 ## Task 2: Install Agents on VM and Register
 
 
