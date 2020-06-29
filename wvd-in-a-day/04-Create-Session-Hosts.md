@@ -149,3 +149,5 @@ In this section, we provide the details of the VMs to be created as session Host
 8. Click on **Create**
 
    ![ws name.](media/72.png)
+
+9. Click on **Next** button.
