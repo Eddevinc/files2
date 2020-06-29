@@ -11,8 +11,7 @@
 3. Enter **password** **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
    
 > Refer the **Environment Details** tab for any other lab credentials/details.
-
-   ![](media/wvd7.png)
+  ![](media/wvd7.png)
 
 4. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **Yes**.
 
