@@ -4,43 +4,43 @@
 
 1. Launch **Azure Portal** (https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. You'd be asked to choose default browser configurations, You can skip those for now by clicking cancel.
 
-2. Now enter <inject key="AzureAdUserEmail"></inject> as **username** and click on **Next**.
+2. Login to Azure with the **username** **<inject key="AzureAdUserEmail" />**
 
    ![](media/wvd1.png)
 
-3. Enter <inject key="AzureAdUserPassword"></inject> as **password** and click on **Sign in**.
+3. Enter **password** **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
    
-4. Refer the **Environment Details** tab for any other lab credentials/details.
+> Refer the **Environment Details** tab for any other lab credentials/details.
 
    ![](media/wvd7.png)
 
-5. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **Yes**.
+4. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **Yes**.
 
    ![](media/wvd3.png)
 
-6. You may encounter a popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+5. You may encounter a popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
 
    ![](media/wvd4.png)
 
-7. In Azure Portal search for **Subscription** and click on **Subscriptions**.
+6. In Azure Portal search for **Subscription** and click on **Subscriptions**.
 
    ![ws name.](media/1.png)
    
-8. Click on your subscription.
+7. Click on your subscription.
 
    ![ws name.](media/2.png)
    
-9. Under Settings blade Click on **Resource Providers**.
+8. Under Settings blade Click on **Resource Providers**.
 
    ![ws name.](media/3.png)
    
-10. Now search for **Microsoft.AAD** and make sure Microsofr.ADD is **Registered**.
+9. Now search for **Microsoft.AAD** and make sure Microsofr.ADD is **Registered**.
 
    ![ws name.](media/4.png)
    
 > In case the **Microsoft.AAD is not registred** then follow the **step 11** *.
 
-11. Click on **Microsoft.AAD** Resource Provider and click on **Register**.
+10. Click on **Microsoft.AAD** Resource Provider and click on **Register**.
 
    ![ws name.](media/5.png)
 
