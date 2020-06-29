@@ -195,7 +195,7 @@ Click on **Next**.
    - **Username**: **WVDUser-02**
    - **Name**: **WVDUser-02**
    
-    ![ws name.](media/30.png)   
+    ![ws name.](media/wvd14.png)   
    
 9. Under pasword section use following configuration.
    
@@ -217,7 +217,7 @@ Click on **Next**.
    
    - **Name**: **DomainJoinAdminUser**
 
-   ![ws name.](media/33.png)   
+   ![ws name.](media/wvd15.png)   
    
 13. Under pasword section use following configuration.
    
