@@ -1,11 +1,25 @@
 # Exercise 2: Azure AD Domain Services 
 
 
-## **Task 1: Create prerequisites for AADDS**
+### **Task 1: Create prerequisites for AADDS**
 
-1. Go to **https://portal.azure.com/** to access your Azure portal.
+1. Launch **Azure Portal** (https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. You'd be asked to choose default browser configurations, You can skip those for now by clicking cancel.
 
-2. Sign in into your Azure Account.
+2. Use the azure credentials provided in the **Environment Details** tab to log in to the portal.
+
+   ![](media/environmentdetails.png)
+   
+3. Refer the **Environment Details** tab for any other lab credentials/details.
+
+   ![](media/wvd7.png)
+
+4. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **Yes**.
+
+   ![](media/wvd3.png)
+
+5. You may encounter a popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+
+   ![](media/wvd4.png)
 
 3. In Azure Portal search for **Subscription** and click on **Subscriptions**.
 
@@ -29,21 +43,19 @@
 
    ![ws name.](media/5.png)
 
-## **Task 2: Deploy AADDS**
+### **Task 2: Deploy AADDS**
 
-1. Go to **https://portal.azure.com/** to access your Azure portal.
+1. On the Azure portal menu or from the Home page, select **Create a resource**.
 
-2. Sign in into your Azure Account.
+   ![](media/wvd6.png)
 
-3. On the Azure portal menu or from the Home page, select **Create a resource**.
-
-4. Enter Domain Services into the search bar, then choose Azure AD Domain Services from the search suggestions.
+2. Enter Domain Services into the search bar, then choose Azure AD Domain Services from the search suggestions.
    ![ws name.](media/6.png)
 
-5. On the Azure AD Domain Services page, click on **Create**.
+3. On the Azure AD Domain Services page, click on **Create**.
    ![ws name.](media/7.png)
     
-6. Configure Basics blade with following settings.
+4. Configure Basics blade with following settings.
       
    - **Subscription**: Select your subscription.
    - **Resource Group** : Select **WVD-RG**
@@ -52,15 +64,15 @@
    - **SKU**: **Standard**
    - **Forest type**: **User**
 
-Then click **Next**.
-
    ![ws name.](media/8.png)
        
-7. In Networking tab under **Virtual network**, Click on **Create new**.
+7. Then click **Next**.
+
+8. In Networking tab under **Virtual network**, Click on **Create new**.
         
    ![ws name.](media/9.png)
 
-8. Configure your new virtual network with following settings and then click **Ok**.
+9. Configure your new virtual network with following settings and then click **Ok**.
 
    - **Name**: **aaddss-vnet-01**
    - **Address range**: **10.1.0.0/16**
@@ -72,7 +84,7 @@ Add following subnets:
 
   ![ws name.](media/10.png)
 
-9. You will return to Networking tab, Here Select the following Subnet.
+10. You will return to Networking tab, Here Select the following Subnet.
      
    - **Virtual network**: **(new)aadds-vnet-01** 
    - **Subnet**: **(new)aads-subnet-01 (10.0.0.0/24)**
@@ -81,15 +93,15 @@ Click on **Next**.
 
    ![ws name.](media/11.png)
 
-10. Click on **Review + Create** button.
+11. Click on **Review + Create** button.
 
     ![ws name.](media/12.png)
 
-11. click on **Create** Button.
+12. click on **Create** Button.
 
     ![ws name.](media/13.png)
     
-12. A popup will appear, Click on **OK**.
+13. A popup will appear, Click on **OK**.
 
     ![ws name.](media/14.png)
     
@@ -267,3 +279,5 @@ Wait for few seconds for the script to execute.
 5. Output of the script will look like this.
 
    ![ws name.](media/42.png)
+
+6. Click **Next** on the bottom right of this page.
