@@ -16,7 +16,7 @@
   
   ![](media/wvd7.png)
 
-4. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **Yes**.
+4. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
 
    ![](media/wvd3.png)
 
