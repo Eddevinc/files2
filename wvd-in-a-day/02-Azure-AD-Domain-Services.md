@@ -1,45 +1,46 @@
 # Exercise 2: Azure AD Domain Services 
 
-
 ### **Task 1: Create prerequisites for AADDS**
 
 1. Launch **Azure Portal** (https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. You'd be asked to choose default browser configurations, You can skip those for now by clicking cancel.
 
-2. Use the azure credentials provided in the **Environment Details** tab to log in to the portal.
+2. Now enter <inject key="AzureAdUserEmail"></inject> as **username** and click on **Next**.
 
-   ![](media/environmentdetails.png)
+   ![](media/wvd1.png)
+
+3. Enter <inject key="AzureAdUserPassword"></inject> as **password** and click on **Sign in**.
    
-3. Refer the **Environment Details** tab for any other lab credentials/details.
+4. Refer the **Environment Details** tab for any other lab credentials/details.
 
    ![](media/wvd7.png)
 
-4. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **Yes**.
+5. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **Yes**.
 
    ![](media/wvd3.png)
 
-5. You may encounter a popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+6. You may encounter a popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
 
    ![](media/wvd4.png)
 
-3. In Azure Portal search for **Subscription** and click on **Subscriptions**.
+7. In Azure Portal search for **Subscription** and click on **Subscriptions**.
 
    ![ws name.](media/1.png)
    
-4. Click on your subscription.
+8. Click on your subscription.
 
    ![ws name.](media/2.png)
    
-5. Under Settings blade Click on **Resource Providers**.
+9. Under Settings blade Click on **Resource Providers**.
 
    ![ws name.](media/3.png)
    
-6. Now search for **Microsoft.AAD** and make sure Microsofr.ADD is **Registered**.
+10. Now search for **Microsoft.AAD** and make sure Microsofr.ADD is **Registered**.
 
    ![ws name.](media/4.png)
    
-*In case the **Microsoft.AAD is not registred** then follow the **step 7** *.
+> In case the **Microsoft.AAD is not registred** then follow the **step 11** *.
 
-7. Click on **Microsoft.AAD** Resource Provider and click on **Register**.
+11. Click on **Microsoft.AAD** Resource Provider and click on **Register**.
 
    ![ws name.](media/5.png)
 
