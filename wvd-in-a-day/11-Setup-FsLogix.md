@@ -35,7 +35,7 @@
    
    **Account kind**: StorageV2(general purpose v2)
    
-   **Replication**: Locally-redundant storage(LRS)
+   **Replication**: Read-access-geo-redundant storage (RA-GRS)
    
    **Access tier(default)**: Hot
    
@@ -45,15 +45,15 @@
    
 4. Under networking tab use following configuration.
 
-    ![ws name.](media/164.png)
+    ![ws name.](media/wvd45.png)
     
      **Connectivity method**: Public endpoint(selected networks)
     
      **virtual network subscription**: Default subscription
      
-     **Virtual Network**: aadds-vnet-01
+     **Virtual Network**: aadds-vnet
      
-     **Subnets**: SessionHost-Subnet(10.1.1.0/24)
+     **Subnets**: SessionHost(10.0.2.0/24)
      
      Leave the rest to default settings.
      
@@ -121,36 +121,24 @@
 
 1. Click on the file share you just created.
 
-   ![ws name.](media/173.png)
+   ![ws name.](media/wvd47.png)
      
      
      
-2. Click on **Access Control (IAM).
+2. Click on **Access Control (IAM)**, then click on **Add** and select **Add role assignment**.
 
-   ![ws name.](media/174.png)   
+  ![ws name.](media/wvd48.png)
    
    
    
-3. Click on **Add** under Add a role assignment.
-
-   ![ws name.](media/175.png)
+3. Select following configuration for role assignment and then click on **Save**.  
    
+   - Role: **Storage File Data SMB Share Contributor**
    
+   - Under **Select** search for *WVDUser* and click on both the users to select them.
    
-4. Select following configuration for role assignment.
-
-   ![ws name.](media/176.png)
+      ![ws name.](media/wvd49.png)
    
-   
-   **Role**: Contributer
-   
-   Under **Select** search for *WVDUser* and click on both the users to select them.
-   
-   
-5. Click on **Save**.
-
-   ![ws name.](media/177.png)
-
 
 
 ## Task 3: Configure Session Hosts
@@ -163,21 +151,21 @@
    
    
    
-2. Click on **WVD-SH-0**.
+2. Click on **WVD-HP01-SH-0**.
 
-   ![ws name.](media/179.png)
+   ![ws name.](media/wvd50.png)
    
    
    
 3. On left side under Operations tab click on **Run command**.
 
-   ![ws name.](media/180.png)
+   ![ws name.](media/wvd51.png)
    
    
    
 4. Now click on **RunPowerShellScript**.
 
-   ![ws name.](media/181.png)
+   ![ws name.](media/WVD-52.png)
    
    
 5. A similar window will open.
@@ -240,4 +228,5 @@
    
    Now Click on **Run** to execute the script.
    
+   Wait for sometime for the script to execute.
    
