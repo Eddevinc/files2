@@ -4,11 +4,11 @@
 
 1. Launch **Azure Portal** (https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. You'd be asked to choose default browser configurations, You can skip those for now by clicking cancel.
 
-2. Login to Azure with the **username** **<inject key="AzureAdUserEmail" />**
+2. Login to Azure with the username **<inject key="AzureAdUserEmail" />**
 
    ![](media/wvd1.png)
 
-3. Enter **password** **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+3. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
    ![](media/wvd2.png)
    
@@ -53,9 +53,11 @@
    ![](media/wvd6.png)
 
 2. Enter Domain Services into the search bar, then choose Azure AD Domain Services from the search suggestions.
+
    ![ws name.](media/6.png)
 
 3. On the Azure AD Domain Services page, click on **Create**.
+
    ![ws name.](media/7.png)
     
 4. Configure Basics blade with following settings.
@@ -77,21 +79,12 @@
 
 9. Configure your new virtual network with following settings and then click **Ok**.
 
-   - **Name**: **aaddss-vnet-01**
-   - **Address range**: **10.1.0.0/16**
+   - **Name**: **aaddss-vnet**
+   - **Address range**: **10.0.0.0/16**
 
-Add following subnets:
-   - **Subnet name**: **aadds-subnet**
-   - **Address range**: **10.1.0.0/24**
-   - **Subnet name**: **SessionHost-Subnet**
-   - **Address range**: **10.1.1.0/24**
+  ![ws name.](media/wvd18.png)
 
-  ![ws name.](media/10.png)
-
-10. You will return to Networking tab, Here Select the following Subnet.
-     
-   - **Virtual network**: **(new)aadds-vnet-01** 
-   - **Subnet**: **(new)aads-subnet-01 (10.0.0.0/24)**
+10. You will return to Networking tab, make sure subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
 
    ![ws name.](media/11.png)
 
@@ -245,6 +238,8 @@ Click on **Next**.
 
 19. Go back to **All Users (Preview)** and copy username of all the three users and paste it in notepad.
 
+   ![ws name.](media/wvd13.png)
+
 ### **Task 5: Change passwords for the users created**
 
 1. In your azure portal, click on the **cloud Shell** icon.
@@ -270,9 +265,7 @@ Click on **Next**.
 
    ![ws name.](media/40.png)
       
-4. Copy the following power shell script and paste it in the cloud shell and hit enter.
-
-   ![ws name.](media/41.png)
+4. Copy and paste in Notepad and replace the username of all the three users with the one you copied in Step 19(previous task).
    
    ```
       #POWER SHELL SCRIPT
@@ -287,10 +280,14 @@ Click on **Next**.
     }
 ```
 
+5. Now copy the powershell script, paste it in the cloud shell and hit enter.
+
+  ![ws name.](media/41.png)
+
 Wait for few seconds for the script to execute.
    
-5. Output of the script will look like this.
+6. Output of the script will look like this.
 
    ![ws name.](media/42.png)
 
-6. Click **Next** on the bottom right of this page.
+7. Click **Next** on the bottom right of this page.
