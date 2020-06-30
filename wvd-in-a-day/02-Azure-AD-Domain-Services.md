@@ -232,7 +232,7 @@ New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $pa
    
 2. Click on **DomainJoinAdminUser** to open it.
 
-    ![ws name.](media/wvd13.png)
+    ![ws name.](media/wvd34.png)
 
 3. Select **Groups** under **Manage**. Then click on **+Add Membership** and select **AAD DC Administrators**.
 
