@@ -5,7 +5,7 @@
 
 
 
-1 **Copy** the following script and **paste** it in a notepad.
+1 **Copy** the following script.
 
 
     $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
