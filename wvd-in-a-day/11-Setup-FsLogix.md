@@ -109,7 +109,7 @@
 
     ![ws name.](media/172.png)
     
-    **Name**: *userprofilestorage*
+    **Name**: *userprofile*
     
     Click on **Create**.
     
