@@ -88,7 +88,7 @@
 
    ![ws name.](media/11.png)
 
-Click on **Next**.
+   Click on **Next**.
 
 11. Click on **Review + Create** button.
 
@@ -102,7 +102,7 @@ Click on **Next**.
 
     ![ws name.](media/14.png)
     
-    Wait for the Deployment to complete, It will take approx 30 minutes to deploy.
+    **Wait for the Deployment to complete, It will take approx 30 minutes to deploy.**
 
 
 ### **Task 3: Update Virtual Network DNS**
@@ -141,7 +141,7 @@ Click on **Next**.
     
 9. Under DNS server select **custom** and paste the IP address of first and second NIC card noted in step 19 and 21.
     
-    ![ws name.](media/23.png)
+    ![ws name.](media/wvd19.png)
      
 10. click on **Save**.
      
@@ -149,104 +149,11 @@ Click on **Next**.
 
 ### **Task 4: Create new AD users**
 
-1. In you Azure portal search bar, search for **Azure Active Directory** and click on it.
-
-   ![ws name.](media/24.png)
-
-2. In Azure active directory page, left side under Manage blade click on **Users**.
-
-   ![ws name.](media/25.png)
-   
-3. Click on **+ new user**.
-
-   ![ws name.](media/26.png)
-     
-4. Under identity section enter following configuration.
-   
-   ![ws name.](media/27.png)   
- 
-   - **Username**: **WVDUser-01**
-   
-   - **Name**: **WVDUser-01**
-   
-5. Under pasword section use following configuration.
-
-   - **Password**: Select **Let me create the password**
-   
-   - **Initial Passowrd**: **Azure1234567**
-   
-   ![ws name.](media/28.png)
-
-6. Leave remaining values at default and click on **Create**.
-      
-7. To create another user click on **+ New user**.
-
-   ![ws name.](media/29.png)
-
-8. Under identity section enter following configuration.
-
-   - **Username**: **WVDUser-02**
-   - **Name**: **WVDUser-02**
-   
-    ![ws name.](media/wvd14.png)   
-   
-9. Under pasword section use following configuration.
-   
-   **Password**: Select **Let me create the password**
-   
-   **Initial Passowrd**: **Azure1234567**
-   
-10. Leave remaining values at default and click on **Create**.
-   
-   ![ws name.](media/31.png)   
-   
-11. To create another user click on **+ New user**.
-
-   ![ws name.](media/32.png)  
-
-12. Under identity section enter following configuration.
-      
-   - **Username**: **DomainJoinAdminUser**
-   
-   - **Name**: **DomainJoinAdminUser**
-
-   ![ws name.](media/wvd15.png)   
-   
-13. Under pasword section use following configuration.
-   
-   - **Password**: Select **Let me create the password**
-   
-   - **Initial Passowrd**: **Azure1234567**
-   
-14. Leave remaining values at default and click on **Create**.
-   
-   ![ws name.](media/34.png)
- 
-15. Under Groups and roles section click on **0 groups selected**
-
-   ![ws name.](media/35.png)
-   
-16. Click on **AAD DC Administrators**.
-
-    ![ws name.](media/36.png)
-    
-17. Click on **Select** 
-
-    ![ws name.](media/37.png)
-    
-18. Leave remaining values at default and click on **Create**.
-
-19. Go back to **All Users (Preview)** and copy username of all the three users and paste it in notepad.
-
-   ![ws name.](media/wvd13.png)
-
-### **Task 5: Change passwords for the users created**
-
-1. In your azure portal, click on the **cloud Shell** icon.
+1. In your azure portal, click on the **Cloud Shell** icon.
 
    ![ws name.](media/38.png)
    
-2. In the Cloud Shell window that opens at the bottom of your browser window, select PowerShell.
+2. In the Cloud Shell window that opens at the bottom of your browser window, select **PowerShell**.
 
    ![ws name.](media/wvd10.png)
 
@@ -261,28 +168,58 @@ Click on **Next**.
     
    ![ws name.](media/wvd12.png)
 
-3. After the terminal launches it will look like this.
+5. After the terminal launches it will look like this.
 
    ![ws name.](media/40.png)
-      
-4. Copy and paste in Notepad and replace the username of all the three users with the one you copied in Step 19(previous task).
-   
-   ```
-      #POWER SHELL SCRIPT
 
-     $UserPricipalNames = @("DomainJoinAdminUser@azurehol1055.onmicrosoft.com","WVDUser-01@azurehol1055.onmicrosoft.com","WVDUser-02@azurehol1055.onmicrosoft.com") #End user UPN
-    $UserPassword = "Azure1234567" #End user password
-    $UserPasswordhash = ConvertTo-SecureString $UserPassword -AsPlainText -Force
+6. Now copy and paste the following script:
 
-    Foreach($UserPricipalName in $UserPricipalNames){ 
-    #Update user password    
-    Update-AzADUser -UserPrincipalName $UserPricipalName -Password $UserPasswordhash
-    }
+```
+$domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
+$password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
+$users = @("domainjoinadmin@$domain","wvduser-01@$domain","wvduser-02@$domain")
+$users | foreach{
+    if((Get-AzADUser -UserPrincipalName $_) -ne $null){
+    Remove-AzADUser -UserPrincipalName $_ -Force
+   }
+}
+New-AzADUser -DisplayName "Domain Join Admin" -MailNickname "DomainJoinAdmin" -Password $password -UserPrincipalName "domainjoinadmin@$domain"
+New-AzADUser -DisplayName "WVD User-01" -MailNickname "WVDUser-01" -Password $password -UserPrincipalName "wvduser-01@$domain"
+New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $password -UserPrincipalName "wvduser-02@$domain"
 ```
 
-5. Now copy the powershell script, paste it in the cloud shell and hit enter.
+7. You will get output in the similar form shown below:
 
-  ![ws name.](media/41.png)
+   ![ws name.](media/wvd22.png)
+
+8. You can verify this by searching for **Azure Active Directory** in the search bar in Azure portal and then click on it.
+
+   ![ws name.](media/24.png)
+
+9. In Azure active directory page, click on **Users** under **Manage** blade .
+
+   ![ws name.](media/25.png)
+   
+10. Here you can review the users created.
+
+   ![ws name.](media/wvd13.png)
+
+### **Task 5: Change passwords for the users created**
+
+1. Now we will run the following script to change passwords for the users created.
+
+2. Copy and paste the following script and hit enter.
+
+```
+$domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
+$password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
+$users = @("domainjoinadmin@$domain","wvduser-01@$domain","wvduser-02@$domain")
+$users | foreach{
+    Update-AzADUser -UserPrincipalName $_ -Password $password
+}
+```
+
+   ![ws name.](media/wvd23.png)
 
 Wait for few seconds for the script to execute.
    
