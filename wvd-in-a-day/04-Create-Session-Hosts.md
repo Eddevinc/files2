@@ -42,7 +42,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Number of VMs**: **2**
    
-   - **Name prefix**: **WVD-SH** 
+   - **Name prefix**: **WVD-HP01-SH** 
 
    - **Image type**: Gallery 
 
@@ -52,7 +52,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Use managed disks**: Yes 
    
-   ![ws name.](media/59.png)
+   ![ws name.](media/wvd37.png)
    
   **B**. Network and Security 
    - Leave all values on default.
@@ -119,7 +119,7 @@ In this section, we provide the details of the VMs to be created as session Host
       
    - **Number of VMs**: **1** 
    
-   - **Name prefix**: **WVD-SH**
+   - **Name prefix**: **WVD-HP02-SH**
 
    - **Image type**: Gallery 
 
@@ -129,7 +129,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Use managed disks**: Yes 
    
-   ![ws name.](media/69.png)
+   ![ws name.](media/WVD36.png)
 
   **B**. Network and Security 
     - Leave all values on default.
