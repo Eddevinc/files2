@@ -36,7 +36,9 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Virtual machine location**: Choose the location of the pre-created resource Group
 
-   - **Virtual machine size**: Standard DS1_V2 
+   - **Virtual machine size**: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
+   
+      ![ws name.](media/wvd28.png)
 
    - **Number of VMs**: **2**
    
@@ -58,8 +60,6 @@ In this section, we provide the details of the VMs to be created as session Host
    ![ws name.](media/60.png)
  
  **C**. Domain and Administrator account 
-
-  ![ws name.](media/61.png)
  
    - **Specify Domain or Unit**: No 
 
@@ -70,6 +70,8 @@ In this section, we provide the details of the VMs to be created as session Host
    - **Confirm Password**: **Azure1234567**
    
    - Click on **Review + create**
+
+  ![ws name.](media/61.png)
 
 8. Click on **Create**.
 
@@ -107,14 +109,14 @@ In this section, we provide the details of the VMs to be created as session Host
 
    In this section, we provide the details of the VMs to be created as session Hosts. 
    
-   ![ws name.](media/69.png)
-
    - **Resource Group**: Choose the default pre-created Resource Group
 
    - **Virtual machine location**: Choose the location of the pre-created resource Group
 
-   - **Virtual machine size**: Standard DS1_V2 
-
+   - **Virtual machine size**: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
+   
+      ![ws name.](media/wvd28.png)
+      
    - **Number of VMs**: **1** 
    
    - **Name prefix**: **WVD-SH**
@@ -126,6 +128,8 @@ In this section, we provide the details of the VMs to be created as session Host
    - **OS disk type**: Standard SSD 
 
    - **Use managed disks**: Yes 
+   
+   ![ws name.](media/69.png)
 
   **B**. Network and Security 
     - Leave all values on default.
