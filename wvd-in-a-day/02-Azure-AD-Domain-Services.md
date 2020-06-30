@@ -121,7 +121,7 @@
     
 4. Note down the **Private IP** of first NIC card.
 
-    ![ws name.](media/18.png)
+    ![ws name.](media/wvd24.png)
     
 5. Now go back to your **WVD-RG** resource group and click on **second NIC card**.
 
@@ -129,7 +129,7 @@
     
 6. Note down the **Private IP** of the second NIC card.
 
-    ![ws name.](media/20.png)
+    ![ws name.](media/wvd25.png)
     
 7. Go back to the **WVD-RG** resource group, and click on **aadds-vnet-01**.
 
@@ -161,7 +161,7 @@
 
    ![ws name.](media/wvd11.png)
 
-4. Use exisiting hands-on-lab-SUFFIX resource group and for:
+4. Use exisiting **WVD-RG** resource group from the drop down and for:
 
     - **storage account:** Create new and enter **sa{uniqueid}**, for example: sa204272.
     - **file share:** Create new and enter **fs{uniqueid}**, for example: fs204272.
@@ -202,11 +202,11 @@ New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $pa
    
 10. Here you can review the users created.
 
-   ![ws name.](media/wvd13.png)
+    ![ws name.](media/wvd13.png)
 
 ### **Task 5: Change passwords for the users created**
 
-1. Now we will run the following script to change passwords for the users created.
+1. Now we will run a script to change passwords for the users created.
 
 2. Copy and paste the following script and hit enter.
 
