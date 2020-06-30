@@ -20,45 +20,15 @@
     -existingVNETName "aadds-vnet-01" -existingSubnetName "SessionHost-Subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
        
        
- 3. Now in Azure portal search for *azure active directory* and click on it.
  
-     ![ws name.](media/184.png)
-     
-     
-     
-  4. Click on **Users**.
-  
-     ![ws name.](media/185.png)
-      
-      
- 5. Click on **DomainJoinAdminUser**.
- 
-     ![ws name.](media/186.png)
-     
-     
- 6. Copy the username of *DomainJoinAdminUser*.
- 
-    ![ws name.](media/187.png)
-    
-    
-    
-7. Go to the Notepad where you copied script in *step 2*.
 
 
-8. Replace the **DomainJoinAdminUser** with the username you copied in  *step 6*.
-
-    ![ws name.](media/188.png)
-    
-    
-9. Copy this script from the notepad.
-
-
-10. In Azure portal click on the **cloud shell button** on top and wait for the cloud shell to connect.
+2. In Azure portal click on the **cloud shell button** on top and wait for the cloud shell to connect.
 
    ![ws name.](media/189.png)
 
 
-11. Paste the script in the cloud shell and press **Enter** to run the script.
+3. Paste the script in the cloud shell and press **Enter** to run the script.
 
    ![ws name.](media/190.png)
    
@@ -66,7 +36,7 @@
    
    
    
-12. After the execution completes the output will look as following.
+4. After the execution completes the output will look as following.
 
     ![ws name.](media/191.png)
 
