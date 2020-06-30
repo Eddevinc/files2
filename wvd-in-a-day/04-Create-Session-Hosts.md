@@ -36,7 +36,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Virtual machine location**: Choose the location of the pre-created resource Group
 
-   - **Virtual machine size**: Standard D1_V2 
+   - **Virtual machine size**: Standard DS1_V2 
 
    - **Number of VMs**: **2**
    
@@ -113,7 +113,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Virtual machine location**: Choose the location of the pre-created resource Group
 
-   - **Virtual machine size**: Standard D1_V2 
+   - **Virtual machine size**: Standard DS1_V2 
 
    - **Number of VMs**: **1** 
    
@@ -121,7 +121,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Image type**: Gallery 
 
-   - **Image**: **Windows 10 Enterprise multi-session, version 1909(choose from dropdown)** 
+   - **Image**: **Windows 10 Enterprise, version 1909(choose from dropdown)** 
 
    - **OS disk type**: Standard SSD 
 
