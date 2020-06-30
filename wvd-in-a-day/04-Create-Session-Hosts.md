@@ -129,7 +129,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Use managed disks**: Yes 
    
-   ![ws name.](media/WVD36.png)
+   ![ws name.](media/wvd36.png)
 
   **B**. Network and Security 
     - Leave all values on default.
