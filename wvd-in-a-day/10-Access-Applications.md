@@ -5,18 +5,25 @@
 ## Task 1: Access published applications via Web browser
 
 
-### Access the published applications using browser
+### **Subtask 1: Access the published applications using browser**
 
 Now as we have published Desktop and Applications in previous step, now we will be accessing them. 
 
+1. Navigate to **Azure Active dDirectory**, then go to **Users**.
 
-1. Use the link ***aka.ms/wvdarmweb*** and enter your **credentials** to login. 
+   ![ws name.](media/25.png)
 
-   **Username**: *WVDUser-01@azurehol1055.onmicrosoft.com*
+2. Copy username of **WVD User-01** and **WVD User-02** and paste it notepad for further use.
+
+2. Now paste this link ```aka.ms/wvdarmweb``` in your browser and enter your **credentials** to login. 
+
+   - Username: Put username **WVD User-01** which you copied in previous step (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.
    
-   **Password**: *Azure1234567*
+      ![ws name.](media/wvd42.png)
 
-   ![ws name.](media/126.png)
+   - Password: **Azure1234567** and click on **Sign in**.
+
+   ![ws name.](media/wvd43.png)
   
 
 2. Now you will be inside the WVD dashboard with all the Desktop and Applications assigned to WVDUser01 accesable. Click on any one of the applications to access it. 
@@ -41,105 +48,85 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
 
 
-### Access the published Desktop using browser
+### **Subtask 2: Access the published Desktop using browser**
 
+1. Now on the top-left side click on **All Resources** and select **WVD-HP-01-DAG** Desktop.
 
+   ![ws name.](media/wvd53.png)
 
-6. Use the link ***aka.ms/wvdarmweb*** and enter your credentials to login. 
-
-   ![ws name.](media/131.png)
-   
-   **Username**: *WVDUser-02@azurehol1055.onmicrosoft.com*
-   
-   **Password**: *Azure1234567*
-
-
-
-7. Now you will be inside the WVD dashboard with all the Desktop and Applications accesable to WVDUser-02. Click on the **Desktop** to access it. 
-
-   ![ws name.](media/132.png)
-
-
-8. Click on **Allow** for the Prompt.
+2. Click on **Allow** for the Prompt.
 
    ![ws name.](media/133.png)
 
 
-9. Enter your **credentials** to access the application.
+3. Enter your **credentials** to access the application and click on **Submit**.
 
-   ![ws name.](media/134.png)
+   - Username: **WVDUser-02@azurehol1055.onmicrosoft.com**
+   
+   - Password: **Azure1234567**
+   
+   ![ws name.](media/wvd38.png)
 
-   click on **Submit**.
 
-10. Your virtual Desktop will launch and it should be ready to use. 
+4. Your virtual Desktop will launch and it should be ready to use. 
 
-   ![ws name.](media/135.png)
-     
-     
+   ![ws name.](media/wvd39.png)
      
 ## Task 2: Access published applications via Remote Desktop Client
 
-
-
-### Access the published applications using WVD client
-
-
+### **Subtask 1: Access the published applications using WVD client**
    
-1. Download the **WVD Client** on your local machine from the following [**Link**](https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-and-10) and install it.
+1. Download the **WVD Client** on your local machine from the following [**Link**](https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-and-10) and install **Windows 64-bit** version by clicking on it.
    
    ![ws name.](media/136.png)
-   
-   
-   
-2. After installation, in your local machine go to **Start** and search for **Remote desktop** and open the application with exact icon as shown below.
+
+2. The browser will ask to **Run** or **Save** the setup - choose **Run**. Then click **Next** on the Welcome page of setup.
+
+3. Check the agreement box and click on **Next**.
+
+4. On **Installation scope** window select **Install just for you** and then click on **Install**.
+
+   ![ws name.](media/wvd41.png)
+
+5. After installation, in your local machine go to **Start** and search for **Remote desktop** and open the application with exact icon as shown below.
 
    ![ws name.](media/137.png)
-   
-   
-   
-3. After the application opens click on **Subscribe with URL**.
+    
+6. After the application opens click on **Subscribe with URL**.
 
    ![ws name.](media/138.png)
   
-  
-  
-4. Enter the following URL **https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery** and click on **Next**.
+7. Enter the following URL **https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery** and click on **Next**.
 
    ![ws name.](media/139.png)
-   
-   
-   
-5. Enter your **credentials** to access the workspace.
+ 
+8. Enter your **credentials** to access the workspace.
 
-   ![ws name.](media/140.png)
+   - Username: **WVDUser-02@azurehol1055.onmicrosoft.com**, then click on **Next**
    
+    ![ws name.](media/wvd40.png)
+
+   - Password: **Azure1234567** and click on **Sign in**.
    
-   **Username**: *WVDUser-02@azurehol1055.onmicrosoft.com*
-   
-   **Password**: *Azure1234567*
-   
-   
-   
-6. Make sure to **uncheck** Allow my organization to manage my device.
+    ![ws name.](media/140.png)
+ 
+9. Make sure to **uncheck** Allow my organization to manage my device.
 
    Click on **Yes**.
 
    ![ws name.](media/141.png)
-   
-   
-   
-7. Now you will be inside the WVD dashboard with all the desktop and applications assigned to *WVDUser01*. Click on any one of the applications to access it. 
+    
+10 Now you will be inside the WVD dashboard with all the desktop and applications assigned to *WVDUser01*. Click on any one of the applications to access it. 
 
    ![ws name.](media/142.png)
 
 
-
-8. Click on **Allow** for the prompt.
+11 Click on **Allow** for the prompt.
 
    ![ws name.](media/143.png)
 
 
-9. Enter your **credentials** to access the application.
+12 Enter your **credentials** to access the application.
 
    ![ws name.](media/144.png)
    
@@ -155,7 +142,7 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
 
 
-### Access the Workspace Desktop using WVD Client
+### **Subtask 2: Access the Workspace Desktop using WVD Client**
 
 
 
