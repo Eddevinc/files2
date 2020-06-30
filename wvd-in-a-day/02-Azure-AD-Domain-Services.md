@@ -224,20 +224,42 @@ New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $pa
 
     ![ws name.](media/wvd13.png)
 
-### **Task 5: Change passwords for the users created**
+### **Task 5: Add membership for DomainJoinAdmin User**
+
+1. In Azure active directory page, click on **Users** under **Manage** blade .
+
+   ![ws name.](media/25.png)
+   
+2. Click on **DomainJoinAdminUser** to open it.
+
+    ![ws name.](media/wvd13.png)
+
+3. Select **Groups** under **Manage**. Then click on **+Add Membership** and select **AAD DC Administrators**.
+
+    ![ws name.](media/wvd30.png)
+
+4. Once selected it will show up under selected groups then click on **Select**.
+
+    ![ws name.](media/wvd33.png)
+
+5. This will show the added membership.
+
+    ![ws name.](media/wvd31.png)
+
+### **Task 6: Change passwords for the users created**
 
 1. Now we will run a script to change passwords for the users created.
 
 2. Copy and paste the following script and hit enter.
 
-```
-$domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
-$password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
-$users = @("domainjoinadmin@$domain","wvduser-01@$domain","wvduser-02@$domain")
-$users | foreach{
-    Update-AzADUser -UserPrincipalName $_ -Password $password
-}
-```
+   ```
+   $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
+   $password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
+   $users = @("domainjoinadmin@$domain","wvduser-01@$domain","wvduser-02@$domain")
+   $users | foreach{
+       Update-AzADUser -UserPrincipalName $_ -Password $password
+   }
+   ```
 
    ![ws name.](media/wvd23.png)
 
