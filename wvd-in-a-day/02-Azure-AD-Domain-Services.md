@@ -102,7 +102,7 @@
 
     ![ws name.](media/14.png)
     
-    **Wait for the Deployment to complete, It will take approx 30 minutes to deploy.**
+    **The Deployment will take approx 30 minutes to deploy. Till then continue with next step.**
 
 12. Now navigate to the **WVD-RG** , then go to **Overview** and open **aadds-vnet**.
 
@@ -124,6 +124,8 @@
     ![ws name.](media/wvd27.png)
 
 ### **Task 3: Update Virtual Network DNS**
+
+> Wait for the deployment of Azure AD Domain Serive(i.e., previous task) to complete. Then only you can start Task 3. 
 
 1. After deployment completes, go back to Azure portal home, and search for resource group and click on **Resource Groups**.
     
