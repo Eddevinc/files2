@@ -126,25 +126,20 @@ Now as we have published Desktop and Applications in previous step, now we will 
    ![ws name.](media/143.png)
 
 
-12 Enter your **credentials** to access the application.
+12 Enter your **credentials** to access the application and click on **Submit**.
 
+   - Username: **WVDUser-02@azurehol1055.onmicrosoft.com**
+   - Password: **Azure1234567**
+   
    ![ws name.](media/144.png)
    
-  Click on **Submit**.
-  
   
    
-10. Your application will launch.
+13. Your application will launch.
 
    ![ws name.](media/145.png)
 
-
-
-
-
 ### **Subtask 2: Access the Workspace Desktop using WVD Client**
-
-
 
 1. In your local machine go to **start** and search for **Remote desktop** and open the Application with exact exact Icon as shown below.
 
@@ -163,14 +158,14 @@ Now as we have published Desktop and Applications in previous step, now we will 
    
 4. Enter your **credentials** to access the Workspace.
 
-   ![ws name.](media/149.png)
+   - **Username**: *WVDUser-02@azurehol1055.onmicrosoft.com*
    
+    ![ws name.](media/wvd40.png)
    
-   **Username**: *WVDUser-02@azurehol1055.onmicrosoft.com*
+   - **Password**: *Azure1234567*
    
-   **Password**: *Azure1234567*
-   
-   
+   ![ws name.](media/wvd44.png)
+
    
 5. Make sure to **uncheck** Allow my organization to manage my device.
 
