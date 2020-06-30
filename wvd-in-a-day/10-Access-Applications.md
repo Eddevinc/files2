@@ -36,11 +36,14 @@ Now as we have published Desktop and Applications in previous step, now we will 
    ![ws name.](media/128.png)
 
 
-4. Enter your **credentials** to access the application.
+4. Enter your **credentials** to access the application and click on **Submit**.
+
+   - Username: Put the username of **WVD User-01** which you copied in previous task (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**)
+   
+   - Password: **Azure1234567**
 
    ![ws name.](media/129.png)
    
-  Click on **Submit**.
    
 5. Your application will launch.
 
@@ -61,7 +64,7 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
 3. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: **WVDUser-02@azurehol1055.onmicrosoft.com**
+   - Username: Put the username of **WVD User-01** which you copied in previous task (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**)
    
    - Password: **Azure1234567**
    
@@ -102,13 +105,13 @@ Now as we have published Desktop and Applications in previous step, now we will 
  
 8. Enter your **credentials** to access the workspace.
 
-   - Username: **WVDUser-02@azurehol1055.onmicrosoft.com**, then click on **Next**
+   - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**), then click on **Next**
    
     ![ws name.](media/wvd40.png)
 
    - Password: **Azure1234567** and click on **Sign in**.
    
-    ![ws name.](media/140.png)
+    ![ws name.](media/wvd44.png)
  
 9. Make sure to **uncheck** Allow my organization to manage my device.
 
@@ -128,12 +131,10 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
 12 Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: **WVDUser-02@azurehol1055.onmicrosoft.com**
+   - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
    - Password: **Azure1234567**
    
    ![ws name.](media/144.png)
-   
-  
    
 13. Your application will launch.
 
@@ -158,7 +159,7 @@ Now as we have published Desktop and Applications in previous step, now we will 
    
 4. Enter your **credentials** to access the Workspace.
 
-   - **Username**: *WVDUser-02@azurehol1055.onmicrosoft.com*
+   - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
    
     ![ws name.](media/wvd40.png)
    
@@ -167,32 +168,24 @@ Now as we have published Desktop and Applications in previous step, now we will 
    ![ws name.](media/wvd44.png)
 
    
-5. Make sure to **uncheck** Allow my organization to manage my device.
-
-   Click on **Yes**.
-
+5. Make sure to **uncheck** Allow my organization to manage my device and click on **Yes**.
 
    ![ws name.](media/150.png)
    
-   
-   
-6. Now you will be inside the WVD dashboard with all the Desktop and Applications accesable to *WVDUser-02*. Click on the **Desktop** to access it. 
+6. Now you will be inside the WVD dashboard with all the Desktop and Applications accesable to **WVDUser-02**. Click on the **Desktop** to access it. 
 
    ![ws name.](media/151.png)
-
-
 
 7. Click on **Allow** for the Prompt.
 
    ![ws name.](media/152.png)
 
+8. Enter your **credentials** to access the application and click on **Submit**.
 
-
-8. Enter your **credentials** to access the application.
-
+   - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
+   - Password: **Azure1234567**
+   
    ![ws name.](media/153.png)
-
-   click on **Submit**.
    
 
 9. Your virtual Desktop will launch and it should be ready to use. 
