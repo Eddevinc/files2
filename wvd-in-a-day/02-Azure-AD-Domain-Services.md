@@ -2,7 +2,7 @@
 
 ### **Task 1: Create prerequisites for AADDS**
 
-1. Launch **Azure Portal** (https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. You'd be asked to choose default browser configurations, You can skip those for now by clicking cancel.
+1. Navigate **Azure Portal** (https://portal.azure.com) in your browser. 
 
 2. Login to Azure with the username **<inject key="AzureAdUserEmail" />**
 
