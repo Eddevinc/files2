@@ -8,15 +8,16 @@
 1 **Copy** the following script and **paste** it in a notepad.
 
 
-      #Parameters
-       $adminUserName = "DomainJoinAdminUser"
-       $adminPassword = "Azure1234567"
+    $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
+    $password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
+    $adminUserName = "domainjoinadmin@$domain"
+    $adminPassword = "Azure1234567"
 
-       #Deploy Template
-       $UserPasswordhash = ConvertTo-SecureString $adminPassword -AsPlainText -Force
-       New-AzResourceGroupDeployment -ResourceGroupName "WVD-RG" `
-       -TemplateUri "https://akipersistantstg.blob.core.windows.net/wvdinaday/deployVM.json" `
-       -existingVNETName "aadds-vnet-01" -existingSubnetName "SessionHost-Subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
+    #Deploy Template
+    $UserPasswordhash = ConvertTo-SecureString $adminPassword -AsPlainText -Force
+    New-AzResourceGroupDeployment -ResourceGroupName "WVD-RG" `
+    -TemplateUri "https://akipersistantstg.blob.core.windows.net/wvdinaday/deployVM.json" `
+    -existingVNETName "aadds-vnet-01" -existingSubnetName "SessionHost-Subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
        
        
  3. Now in Azure portal search for *azure active directory* and click on it.
