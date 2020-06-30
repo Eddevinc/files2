@@ -104,6 +104,24 @@
     
     **Wait for the Deployment to complete, It will take approx 30 minutes to deploy.**
 
+12. Now navigate to the **WVD-RG** , then go to **Overview** and open **aadds-vnet**.
+
+    ![ws name.](media/wvd20.png)
+
+13. Select **Subnets** given under **Settings** blade, then click on **+Subnet** to add new subnet.
+
+    ![ws name.](media/wvd21.png)
+
+14. Now add following configuration and select **OK**:
+
+    - Name: **SessionHost**
+    - Address Range: **10.0.2.0/24**
+
+    ![ws name.](media/wvd26.png)
+
+15. Once created it will appear under **Subnets** as shown below:
+
+    ![ws name.](media/wvd27.png)
 
 ### **Task 3: Update Virtual Network DNS**
 
