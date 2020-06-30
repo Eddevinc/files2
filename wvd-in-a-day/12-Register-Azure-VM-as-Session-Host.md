@@ -17,7 +17,7 @@
     $UserPasswordhash = ConvertTo-SecureString $adminPassword -AsPlainText -Force
     New-AzResourceGroupDeployment -ResourceGroupName "WVD-RG" `
     -TemplateUri "https://akipersistantstg.blob.core.windows.net/wvdinaday/deployVM.json" `
-    -existingVNETName "aadds-vnet-01" -existingSubnetName "SessionHost-Subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
+    -existingVNETName "aadds-vnet" -existingSubnetName "SessionHost" -adminUsername $adminUserName -adminPassword $UserPasswordhash
        
        
  
