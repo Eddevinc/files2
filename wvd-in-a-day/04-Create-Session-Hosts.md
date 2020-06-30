@@ -38,7 +38,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Virtual machine size**: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
    
-      ![ws name.](media/wvd28.png)
+      ![ws name.](media/wvd35.png)
 
    - **Number of VMs**: **2**
    
@@ -57,7 +57,7 @@ In this section, we provide the details of the VMs to be created as session Host
   **B**. Network and Security 
    - Leave all values on default.
  
-   ![ws name.](media/60.png)
+   ![ws name.](media/wvd32.png)
  
  **C**. Domain and Administrator account 
  
@@ -115,7 +115,7 @@ In this section, we provide the details of the VMs to be created as session Host
 
    - **Virtual machine size**: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
    
-      ![ws name.](media/wvd28.png)
+      ![ws name.](media/wvd35.png)
       
    - **Number of VMs**: **1** 
    
@@ -134,7 +134,7 @@ In this section, we provide the details of the VMs to be created as session Host
   **B**. Network and Security 
     - Leave all values on default.
  
-   ![ws name.](media/70.png)
+   ![ws name.](media/wvd32.png)
  
  **C**. Domain and Administrator account 
 
