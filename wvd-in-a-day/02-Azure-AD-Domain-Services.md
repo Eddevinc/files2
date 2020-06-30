@@ -71,34 +71,34 @@
 
    ![ws name.](media/8.png)
        
-7. Then click **Next**.
+5. Then click **Next**.
 
-8. In Networking tab under **Virtual network**, Click on **Create new**.
+6. In Networking tab under **Virtual network**, Click on **Create new**.
         
    ![ws name.](media/wvd8.png)
 
-9. Configure your new virtual network with following settings and then click **Ok**.
+7. Configure your new virtual network with following settings and then click **Ok**.
 
    - **Name**: **aaddss-vnet**
    - **Address range**: **10.0.0.0/16**
 
   ![ws name.](media/wvd18.png)
 
-10. You will return to Networking tab, make sure subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
+8. You will return to Networking tab, make sure subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
 
    ![ws name.](media/11.png)
 
    Click on **Next**.
 
-11. Click on **Review + Create** button.
+9. Click on **Review + Create** button.
 
     ![ws name.](media/12.png)
 
-12. Now click on **Create** Button.
+10. Now click on **Create** Button.
 
     ![ws name.](media/13.png)
     
-13. A popup will appear, Click on **OK**.
+11. A popup will appear, Click on **OK**.
 
     ![ws name.](media/14.png)
     
@@ -221,10 +221,10 @@ $users | foreach{
 
    ![ws name.](media/wvd23.png)
 
-Wait for few seconds for the script to execute.
+ > Wait for few seconds for the script to execute.
    
-6. Output of the script will look like this.
+3. Output of the script will look like this.
 
    ![ws name.](media/42.png)
 
-7. Click **Next** on the bottom right of this page.
+4. Click **Next** on the bottom right of this page.
