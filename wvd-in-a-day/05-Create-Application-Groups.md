@@ -1,6 +1,14 @@
 # Exercise 5: Create Application Groups
 
+Application Group is a logical grouping of applications installed on session hosts in the host pool. They are of two types:
+1.	Remote App
+2.	Desktop
+The default app group created for a new Windows Virtual Desktop host pool also publishes the full desktop. In addition, you can create one or more RemoteApp application groups for the host pool.
+
 ### **Task 1: Verify application group of type ‘Desktop’ is created by default**
+
+An application group of type ‘Desktop’ was created automatically while creating the Session Host in previous exercise. We will be verifying if that host pool is created automatically or not..
+
 
 1. In the search bar, search for ‘Windows Virtual Desktop” and you will see a resource that shows up in the same name. Click on it.
 
@@ -24,19 +32,19 @@
 
    ![ws name.](media/77.png)
    
-      1) **Subscription**: Choose the default subscription.
+      - Subscription: Choose the default subscription.
 
-      2) **Resource Group**: Choose the default pre-created Resource Group.
+      - Resource Group: Choose the default pre-created Resource Group.
 
-      3) **Host Pool:** **WVD-HP-01** (***This application group will be created under WVD-HP-01 hostpool***)
+      - Host Pool: **WVD-HP-01** (*This application group will be created under WVD-HP-01 hostpool*)
 
-      4) **Location**:  Choose the default location
+      - Location:  Choose the default location
 
-      5) **Application Group Type:** **RemoteApp** 
+      - Application Group Type: **RemoteApp** 
 
-      6) **Application Group Name:** **WVD-AG-01**
+      - Application Group Name: **WVD-AG-01**
 
-      7) Click on **Review + create**
+      - Click on **Review + create**
   
 3. Click on **Create**.
 
