@@ -35,7 +35,7 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 
    ![ws name.](media/wvd54.png)
    
-   wait for sometime for the script to execute.
+  > wait for sometime for the script to execute.
    
    
    
@@ -43,7 +43,7 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 
     ![ws name.](media/wvd55.png)
 
-    wait for few more minutes for the deployment of virtual machine to complete.
+   > wait for few more minutes for the deployment of virtual machine to complete.
 
 
 ## Task 2: Install Agents on VM and Register
