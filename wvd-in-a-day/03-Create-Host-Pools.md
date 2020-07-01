@@ -35,23 +35,23 @@ Host pools are a collection of one or more identical virtual machines within Win
 
       - **Host pool type**: *Pooled*
       
-            Host Pools are of 2 types:
-            1.	Pooled
-            2.	Personal
-            Pooled is used to share the same Session Host (Virtual Machine) resources among multiple users, while Personal uses a dedicated Session host of individual user.
+      > Host Pools are of 2 types:
+         1.	Pooled
+         2.	Personal
+         Pooled is used to share the same Session Host (Virtual Machine) resources among multiple users, while Personal uses a dedicated Session host of individual user.
 
       
       - Max session Limit: **5**
       
-            Max session Limit limits the simultaneous number of users on the same session host.
+      > Max session Limit limits the simultaneous number of users on the same session host.
      
       - Load Balancing Algorithm: **Breadth First**
       
-            Load Balancing Algorithm are of 2 types:
+      > Load Balancing Algorithm are of 2 types:
             1. Breadth-first
             2. Depth-first
 
-            Breadth-first load balancing distributes new user sessions across all available session hosts in the host pool. Depth-first load balancing distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
+          Breadth-first load balancing distributes new user sessions across all available session hosts in the host pool. Depth-first load balancing distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
 
      
      -  Then click on **Review + Create**.
