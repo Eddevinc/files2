@@ -1,11 +1,12 @@
 # Exercise 9: Assign Users to Application Groups
 
-
+Assigning users to a specific application groups can allow users to have access to specific applications only.
+   
    
 ## Assign Users to Application Groups
 
 
-### Assigning users to WVD-AG-01
+**A.** Assigning users to WVD-AG-01 application group.
 
 
 1. In the search bar, search for ‘Windows Virtual Desktop” and you will see a resource that shows up in the same name. Click on it.
@@ -47,77 +48,85 @@
 7. Now click on **Select**.
 
    ![ws name.](media/115.png)
-   
+
+> This will allow both WVDUser-1 and WVDUser-02 access to WVD-AG-01 application group.
+
+
    Now return back to application group page.
    
 
 
-### Assigning users to WVD-HP-01-DAG
+**B.** Assigning users to WVD-HP-01-DAG application group.
 
 
   
-8. To assign users to second application group, click on **WVD-HP-01-DAG**.
+1. To assign users to second application group, click on **WVD-HP-01-DAG**.
 
    ![ws name.](media/116.png)
    
    
    
-9. Click on **Assignments**.
+2. Click on **Assignments**.
 
    ![ws name.](media/117.png)
    
    
    
-10. Click on **+ Add**.
+3. Click on **+ Add**.
 
    ![ws name.](media/118.png)
    
    
    
-11. In search bar search for *WVDUser* and select **both** the users by clicking on them.
+4. In search bar search for *WVDUser* and select **both** the users by clicking on them.
 
    ![ws name.](media/119.png)
    
    
    
-12. Now click on **Select**.
+5. Now click on **Select**.
 
    ![ws name.](media/120.png)
+   
+   
+> This will allow both WVDUser-1 and WVDUser-02 access to WVD-HP-01-DAG application group.
+
    
    Now return back to application group page.
    
    
 
-### Assigning users to WVD-HP-02-DAG
+**C.** Assigning users to WVD-HP-02-DAG application group.
 
 
-13. To assign users to second application group, click on **WVD-HP-02-DAG**.
+1. To assign users to second application group, click on **WVD-HP-02-DAG**.
 
    ![ws name.](media/121.png)
    
    
    
-14. Click on **Assignments**.
+2. Click on **Assignments**.
 
    ![ws name.](media/122.png)
    
    
    
-15. Click on **+ Add**.
+3. Click on **+ Add**.
 
    ![ws name.](media/123.png)
    
    
    
-6. In search bar search for *WVDUser-02* and select the **WVDUser-02**.
+4. In search bar search for *WVDUser-02* and select the **WVDUser-02**.
 
    ![ws name.](media/124.png)
    
    
    
-7. Now click on **Select**.
+5. Now click on **Select**.
 
    ![ws name.](media/125.png)
    
    
    
+> This will allow WVDUser-02 access to WVD-AG-02 application group.   
