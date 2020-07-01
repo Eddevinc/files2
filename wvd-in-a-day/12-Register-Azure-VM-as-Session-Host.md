@@ -49,8 +49,9 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 ## Task 2: Install Agents on VM and Register
 
 In this task we will be establish a RDP connection with the virtual machine created in previous task and download two agents:
-  1 . Windows Virtual Desktop Agent
-  2. Windows Virtual Desktop Agent Bootloader
+
+  - Windows Virtual Desktop Agent
+  - Windows Virtual Desktop Agent Bootloader
   
 These two agents will be used to register this virtual machine a part of session hosts of WVD-HP-01 hostpool.
 
