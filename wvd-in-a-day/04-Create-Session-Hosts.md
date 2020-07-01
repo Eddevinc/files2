@@ -32,25 +32,25 @@
 
 In this section, we provide the details of the VMs to be created as session Hosts.    
 
-   - **Resource Group**: Choose the default pre-created Resource Group
+   - Resource Group: **Choose the default pre-created Resource Group**
 
-   - **Virtual machine location**: Choose the location of the pre-created resource Group
+   - Virtual machine location: **Choose the location of the pre-created resource Group**
 
-   - **Virtual machine size**: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
+   - Virtual machine size: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
    
       ![ws name.](media/wvd35.png)
 
-   - **Number of VMs**: **2**
+   - Number of VMs: **2**
    
-   - **Name prefix**: **WVD-HP01-SH** 
+   - Name prefix: **WVD-HP01-SH** 
 
-   - **Image type**: Gallery 
+   - Image type: **Gallery**
 
-   - **Image**: Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus (choose from dropdown) 
+   - Image: **Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus**(choose from dropdown) 
 
-   - **OS disk type**: Standard SSD 
+   - OS disk type: **Standard SSD**
 
-   - **Use managed disks**: Yes 
+   - Use managed disks: **Yes**
    
    ![ws name.](media/wvd37.png)
    
@@ -61,13 +61,13 @@ In this section, we provide the details of the VMs to be created as session Host
  
  **C**. Domain and Administrator account 
  
-   - **Specify Domain or Unit**: No 
+   - pecify Domain or Unit: **No**
 
-   - **AD domain join UPN**: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
+   - AD domain join UPN: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
 
-   - **Password**: **Azure1234567**
+   - Password: **Azure1234567**
 
-   - **Confirm Password**: **Azure1234567**
+   - Confirm Password: **Azure1234567**
    
    - Click on **Review + create**
 
@@ -109,25 +109,25 @@ In this section, we provide the details of the VMs to be created as session Host
 
    In this section, we provide the details of the VMs to be created as session Hosts. 
    
-   - **Resource Group**: Choose the default pre-created Resource Group
+   - Resource Group: **Choose the default pre-created Resource Group**
 
-   - **Virtual machine location**: Choose the location of the pre-created resource Group
+   - Virtual machine location: **Choose the location of the pre-created resource Group**
 
-   - **Virtual machine size**: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
+   - Virtual machine size: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
    
       ![ws name.](media/wvd35.png)
       
-   - **Number of VMs**: **1** 
+   - Number of VMs: **1** 
    
-   - **Name prefix**: **WVD-HP02-SH**
+   - Name prefix: **WVD-HP02-SH**
 
-   - **Image type**: Gallery 
+   - Image type: **Gallery**
 
-   - **Image**: **Windows 10 Enterprise, version 1909(choose from dropdown)** 
+   - Image: **Windows 10 Enterprise, version 1909(choose from dropdown)** 
 
-   - **OS disk type**: Standard SSD 
+   - OS disk type: **Standard SSD**
 
-   - **Use managed disks**: Yes 
+   - Use managed disks: **Yes** 
    
    ![ws name.](media/wvd36.png)
 
@@ -138,13 +138,13 @@ In this section, we provide the details of the VMs to be created as session Host
  
  **C**. Domain and Administrator account 
 
-   - **Specify Domain or Unit**: No 
+   - **Specify Domain or Unit**: **No** 
 
-   - **AD domain join UPN**: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
+   - AD domain join UPN: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
 
-   - **Password**: **Azure1234567**
+   - Password: **Azure1234567**
 
-   - **Confirm Password**: **Azure1234567**
+   - Confirm Password: **Azure1234567**
    
    - Click on **Review + create**
     
