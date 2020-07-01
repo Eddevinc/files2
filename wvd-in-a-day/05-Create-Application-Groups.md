@@ -50,4 +50,4 @@ An application group of type ‘Desktop’ was created automatically while creat
 
    ![ws name.](media/78.png)
    
-4. Click on **Next** button.
+4. Click on the **Next** button.
