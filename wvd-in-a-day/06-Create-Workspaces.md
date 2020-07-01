@@ -22,13 +22,13 @@ A workspace is a logical grouping of application groups in WVD. Each WVD applica
 
    ![ws name.](media/82.png)
 
-   - **Subscription**:  Default Subscription 
+   - Subscription:  **Default Subscription** 
    
-   - **Resource Group**: *WVD-RG*
+   - Resource Group: **WVD-RG**
 
-   - **Workspace name**: *WVD-WS-01*
+   - Workspace name: **WVD-WS-01**
 
-   - **Location**: Default location of resource group
+   - Location: **Default location of resource group**
    
    - Click on **Review + create**.
  
@@ -44,13 +44,13 @@ A workspace is a logical grouping of application groups in WVD. Each WVD applica
 
    ![ws name.](media/85.png)
 
-   - **Subscription**:  Default Subscription 
+   - Subscription:  **Default Subscription**
    
-   - **Resource Group**: *WVD-RG*
+   - Resource Group: **WVD-RG**
 
-   - **Workspace name**: *WVD-WS-02*
+   - Workspace name: **WVD-WS-02**
 
-   - **Location**: Default location of resource group
+   - Location: **Default location of resource group**
    
    - Click on **Review + create**.
 
