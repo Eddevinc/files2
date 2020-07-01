@@ -108,14 +108,14 @@ These two agents will be used to register this virtual machine a part of session
    
 10. Enter your credentials.
 
-   ![ws name.](media/201.png)
+    ![ws name.](media/201.png)
    
    
-   Username: **domainjoinadmin**
+     Username: **domainjoinadmin**
    
-   Password: **Azure1234567**
+     Password: **Azure1234567**
    
-   Click on **OK**.
+     Click on **OK**.
    
    
    
@@ -123,12 +123,12 @@ These two agents will be used to register this virtual machine a part of session
  
     ![ws name.](media/202.png)
     
-   > A RDP Connection with your VM will be established.
+    > A RDP Connection with your VM will be established.
     
     
 12. In your Vm window click on **Accept**.
  
-     ![ws name.](media/203.png)
+    ![ws name.](media/203.png)
     
     
     
@@ -150,7 +150,7 @@ These two agents will be used to register this virtual machine a part of session
     
 15. Below your browser a popup will be displayed, Click on **Run**.
  
-     ![ws name.](media/206.png)
+    ![ws name.](media/206.png)
 
 
 
