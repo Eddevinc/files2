@@ -230,5 +230,6 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
    
    Now Click on **Run** to execute the script.
    
-   Wait for sometime for the script to execute.
+   Wait for sometime for the script to execute, It will show a output saying ***Script Executed successfully***.
    
+  
