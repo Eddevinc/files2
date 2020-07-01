@@ -276,4 +276,4 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/42.png)
 
-4. Click **Next** on the bottom right of this page.
+4. Click on the **Next** button.
