@@ -1,6 +1,10 @@
 # Exercise 8: Publish Applications
 
 
+The Published applications can be accessed directly from the wrokspace after the user sign in to windows virtual desktop, without launching the desktop environment.
+
+
+
 
 ## Task 1: Publish Applications from Start Menu
 
