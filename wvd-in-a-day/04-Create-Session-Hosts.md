@@ -154,4 +154,4 @@ In this section, we provide the details of the VMs to be created as session Host
 
    ![ws name.](media/72.png)
 
-9. Click **Next** on the bottom right of this page.
+9. Click on the **Next** button.
