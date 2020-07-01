@@ -37,19 +37,19 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 6. In Azure Portal search for **Subscription** and click on **Subscriptions**.
 
-   ![ws name.](media/1.png)
+   ![ws name.](media/a.png)
    
 7. Click on your subscription.
 
-   ![ws name.](media/2.png)
+   ![ws name.](media/b.png)
    
 8. Under Settings blade Click on **Resource Providers**.
 
-   ![ws name.](media/3.png)
+   ![ws name.](media/c.png)
    
 9. Now search for **Microsoft.AAD** and make sure Microsofr.ADD is **Registered**.
 
-   ![ws name.](media/4.png)
+   ![ws name.](media/d.png)
    
 > In case the **Microsoft.AAD is not registred** then follow the **step 10** *.
 
@@ -65,22 +65,22 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 2. Enter Domain Services into the search bar, then choose Azure AD Domain Services from the search suggestions.
 
-   ![ws name.](media/6.png)
+   ![ws name.](media/e.png)
 
 3. On the Azure AD Domain Services page, click on **Create**.
 
-   ![ws name.](media/7.png)
+   ![ws name.](media/f.png)
     
 4. Configure Basics blade with following settings.
       
-   - **Subscription**: Select your subscription.
-   - **Resource Group** : Select **WVD-RG**
-   - **DNS domain name**: **Default value**
-   - **Region**: select **East US**
-   - **SKU**: **Standard**
-   - **Forest type**: **User**
+   - Subscription: Select your subscription.
+   - Resource Group: Select **WVD-RG**
+   - DNS domain name: **Default value**
+   - Region: select **East US**
+   - SKU**: **Standard**
+   - Forest type: **User**
 
-   ![ws name.](media/8.png)
+   ![ws name.](media/g.png)
        
 5. Then click **Next**.
 
@@ -93,21 +93,21 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
    - **Name**: **aadds-vnet**
    - **Address range**: **10.0.0.0/16**
 
-  ![ws name.](media/wvd18.png)
+  ![ws name.](media/h.png)
 
 8. You will return to Networking tab, make sure subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
 
-   ![ws name.](media/11.png)
+   ![ws name.](media/i.png)
 
    Click on **Next**.
 
 9. Click on **Review + Create** button.
 
-    ![ws name.](media/12.png)
+    ![ws name.](media/j.png)
 
 10. Now click on **Create** Button.
 
-    ![ws name.](media/13.png)
+    ![ws name.](media/k.png)
     
 11. A popup will appear, Click on **OK**.
 
