@@ -1,5 +1,9 @@
 # Exercise 6: Create Workspaces
 
+A workspace is a logical grouping of application groups in WVD. Each WVD application group must be associated with a workspace for users to see the remote apps and desktops published to them.
+
+
+
 ### **Task 1: Create Workspaces**
 
 1. Now go to Azure Portal then search for ‘Windows Virtual Desktop” in the search bar and you will see a resource that shows up in the same name. Click on it.
