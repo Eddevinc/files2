@@ -2,39 +2,31 @@
 
 ### **Task 1: Deploy 2 Windows 10 Enterprise multi-session Session Hosts to ‘Pooled’ Host Pool**
 
-1. In the search bar of Azure Portal, search for ‘Windows Virtual Desktop” and you will see a resource that shows up in the same name. Click on it.
+1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
 
-   ![ws name.](media/53.png)
+   ![ws name.](media/y.png)
      
-2. Click on **Host pools**.
+2. Click on **Host pools** and select **WVD-HP-01** to open it.
 
-   ![ws name.](media/54.png)
+   ![ws name.](media/a5.png)
      
-3. Click on the Host pool **WVD-HP-01**.
+3. Now click on **Session hosts** present under **Manage** blade and then click on **+Add**.
 
-   ![ws name.](media/55.png)
-     
-4. In the Host pool page under **Manage** blade click on **Session hosts**.
-
-   ![ws name.](media/56.png)
-     
-5. Click on **+ Add**.
-
-   ![ws name.](media/57.png)
+   ![ws name.](media/a6.png)
     
-6. In the Session host creation page, leave the value at default and click on **Next: Virtual Macines**.
+4. In the Session host creation page, leave the value at default and click on **Next: Virtual Macines**.
 
-   ![ws name.](media/58.png)
+   ![ws name.](media/a7.png)
   
-7. Configure the session hosts with following configuration.
+5. Configure the session hosts with following configuration.
 
    **A**. Session Host Specifications
 
      In this section, we provide the details of the VMs to be created as session Hosts.    
 
-     - Resource Group: **Choose the default pre-created Resource Group**
+     - Resource Group: Choose the exiting Resource Group that is **WVD-RG**.
 
-     - Virtual machine location: **Choose the location of the pre-created resource Group**
+     - Virtual machine location: Choose the location of the exiting Resource Group.
 
      - Virtual machine size: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
    
@@ -52,17 +44,17 @@
 
      - Use managed disks: **Yes**
    
-     ![ws name.](media/wvd37.png)
+     ![ws name.](media/a8.png)
      
    
   **B**. Network and Security 
-     - Leave all values on default.
- 
-   ![ws name.](media/wvd32.png)
+   - Subnet: **sessionhosts-subnet (10.0.1.0/24)**
+     
+   - Leave all other values on default.
  
  **C**. Domain and Administrator account 
  
-   - pecify Domain or Unit: **No**
+   - Specify Domain or Unit: **No**
 
    - AD domain join UPN: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
 
@@ -72,47 +64,36 @@
    
    - Click on **Review + create**
 
-   ![ws name.](media/61.png)
+   ![ws name.](media/a9.png)
+   
+   
+6. Click on **Create**.
 
-8. Click on **Create**.
-
-   ![ws name.](media/62.png)
+   ![ws name.](media/a10.png)
   
 ### **Task 2: Deploy a Windows 10 Enterprise Session Hosts to ‘Personal’ Host Pool**
 
-1. In the search bar of Azure Portal, search for ‘Windows Virtual Desktop” and you will see a resource that shows up in the same name. Click on it.
+1. Now go back to **Host pools** and select **WVD-HP-02** to open it.
 
-   ![ws name.](media/63.png)
+   ![ws name.](media/a11.png)
   
-2. Click on **Host pools**.
+2. Now click on **Session hosts** present under **Manage** blade and then click on **+Add**.
 
-   ![ws name.](media/64.png)
-   
-3. Click on the Host pool **WVD-HP-02**.
+   ![ws name.](media/a12.png)
+    
+3. In the Session host creation page, leave the value at default and click on **Next: Virtual Macines**.
 
-   ![ws name.](media/65.png)
-  
-4. In the Host pool page under Manage blade click on **Session hosts**.
-
-   ![ws name.](media/66.png)
-  
-5. Click on **+ Add**.
-
-   ![ws name.](media/67.png)
-  
-6. In the Session host creation page, leave the value at default and click on **Next: Virtual Macines**.
-
-   ![ws name.](media/68.png)
+   ![ws name.](media/a13.png)
  
-7. Configure the session hosts with following configuration.
+4. Configure the session hosts with following configuration.
 
    **A**. Session Host Specifications
 
     In this section, we provide the details of the VMs to be created as session Hosts. 
    
-    - Resource Group: **Choose the default pre-created Resource Group**
+     - Resource Group: Choose the exiting Resource Group that is **WVD-RG**.
 
-    - Virtual machine location: **Choose the location of the pre-created resource Group**
+     - Virtual machine location: Choose the location of the exiting Resource Group.
 
     - Virtual machine size: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
    
@@ -130,16 +111,16 @@
 
      - Use managed disks: **Yes** 
    
-     ![ws name.](media/wvd36.png)
+     ![ws name.](media/a14.png)
 
   **B**. Network and Security 
-     - Leave all values on default.
- 
-   ![ws name.](media/wvd32.png)
- 
+   - Subnet: **sessionhosts-subnet (10.0.1.0/24)**
+     
+   - Leave all other values on default.
+    
   **C**. Domain and Administrator account 
 
-   - **Specify Domain or Unit**: **No** 
+   - Specify Domain or Unit: **No** 
 
    - AD domain join UPN: Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.
 
@@ -149,10 +130,10 @@
    
    - Click on **Review + create**
     
-   ![ws name.](media/71.png)
+   ![ws name.](media/a15.png)
   
 8. Click on **Create**.
 
-   ![ws name.](media/72.png)
+   ![ws name.](media/a16.png)
 
 9. Click on the **Next** button.
