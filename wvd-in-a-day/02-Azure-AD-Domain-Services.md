@@ -90,7 +90,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 7. Configure your new virtual network with following settings and then click **Ok**.
 
-   - **Name**: **aaddss-vnet**
+   - **Name**: **aadds-vnet**
    - **Address range**: **10.0.0.0/16**
 
   ![ws name.](media/wvd18.png)
@@ -125,7 +125,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 14. Now add following configuration and select **OK**:
 
-    - Name: **SessionHost**
+    - Name: **sessionhosts-subnet**
     - Address Range: **10.0.2.0/24**
 
     ![ws name.](media/wvd26.png)
@@ -162,7 +162,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
     ![ws name.](media/wvd25.png)
     
-7. Go back to the **WVD-RG** resource group, and click on **aadds-vnet-01**.
+7. Go back to the **WVD-RG** resource group, and click on **aadds-vnet**.
 
     ![ws name.](media/21.png)
     
