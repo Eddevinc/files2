@@ -126,29 +126,29 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 14. Now add following configuration and select **OK**:
 
     - Name: **sessionhosts-subnet**
-    - Address Range: **10.0.2.0/24**
+    - Address Range: **10.0.1.0/24**
 
-    ![ws name.](media/wvd26.png)
+    ![ws name.](media/l.png)
 
 15. Once created it will appear under **Subnets** as shown below:
 
-    ![ws name.](media/wvd27.png)
+    ![ws name.](media/m.png)
 
 ### **Task 3: Update Virtual Network DNS**
 
 > Wait for the deployment of Azure AD Domain Serive(i.e., previous task) to complete. Then only you can start Task 3. 
 
-1. After deployment completes, go back to Azure portal home, and search for resource group and click on **Resource Groups**.
+1. After deployment completes, go back to Azure portal home, select **Resource Groups** under **Navigate**.
     
-   ![ws name.](media/15.png)
+   ![ws name.](media/n.png)
     
 2. Now click on your **WVD-RG** resource group.
 
-   ![ws name.](media/16.png)
+   ![ws name.](media/o.png)
     
 3. Click on **first NIC card**.
 
-   ![ws name.](media/17.png)
+   ![ws name.](media/p.png)
     
 4. Note down the **Private IP** of first NIC card.
 
@@ -156,7 +156,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
     
 5. Now go back to your **WVD-RG** resource group and click on **second NIC card**.
 
-    ![ws name.](media/19.png)
+    ![ws name.](media/q.png)
     
 6. Note down the **Private IP** of the second NIC card.
 
@@ -164,17 +164,13 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
     
 7. Go back to the **WVD-RG** resource group, and click on **aadds-vnet**.
 
-    ![ws name.](media/21.png)
+    ![ws name.](media/r.png)
     
-8. Now under **Settings** bade click on **DNS servers**.
+8. Now under **Settings** blade click on **DNS servers**. Then select **custom** and paste the IP address of first and second NIC card noted in step 19 and 21.
 
-    ![ws name.](media/22.png)
-    
-9. Under DNS server select **custom** and paste the IP address of first and second NIC card noted in step 19 and 21.
-    
     ![ws name.](media/wvd19.png)
      
-10. click on **Save**.
+9. Click on **Save**.
      
     ![ws name.](media/wvd9.png)
 
@@ -205,19 +201,19 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 6. Now copy and paste the following script:
 
-```
-$domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
-$password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
-$users = @("domainjoinadmin@$domain","wvduser-01@$domain","wvduser-02@$domain")
-$users | foreach{
-    if((Get-AzADUser -UserPrincipalName $_) -ne $null){
-    Remove-AzADUser -UserPrincipalName $_ -Force
+   ```
+   $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
+   $password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
+   $users = @("domainjoinadmin@$domain","wvduser-01@$domain","wvduser-02@$domain")
+   $users | foreach{
+       if((Get-AzADUser -UserPrincipalName $_) -ne $null){
+       Remove-AzADUser -UserPrincipalName $_ -Force
+      }
    }
-}
-New-AzADUser -DisplayName "Domain Join Admin" -MailNickname "DomainJoinAdmin" -Password $password -UserPrincipalName "domainjoinadmin@$domain"
-New-AzADUser -DisplayName "WVD User-01" -MailNickname "WVDUser-01" -Password $password -UserPrincipalName "wvduser-01@$domain"
-New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $password -UserPrincipalName "wvduser-02@$domain"
-```
+   New-AzADUser -DisplayName "Domain Join Admin" -MailNickname "DomainJoinAdmin" -Password $password -UserPrincipalName "domainjoinadmin@$domain"
+   New-AzADUser -DisplayName "WVD User-01" -MailNickname "WVDUser-01" -Password $password -UserPrincipalName "wvduser-01@$domain"
+   New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $password -UserPrincipalName "wvduser-02@$domain"
+   ```
 
 7. You will get output in the similar form shown below:
 
