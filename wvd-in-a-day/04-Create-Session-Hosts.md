@@ -136,7 +136,7 @@ In this section, we provide the details of the VMs to be created as session Host
  
    ![ws name.](media/wvd32.png)
  
- **C**. Domain and Administrator account 
+  **C**. Domain and Administrator account 
 
    - **Specify Domain or Unit**: **No** 
 
@@ -148,10 +148,10 @@ In this section, we provide the details of the VMs to be created as session Host
    
    - Click on **Review + create**
     
-  ![ws name.](media/71.png)
+   ![ws name.](media/71.png)
   
-8. Click on **Create**
+8. Click on **Create**.
 
    ![ws name.](media/72.png)
 
-9. Click on **Next** button.
+9. Click **Next** on the bottom right of this page.
