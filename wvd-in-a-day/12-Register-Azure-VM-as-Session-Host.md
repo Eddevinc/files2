@@ -35,13 +35,13 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 
    ![ws name.](media/wvd54.png)
    
-  > wait for sometime for the script to execute.
+   > wait for sometime for the script to execute.
    
    
    
 4. After the execution completes the output will look as following.
 
-    ![ws name.](media/wvd55.png)
+   ![ws name.](media/wvd55.png)
 
    > wait for few more minutes for the deployment of virtual machine to complete.
 
