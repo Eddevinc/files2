@@ -40,3 +40,4 @@
 
     ![ws name.](media/a31.png)
   
+15. Click on **Next** button.
