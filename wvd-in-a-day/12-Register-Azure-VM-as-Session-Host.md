@@ -1,5 +1,8 @@
 # Exercise 12: Register Azure VM as Session Host
 
+In the following exercise, we will be creating a virtual machine which will automatically domain join by running a script in cloud shell.
+After Deployment of virtual machine we will establish a RDP connection to the virtual machine and register the virtual machine as a session host under *WVD-HP-01* hostpool.
+
 
 ## Task 1: Create a Vm using Cloud Shell
 
@@ -48,7 +51,7 @@
 In this task we will be establish a RDP connection with the virtual machine created in previous task and download two agents:
 1. Windows Virtual Desktop Agent
 2. Windows Virtual Desktop Agent Bootloader
-These two agents will be used to make this virtual machine a part of session hosts of WVD-HP-01 hostpool.
+These two agents will be used to register this virtual machine a part of session hosts of WVD-HP-01 hostpool.
 
 1. In search bar of your Azure portal search for *virtual machines* and click on it.
 
