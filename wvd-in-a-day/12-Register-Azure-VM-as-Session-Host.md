@@ -20,7 +20,7 @@
     -existingVNETName "aadds-vnet" -existingSubnetName "SessionHost" -adminUsername $adminUserName -adminPassword $UserPasswordhash
        
        
- 
+ > **Note:** The following script will be used to create a virtual machine.
 
 
 2. In Azure portal click on the **cloud shell button** on top and wait for the cloud shell to connect.
@@ -45,7 +45,10 @@
 
 ## Task 2: Install Agents on VM and Register
 
-
+In this task we will be establish a RDP connection with the virtual machine created in previous task and download two agents:
+1. Windows Virtual Desktop Agent
+2. Windows Virtual Desktop Agent Bootloader
+These two agents will be used to make this virtual machine a part of session hosts of WVD-HP-01 hostpool.
 
 1. In search bar of your Azure portal search for *virtual machines* and click on it.
 
@@ -183,7 +186,7 @@
 
     ![ws name.](media/212.png)
     
-    
+    > This unique registration key will be enable the Virtual Machine to become session host under this particular WVD-HP-01 hostpool.
     
 22. Go back to the VM RDP window, and click inside the box opened in the installer.
 
