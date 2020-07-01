@@ -10,31 +10,26 @@ The default app group created for a new Windows Virtual Desktop host pool also p
 An application group of type ‘Desktop’ was created automatically while creating the Session Host in previous exercise. We will be verifying if that host pool is created automatically or not..
 
 
-1. In the search bar, search for ‘Windows Virtual Desktop” and you will see a resource that shows up in the same name. Click on it.
+1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
 
-   ![ws name.](media/73.png)
+   ![ws name.](media/y.png)
    
-2. Click on **Application Groups**.
+2. Click on **Application Groups** and verify that a application group named **WVD-HP-01-DAG** and **WVD-HP-02-DAG** is already present.
 
-   ![ws name.](media/74.png)
+   ![ws name.](media/a17.png)
   
-3. Verify that a application group named **WVD-HP-01-DAG** and **WVD-HP-02-DAG** is already present.
-
-   ![ws name.](media/75.png)
   
-## Task 2: Create application groups of type ‘Remote App’
+## Task 2: Create application groups of type Remote App
 
 1. In the Application group page click on **+ Add**.
 
-   ![ws name.](media/76.png)
+   ![ws name.](media/a18.png)
   
-2. On the ‘Basics’ section, fill the parameters as below: 
-
-   ![ws name.](media/77.png)
+2. On the **Basics** section, fill the parameters as below: 
    
-      - Subscription: Choose the default subscription.
+      - Subscription: Choose the **default subscription**.
 
-      - Resource Group: Choose the default pre-created Resource Group.
+      - Resource Group: Choose the exiting Resource Group that is **WVD-RG**.
 
       - Host Pool: **WVD-HP-01** (*This application group will be created under WVD-HP-01 hostpool*)
 
@@ -46,8 +41,10 @@ An application group of type ‘Desktop’ was created automatically while creat
 
       - Click on **Review + create**
   
+     ![ws name.](media/a19.png)
+
 3. Click on **Create**.
 
-   ![ws name.](media/78.png)
+   ![ws name.](media/a20.png)
    
 4. Click on the **Next** button.
