@@ -30,32 +30,33 @@
 
    **A**. Session Host Specifications
 
-In this section, we provide the details of the VMs to be created as session Hosts.    
+     In this section, we provide the details of the VMs to be created as session Hosts.    
 
-   - Resource Group: **Choose the default pre-created Resource Group**
+     - Resource Group: **Choose the default pre-created Resource Group**
 
-   - Virtual machine location: **Choose the location of the pre-created resource Group**
+     - Virtual machine location: **Choose the location of the pre-created resource Group**
 
-   - Virtual machine size: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
+     - Virtual machine size: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
    
-      ![ws name.](media/wvd35.png)
+     ![ws name.](media/wvd35.png)
 
-   - Number of VMs: **2**
+     - Number of VMs: **2**
    
-   - Name prefix: **WVD-HP01-SH** 
+     - Name prefix: **WVD-HP01-SH** 
 
-   - Image type: **Gallery**
+     - Image type: **Gallery**
 
-   - Image: **Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus**(choose from dropdown) 
+     - Image: **Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus**(choose from dropdown) 
 
-   - OS disk type: **Standard SSD**
+     - OS disk type: **Standard SSD**
 
-   - Use managed disks: **Yes**
+     - Use managed disks: **Yes**
    
-   ![ws name.](media/wvd37.png)
+     ![ws name.](media/wvd37.png)
+     
    
   **B**. Network and Security 
-   - Leave all values on default.
+     - Leave all values on default.
  
    ![ws name.](media/wvd32.png)
  
@@ -71,7 +72,7 @@ In this section, we provide the details of the VMs to be created as session Host
    
    - Click on **Review + create**
 
-  ![ws name.](media/61.png)
+   ![ws name.](media/61.png)
 
 8. Click on **Create**.
 
@@ -107,32 +108,32 @@ In this section, we provide the details of the VMs to be created as session Host
 
    **A**. Session Host Specifications
 
-   In this section, we provide the details of the VMs to be created as session Hosts. 
+    In this section, we provide the details of the VMs to be created as session Hosts. 
    
-   - Resource Group: **Choose the default pre-created Resource Group**
+    - Resource Group: **Choose the default pre-created Resource Group**
 
-   - Virtual machine location: **Choose the location of the pre-created resource Group**
+    - Virtual machine location: **Choose the location of the pre-created resource Group**
 
-   - Virtual machine size: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
+    - Virtual machine size: **Standard DS1_V2**. [Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below]
    
-      ![ws name.](media/wvd35.png)
+    ![ws name.](media/wvd35.png)
       
-   - Number of VMs: **1** 
+     - Number of VMs: **1** 
    
-   - Name prefix: **WVD-HP02-SH**
+     - Name prefix: **WVD-HP02-SH**
 
-   - Image type: **Gallery**
+     - Image type: **Gallery**
 
-   - Image: **Windows 10 Enterprise, version 1909(choose from dropdown)** 
+     - Image: **Windows 10 Enterprise, version 1909(choose from dropdown)** 
 
-   - OS disk type: **Standard SSD**
+     - OS disk type: **Standard SSD**
 
-   - Use managed disks: **Yes** 
+     - Use managed disks: **Yes** 
    
-   ![ws name.](media/wvd36.png)
+     ![ws name.](media/wvd36.png)
 
   **B**. Network and Security 
-    - Leave all values on default.
+     - Leave all values on default.
  
    ![ws name.](media/wvd32.png)
  
