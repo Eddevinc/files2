@@ -82,7 +82,7 @@ These two agents will be used to register this virtual machine a part of session
 
    ![ws name.](media/196.png)
    
-   A file named ***WVD-VM-01*** will download.
+   A file named ***WVD-VM-01.rdp*** will download.
    
    
    
@@ -111,9 +111,9 @@ These two agents will be used to register this virtual machine a part of session
    ![ws name.](media/201.png)
    
    
-   **Username**: *domainjoinadmin*
+   Username: **domainjoinadmin**
    
-   **Password**: *Azure1234567*
+   Password: **Azure1234567**
    
    Click on **OK**.
    
@@ -160,7 +160,7 @@ These two agents will be used to register this virtual machine a part of session
     
     
     
-16. Click on the **check Box** saying *I accepting the terms in the License Agreement* and click on **Next**.
+16. Click on the **check box** saying *I accepting the terms in the License Agreement* and click on **Next**.
 
     ![ws name.](media/208.png)
     
