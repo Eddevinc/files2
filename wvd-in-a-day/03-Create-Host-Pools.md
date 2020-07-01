@@ -96,4 +96,4 @@ Breadth-first load balancing distributes new user sessions across all available 
  
     ![ws name.](media/52.png)
      
-7. Click **Next** on the bottom right of this page.
+7. Click on the **Next** button.
