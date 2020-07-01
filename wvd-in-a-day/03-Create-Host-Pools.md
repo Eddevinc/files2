@@ -72,7 +72,7 @@ Breadth-first load balancing distributes new user sessions across all available 
 
    ![ws name.](media/50.png)
 
-6. Under Basics configure Host pool with following values.
+5. Under Basics configure Host pool with following values.
   
    **A.** Project Details – Defines the environment 
 
@@ -92,8 +92,8 @@ Breadth-first load balancing distributes new user sessions across all available 
      
    ![ws name.](media/51.png)
      
- 7. Click on **Create**.
+6. Click on **Create**.
  
     ![ws name.](media/52.png)
      
-8. Click on **Next** button.
+7. Click **Next** on the bottom right of this page.
