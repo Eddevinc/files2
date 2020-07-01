@@ -90,8 +90,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 7. Configure your new virtual network with following settings and then click **Ok**.
 
-   - **Name**: **aadds-vnet**
-   - **Address range**: **10.0.0.0/16**
+   - Name: **aadds-vnet**
+   - Address range: **10.0.0.0/16**
 
   ![ws name.](media/h.png)
 
@@ -113,7 +113,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
     ![ws name.](media/14.png)
     
-    **The Deployment will take approx 30 minutes to deploy. Till then continue with next step.**
+    > The Deployment will take approx 30 minutes to deploy. Till then continue with next step.
 
 12. Now navigate to the **WVD-RG** , then go to **Overview** and open **aadds-vnet**.
 
@@ -152,27 +152,27 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
     
 4. Note down the **Private IP** of first NIC card.
 
-    ![ws name.](media/wvd24.png)
+   ![ws name.](media/wvd24.png)
     
 5. Now go back to your **WVD-RG** resource group and click on **second NIC card**.
 
-    ![ws name.](media/q.png)
+   ![ws name.](media/q.png)
     
 6. Note down the **Private IP** of the second NIC card.
 
-    ![ws name.](media/wvd25.png)
+   ![ws name.](media/wvd25.png)
     
 7. Go back to the **WVD-RG** resource group, and click on **aadds-vnet**.
 
-    ![ws name.](media/r.png)
+   ![ws name.](media/r.png)
     
 8. Now under **Settings** blade click on **DNS servers**. Then select **custom** and paste the IP address of first and second NIC card noted in step 19 and 21.
 
-    ![ws name.](media/wvd19.png)
+   ![ws name.](media/wvd19.png)
      
 9. Click on **Save**.
      
-    ![ws name.](media/wvd9.png)
+   ![ws name.](media/wvd9.png)
 
 ### **Task 4: Create new AD users**
 
@@ -239,19 +239,19 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
    
 2. Click on **DomainJoinAdminUser** to open it.
 
-    ![ws name.](media/wvd34.png)
+   ![ws name.](media/wvd34.png)
 
 3. Select **Groups** under **Manage**. Then click on **+Add Membership** and select **AAD DC Administrators**.
 
-    ![ws name.](media/wvd30.png)
+   ![ws name.](media/wvd30.png)
 
 4. Once selected it will show up under selected groups then click on **Select**.
 
-    ![ws name.](media/wvd33.png)
+   ![ws name.](media/wvd33.png)
 
 5. This will show the added membership.
 
-    ![ws name.](media/wvd31.png)
+   ![ws name.](media/wvd31.png)
 
 ### **Task 6: Change passwords for the users created**
 
@@ -270,7 +270,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/wvd23.png)
 
- > Wait for few seconds for the script to execute.
+   > Wait for few seconds for the script to execute.
    
 3. Output of the script will look like this.
 
