@@ -19,7 +19,7 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
 
 
 
-3. Use the following configuration for the storae account.
+3. Use the following configuration for the storage account.
 
    ![ws name.](media/163.png)
    
@@ -143,7 +143,7 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
 
 ## Task 3: Configure Session Hosts
 
-
+A. In this task we will install and configure FsLogix in the *WVD-HP01-SH-0* session host.
 
 1. In your Azure portal search for *virtual machines* and click on it.
 
@@ -232,4 +232,72 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
    
    Wait for sometime for the script to execute, It will show a output saying ***Script Executed successfully***.
    
-  
+ 
+   
+9. Now search for *Windows Virtual Desktop* in azure portal and click on it.
+
+   ![ws name.](media/.png)
+   
+   
+10. Click on **Users*.
+
+    ![ws name.](media/.png)
+
+11. In the search bar search for *WVDUser* then click on **WVDUser-01**.
+
+    ![ws name.](media/.png)
+    
+    
+12. Switch to sessions blade.
+
+    ![ws name.](media/.png)
+    
+13. Select both WVDUser-01 and WVDUser-02 and click on **Log off*.
+
+    ![ws name.](media/.png)
+   
+    > This will logoff both the session host so that when the users sign in again to the session host the Fxlogix will start functioning.
+    
+    
+14. In you local machine, click on **Start** and search for *Remote Desktop* and open it.
+
+    ![ws name.](media/.png)
+    
+    
+15. Click on the **WVD-HP-01-DAG** Desktop to launch it.
+
+    ![ws name.](media/.png)
+    
+16. Enter your **Credentials** to access the desktop.
+
+    ![ws name.](media/.png)
+    
+    
+17. Now you can see the desktop saying ***Please wait for the FSLogix Apps Services***.
+
+    ![ws name.](media/.png)
+    
+    
+18. Now return back to the Azure Portal and search for *storage account* and click on it.
+
+    ![ws name.](media/.png)
+    
+    
+19. Click on the storage account you created in **Task 1, step 3**.
+
+    ![ws name.](media/.png)
+    
+    
+20. Click on **File Shares**.
+
+    ![ws name.](media/.png)
+    
+    
+21. Click on **userprofile**.
+
+    ![ws name.](media/)
+
+
+22. Now you will be able to see the user profiles data stored in the fileshares.
+
+    ![ws name.](media/.png)
