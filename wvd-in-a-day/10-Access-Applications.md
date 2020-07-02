@@ -1,15 +1,12 @@
 # Exercise 10: Access Applications
 
-
-
-## Task 1: Access published applications via Web browser
-
+## **Task 1: Access published applications via Web browser**
 
 ### **Subtask 1: Access the published applications using browser**
 
 Now as we have published Desktop and Applications in previous step, now we will be accessing them. 
 
-1. Navigate to **Azure Active dDirectory**, then go to **Users**.
+1. Navigate to **Azure Active Directory**, then go to **Users**.
 
    ![ws name.](media/25.png)
 
