@@ -8,11 +8,13 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
 1. Navigate to **Azure Active Directory**, then go to **Users**.
 
-   ![ws name.](media/25.png)
+   ![ws name.](media/t.png)
 
 2. Copy username of **WVD User-01** and **WVD User-02** and paste it notepad for further use.
 
-2. Now paste this link ```aka.ms/wvdarmweb``` in your browser and enter your **credentials** to login. 
+   ![ws name.](media/a45.png)
+
+3. Now paste this link ```aka.ms/wvdarmweb``` in your browser and enter your **credentials** to login. 
 
    - Username: Put username **WVD User-01** which you copied in previous step (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.
    
@@ -20,33 +22,31 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
    - Password: **Azure1234567** and click on **Sign in**.
 
-   ![ws name.](media/wvd43.png)
+      ![ws name.](media/wvd43.png)
   
 
-2. Now you will be inside the WVD dashboard with all the Desktop and Applications assigned to WVDUser01 accesable. Click on any one of the applications to access it. 
+4. Now you will be inside the WVD dashboard with all the Desktop and Applications assigned to WVDUser01 accesable. Click on any one of the applications to access it. 
 
-   ![ws name.](media/127.png)
+   ![ws name.](media/a46.png)
 
 
-3. Click on **Allow** for the prompt.
+5. Click on **Allow** for the prompt.
 
    ![ws name.](media/128.png)
 
 
-4. Enter your **credentials** to access the application and click on **Submit**.
+6. Enter your **credentials** to access the application and click on **Submit**.
 
    - Username: Put the username of **WVD User-01** which you copied in previous task (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**)
    
    - Password: **Azure1234567**
 
-   ![ws name.](media/129.png)
+   ![ws name.](media/a47.png)
    
    
-5. Your application will launch.
+7. Your application will launch.
 
    ![ws name.](media/130.png)
-
-
 
 ### **Subtask 2: Access the published Desktop using browser**
 
@@ -65,22 +65,23 @@ Now as we have published Desktop and Applications in previous step, now we will 
    
    - Password: **Azure1234567**
    
-   ![ws name.](media/wvd38.png)
+   ![ws name.](media/a47.png)
 
 
 4. Your virtual Desktop will launch and it should be ready to use. 
 
    ![ws name.](media/wvd39.png)
-     
-## Task 2: Access published applications via Remote Desktop Client
+
+
+## **Task 2: Access published applications via Remote Desktop Client**
 
 ### **Subtask 1: Access the published applications using WVD client**
    
 1. Download the **WVD Client** on your local machine from the following [**Link**](https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-and-10) and install **Windows 64-bit** version by clicking on it.
    
-   ![ws name.](media/136.png)
+   ![ws name.](media/a48.png)
 
-2. The browser will ask to **Run** or **Save** the setup - choose **Run**. Then click **Next** on the Welcome page of setup.
+2. Then open the setup and click **Next** on the Welcome page of setup.
 
 3. Check the agreement box and click on **Next**.
 
