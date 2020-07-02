@@ -158,4 +158,4 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
 8. Your virtual Desktop will launch and it should be ready to use. 
 
-   ![ws name.](media/154.png)
+   ![ws name.](media/154.png) 
