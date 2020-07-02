@@ -200,11 +200,11 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
  
 9. Wait for sometime for the script to execute. It will show a output saying **Script Executed successfully**.
 
-   ![ws name.](media/a70.png)
+   ![ws name.](media/a84.png)
    
 10. Click on **WVD-HP01-SH-1**.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a85.png)
 
 
 11. Select **RunPowerShellScript**.
@@ -223,7 +223,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
  
 14. Wait for sometime for the script to execute. It will show a output saying **Script Executed successfully**.
 
-   ![ws name.](media/a70.png)
+   ![ws name.](media/a84.png)
 
   
 15. Now search for **Windows Virtual Desktop** in azure portal and click on it.
