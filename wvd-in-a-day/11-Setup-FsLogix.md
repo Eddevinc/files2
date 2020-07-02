@@ -277,6 +277,7 @@ A. In this task we will install and configure FsLogix in the *WVD-HP01-SH-0* ses
 
     ![ws name.](media/.png)
     
+    > This means that user profile is being manaed by FSLogix.
     
 18. Now return back to the Azure Portal and search for *storage account* and click on it.
 
