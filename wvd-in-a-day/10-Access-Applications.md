@@ -93,15 +93,11 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
    ![ws name.](media/137.png)
     
-6. After the application opens click on **Subscribe with URL**.
+6. After the application opens click on **Subscribe**.
 
-   ![ws name.](media/138.png)
-  
-7. Enter the following URL **https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery** and click on **Next**.
+   ![ws name.](media/a47.png)
 
-   ![ws name.](media/139.png)
- 
-8. Enter your **credentials** to access the workspace.
+7. Enter your **credentials** to access the workspace.
 
    - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**), then click on **Next**
    
@@ -111,74 +107,48 @@ Now as we have published Desktop and Applications in previous step, now we will 
    
     ![ws name.](media/wvd44.png)
  
-9. Make sure to **uncheck** Allow my organization to manage my device.
+8. Make sure to **uncheck** Allow my organization to manage my device.
 
    Click on **Yes**.
 
    ![ws name.](media/141.png)
     
-10 Now you will be inside the WVD dashboard with all the desktop and applications assigned to *WVDUser01*. Click on any one of the applications to access it. 
+    
+9. Now you will be inside the WVD dashboard with all the desktop and applications assigned to *WVDUser02*. Click on any one of the applications to access it. 
 
    ![ws name.](media/142.png)
 
 
-11 Click on **Allow** for the prompt.
+10. Click on **Allow** for the prompt.
 
    ![ws name.](media/143.png)
 
 
-12 Enter your **credentials** to access the application and click on **Submit**.
+11. Enter your **credentials** to access the application and click on **Submit**.
 
    - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
    - Password: **Azure1234567**
    
    ![ws name.](media/144.png)
    
-13. Your application will launch.
+12. Your application will launch.
 
    ![ws name.](media/145.png)
+   
+13. Click on the **X** icon on the top right corner to close word.
 
 ### **Subtask 2: Access the Workspace Desktop using WVD Client**
 
-1. In your local machine go to **start** and search for **Remote desktop** and open the Application with exact exact Icon as shown below.
 
-   ![ws name.](media/146.png)
-
-
-2. After the application opens click on **Subscribe with URL**.
-
-   ![ws name.](media/147.png)
-  
-  
-3. Enter the following URL **https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery** and click on **Next**.
-
-   ![ws name.](media/148.png)
-   
-   
-4. Enter your **credentials** to access the Workspace.
-
-   - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
-   
-    ![ws name.](media/wvd40.png)
-   
-   - **Password**: *Azure1234567*
-   
-   ![ws name.](media/wvd44.png)
-
-   
-5. Make sure to **uncheck** Allow my organization to manage my device and click on **Yes**.
-
-   ![ws name.](media/150.png)
-   
-6. Now you will be inside the WVD dashboard with all the Desktop and Applications accesable to **WVDUser-02**. Click on the **Desktop** to access it. 
+5. Now in the WVD client click on the **Desktop** to access it. 
 
    ![ws name.](media/151.png)
 
-7. Click on **Allow** for the Prompt.
+6. Click on **Allow** for the Prompt.
 
    ![ws name.](media/152.png)
 
-8. Enter your **credentials** to access the application and click on **Submit**.
+7. Enter your **credentials** to access the application and click on **Submit**.
 
    - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
    - Password: **Azure1234567**
@@ -186,6 +156,6 @@ Now as we have published Desktop and Applications in previous step, now we will 
    ![ws name.](media/153.png)
    
 
-9. Your virtual Desktop will launch and it should be ready to use. 
+8. Your virtual Desktop will launch and it should be ready to use. 
 
    ![ws name.](media/154.png)
