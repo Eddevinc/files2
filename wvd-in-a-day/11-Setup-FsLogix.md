@@ -131,7 +131,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
    ![ws name.](media/wvd51.png)
   
-4. Now click on **RunPowerShellScript**.
+4. Now select **RunPowerShellScript**.
 
    ![ws name.](media/a68.png)
    
@@ -197,59 +197,86 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
    
    - Now Click on **Run** to execute the script.
    
-   - Wait for sometime for the script to execute, It will show a output saying **Script Executed successfully**.
+ 
+9. Wait for sometime for the script to execute. It will show a output saying **Script Executed successfully**.
+
+   ![ws name.](media/a70.png)
+   
+10. Click on **WVD-HP01-SH-1**.
+
+    ![ws name.](media/.png)
+
+
+11. Select **RunPowerShellScript**.
+
+    ![ws name.](media/a68.png)
+    
+    
+12. Press **Ctrl + V** to paste the script in the Powershell window.
+
+13. Now scroll up on the script you pasted and replace **NameofStorageAccount (for example: storageaccount204756)** in second line of script with the storage account name you created in *Task 1, step 9*.
+
+   ![ws name.](media/a70.png)
+   
+   - Now Click on **Run** to execute the script.
+   
+ 
+14. Wait for sometime for the script to execute. It will show a output saying **Script Executed successfully**.
+
+   ![ws name.](media/a70.png)
+
   
-9. Now search for **Windows Virtual Desktop** in azure portal and click on it.
+15. Now search for **Windows Virtual Desktop** in azure portal and click on it.
 
    ![ws name.](media/y.png)
    
    
-10. Click on **Users**, then in the search bar search for **WVDUser** then click on **WVDUser-01**.
+16. Click on **Users**, then in the search bar search for **WVDUser** then click on **WVDUser-01**.
 
     ![ws name.](media/a71.png)
     
-11. Switch to **Sessions** blade, then select both WVDUser-01 and WVDUser-02 and click on **Log off**.
+17. Switch to **Sessions** blade, then select both WVDUser-01 and WVDUser-02 and click on **Log off**.
 
     ![ws name.](media/a72.png)
     
-12. Click on **OK** for **Log off user from VMs**.
+18. Click on **OK** for **Log off user from VMs**.
 
     ![ws name.](media/a73.png)
    
     > This will logoff both the session host so that when the users sign in again to the session host the Fxlogix will start functioning.
     
     
-13. In you local machine, click on **Start** and search for *Remote Desktop* and open it.
+19. In you local machine, click on **Start** and search for *Remote Desktop* and open it.
 
     ![ws name.](media/a74.png)
     
     
-14. Double click on the **WVD-HP-01-DAG** Desktop to launch it.
+20. Double click on the **WVD-HP-01-DAG** Desktop to launch it.
 
     ![ws name.](media/a75.png)
     
-15. Enter your **Credentials** to access the desktop.
+21. Enter your **Credentials** to access the desktop.
 
     ![ws name.](media/a52.png)
     
     
-16. Now you can see the desktop saying ***Please wait for the FSLogix Apps Services***.
+22. Now you can see the desktop saying ***Please wait for the FSLogix Apps Services***.
 
     ![ws name.](media/a77.png)
     
     > This means that user profile is being manaed by FSLogix.
     
-17. Now return back to the Azure Portal and search for *storage account* and click on it.
+23. Now return back to the Azure Portal and search for *storage account* and click on it.
 
     ![ws name.](media/a55.png)
     
     
-18. Click on the storage account you created in **Task 1 step 3**, and click on **File share** and open **userprofile** fileshare.
+24. Click on the storage account you created in **Task 1 step 3**, and click on **File share** and open **userprofile** fileshare.
 
     ![ws name.](media/a76.png)
     
 
 
-21. Now you will be able to see the user profiles data stored in the fileshares.
+25. Now you will be able to see the user profiles data stored in the fileshares.
 
     ![ws name.](media/.png)
