@@ -156,3 +156,10 @@ Now as we have published Desktop and Applications in previous step, now we will 
 4. Your virtual Desktop will launch and it should be ready to use. 
 
    ![ws name.](media/a54.png) 
+
+
+5. Now close the **WVD-HP-02-DAG** virtual machine then navigate back to the remote desktop client.
+
+6. Click on the elipsis and select **Unsubscribe**.
+
+   ![ws name.](media/a79.png) 
