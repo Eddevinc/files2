@@ -219,46 +219,37 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
     > This will logoff both the session host so that when the users sign in again to the session host the Fxlogix will start functioning.
     
     
-14. In you local machine, click on **Start** and search for *Remote Desktop* and open it.
+13. In you local machine, click on **Start** and search for *Remote Desktop* and open it.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a74.png)
     
     
-15. Click on the **WVD-HP-01-DAG** Desktop to launch it.
+14. Double click on the **WVD-HP-01-DAG** Desktop to launch it.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a75.png)
     
-16. Enter your **Credentials** to access the desktop.
+15. Enter your **Credentials** to access the desktop.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a52.png)
     
     
-17. Now you can see the desktop saying ***Please wait for the FSLogix Apps Services***.
+16. Now you can see the desktop saying ***Please wait for the FSLogix Apps Services***.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a77.png)
     
     > This means that user profile is being manaed by FSLogix.
     
-18. Now return back to the Azure Portal and search for *storage account* and click on it.
+17. Now return back to the Azure Portal and search for *storage account* and click on it.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a55.png)
     
     
-19. Click on the storage account you created in **Task 1, step 3**.
+18. Click on the storage account you created in **Task 1 step 3**, and click on **File share** and open **userprofile** fileshare.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a76.png)
     
-    
-20. Click on **File Shares**.
-
-    ![ws name.](media/.png)
-    
-    
-21. Click on **userprofile**.
-
-    ![ws name.](media/)
 
 
-22. Now you will be able to see the user profiles data stored in the fileshares.
+21. Now you will be able to see the user profiles data stored in the fileshares.
 
     ![ws name.](media/.png)
