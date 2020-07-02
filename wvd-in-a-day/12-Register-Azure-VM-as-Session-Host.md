@@ -35,8 +35,6 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
    
    > wait for sometime for the script to execute.
    
-   
-   
 4. After the execution completes the output will look as following.
 
    ![ws name.](media/wvd55.png)
@@ -53,43 +51,29 @@ In this task we will be establish a RDP connection with the virtual machine crea
   
 These two agents will be used to register this virtual machine a part of session hosts of WVD-HP-01 hostpool.
 
-1. In search bar of your Azure portal search for *virtual machines* and click on it.
+1. In search bar of your Azure portal search for **virtual machines** and click on it.
 
-   ![ws name.](media/192.png)
+   ![ws name.](media/a67.png)
    
    
    
-2. Click on **WVD-VM-01**.
+2. Open **WVD-VM-01** virtual machine,then click on **Connect** and select **RDP**.
 
-   ![ws name.](media/193.png)
+   ![ws name.](media/a81.png)
    
-   
-   
-3. Click on **Connect**.
+  
+3. Click on **Download RDP File**.
 
-   ![ws name.](media/194.png)
+   ![ws name.](media/a82.png)
    
-   
-
-4. Select **RDP**.
-
-   ![ws name.](media/195.png)
-   
-   
-5. Click on **Download RDP File**.
-
-   ![ws name.](media/196.png)
-   
-   > A file named ***WVD-VM-01.rdp*** will download.
-   
-   
-   
-6. Click on the downloaded file to open.
+   > A file named **WVD-VM-01.rdp** will download.
+  
+4. Click on the downloaded file to open.
 
    ![ws name.](media/197.png)
    
    
-7. RDP window will open, click on **Connect**.
+5. RDP window will open, click on **Connect**.
 
    ![ws name.](media/198.png)
    
