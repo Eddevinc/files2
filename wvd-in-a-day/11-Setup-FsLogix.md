@@ -221,7 +221,7 @@ A. In this task we will install and configure FsLogix in the *WVD-HP01-SH-0* ses
        Write-Host "Script Executed successfully"
     
     
-> The above script will create a new directory i.e. *C:\LabFiles* where it will download FSLogix Installation bundle and extract it. After extraction installation of FxLogix will begin after which the script will create a registry key under *HKLM:\SOFTWARE\FSLogix*.
+> The above script will create a new directory i.e. *C:\LabFiles* where it will download FSLogix Installation bundle and extract it. After extraction installation of FSLogix will begin. When configuring Profile Container registry settings are added here: Registry Key: *HKLM\SOFTWARE\FSLogix\Profiles*. When configuring Profile Container the entire contents of the registry will be redirected to the FSLogix Profile Container. 
 
 
 8. Now scroll up on the script you pasted and replace ***NameofStorageAccount*** in second line of script with the storage account name you created in *Task 1, step 9*.
@@ -252,7 +252,7 @@ A. In this task we will install and configure FsLogix in the *WVD-HP01-SH-0* ses
 
     ![ws name.](media/.png)
     
-13. Select both WVDUser-01 and WVDUser-02 and click on **Log off*.
+13. Select both WVDUser-01 and WVDUser-02 and click on **Log off**.
 
     ![ws name.](media/.png)
    
