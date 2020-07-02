@@ -6,11 +6,9 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 
 ## Task 1: Create a Vm using Cloud Shell
 
-
-
 1 **Copy** the following script.
 
-
+    ```
     $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
     $password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
     $adminUserName = "domainjoinadmin@$domain"
@@ -21,12 +19,12 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
     New-AzResourceGroupDeployment -ResourceGroupName "WVD-RG" `
     -TemplateUri "https://akipersistantstg.blob.core.windows.net/wvdinaday/deployVM.json" `
     -existingVNETName "aadds-vnet" -existingSubnetName "sessionhosts-subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
-       
+    ``` 
        
  > **Note:** The following script will be used to create a virtual machine.
 
 
-2. In Azure portal click on the **cloud shell button** on top and wait for the cloud shell to connect.
+2. In Azure portal click on the **Cloud Shell button** on top and wait for the cloud shell to connect.
 
    ![ws name.](media/189.png)
 
