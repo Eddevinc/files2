@@ -95,7 +95,7 @@ Now as we have published Desktop and Applications in previous step, now we will 
     
 6. After the application opens click on **Subscribe**.
 
-   ![ws name.](media/a47.png)
+   ![ws name.](media/a49.png)
 
 7. Enter your **credentials** to access the workspace.
 
@@ -107,55 +107,52 @@ Now as we have published Desktop and Applications in previous step, now we will 
    
     ![ws name.](media/wvd44.png)
  
-8. Make sure to **uncheck** Allow my organization to manage my device.
+8. Make sure to **uncheck** Allow my organization to manage my device and then click on **Yes**.
 
-   Click on **Yes**.
-
-   ![ws name.](media/141.png)
+   ![ws name.](media/a50.png)
     
     
-9. Now you will be inside the WVD dashboard with all the desktop and applications assigned to *WVDUser02*. Click on any one of the applications to access it. 
+9. Now click on **Done** for **You're all set**.
+
+   ![ws name.](media/a51.png)
+
+10. Now you will be inside the WVD dashboard with all the desktop and applications assigned to **WVDUser02**. Double click on any one of the applications to access it. 
 
    ![ws name.](media/142.png)
 
 
-10. Click on **Allow** for the prompt.
+11. Click on **Allow** for the prompt.
 
    ![ws name.](media/143.png)
 
 
-11. Enter your **credentials** to access the application and click on **Submit**.
+12. Enter your **credentials** to access the application and click on **Submit**.
 
    - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
    - Password: **Azure1234567**
    
-   ![ws name.](media/144.png)
+   ![ws name.](media/a52.png)
    
-12. Your application will launch.
+13. Your application will launch.
 
    ![ws name.](media/145.png)
    
-13. Click on the **X** icon on the top right corner to close word.
+14. Click on the **X** icon on the top right corner to close word.
 
 ### **Subtask 2: Access the Workspace Desktop using WVD Client**
 
+1. Now in the WVD client double click on the **WVD-HP-02-DAG** Desktop to access it. 
 
-5. Now in the WVD client click on the **Desktop** to access it. 
+   ![ws name.](media/a53.png)
 
-   ![ws name.](media/151.png)
-
-6. Click on **Allow** for the Prompt.
-
-   ![ws name.](media/152.png)
-
-7. Enter your **credentials** to access the application and click on **Submit**.
+2. Enter your **credentials** to access the application and click on **Submit**.
 
    - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
    - Password: **Azure1234567**
    
-   ![ws name.](media/153.png)
+   ![ws name.](media/a52.png)
    
 
-8. Your virtual Desktop will launch and it should be ready to use. 
+4. Your virtual Desktop will launch and it should be ready to use. 
 
-   ![ws name.](media/154.png) 
+   ![ws name.](media/a54.png) 
