@@ -246,9 +246,16 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
     > This will logoff both the session host so that when the users sign in again to the session host the Fxlogix will start functioning.
     
     
-19. In you local machine, click on **Start** and search for *Remote Desktop* and open it.
+19. Now paste this link ```aka.ms/wvdarmweb``` in your browser and enter your **credentials** to login. 
 
-    ![ws name.](media/a74.png)
+   - Username: Put username **WVD User-01** which you copied in previous step (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.
+   
+      ![ws name.](media/wvd42.png)
+
+   - Password: **Azure1234567** and click on **Sign in**.
+
+      ![ws name.](media/wvd43.png)
+  
     
     
 20. Double click on the **WVD-HP-01-DAG** Desktop to launch it.
