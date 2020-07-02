@@ -248,7 +248,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
     
 19. Now paste this link ```aka.ms/wvdarmweb``` in your browser and enter your **credentials** to login. 
 
-   - Username: Put username **WVD User-01** which you copied in previous step (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.
+   - Username: Put username of **WVD User-01**  (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.
    
       ![ws name.](media/wvd42.png)
 
@@ -278,12 +278,27 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
     ![ws name.](media/a55.png)
     
     
-24. Click on the storage account you created in **Task 1 step 3**, and click on **File share** and open **userprofile** fileshare.
+24. Click on the storage account you created in **Task 1 step 3**, then under settings blade click on  **Firewalls and virtual networks**.
 
-    ![ws name.](media/a76.png)
+    ![ws name.](media/.png)
+    
+25. Under *Allow access from* select **All networks** and click on **save icon**.
+
+    ![ws name.](media/.png)
+    
+    > This will enable access of your storage account on the public network.
+    
+    
+26. Now click on **Overview** and open **Fileshare**.
+
+    ![ws name.](media/.png)
+    
+    
+27. Click on the **userprofile** fileshare.
+
+    ![ws name.](media/.png)
     
 
-
-25. Now you will be able to see the user profiles data stored in the fileshares.
+25. Now you will be able to see the user profiles data stored in the fileshares in a ***.vhd*** format.
 
     ![ws name.](media/.png)
