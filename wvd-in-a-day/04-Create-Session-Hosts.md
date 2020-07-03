@@ -1,6 +1,11 @@
 # Exercise 4: Create Session Hosts
 
+Session hosts are virtual machines created under host pools in which users can sign in ane access ther remote or Desktop application.
+
+
 ### **Task 1: Deploy 2 Windows 10 Enterprise multi-session Session Hosts to ‘Pooled’ Host Pool**
+
+We will be creating two session hosts i.e. WVD-HP01-SH-0 and WVD-HP01-SH-1 under WVD-HP-01 host pool which is of pooled type.
 
 1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
 
@@ -70,8 +75,14 @@
 6. Click on **Create**.
 
    ![ws name.](media/a10.png)
+   
+   > We will be using sessionhosts-subnet for deploying resources related to session hosts.
+   
   
 ### **Task 2: Deploy a Windows 10 Enterprise Session Hosts to ‘Personal’ Host Pool**
+
+We will be deploying a session host i.e. WVD-HP02-0 under WVD-HP-02 hostpool which is of personal type.
+
 
 1. Now go back to **Host pools** and select **WVD-HP-02** to open it.
 
