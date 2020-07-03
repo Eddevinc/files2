@@ -4,6 +4,8 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
 
 ## Task 1: Create Storage account and file share
 
+In the following task we will be creating a storage account with a file share which will be used to store user profiles for FSlogix.
+
 1. In your Azure portal search for storage account and click on it.
 
    ![ws name.](media/a55.png)
@@ -37,6 +39,8 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
 4. Under networking tab use following configuration.
     
      - Connectivity method: Public endpoint(selected networks)
+     
+     > This will make sure that your storage account is not accesable from public network making it more secure.
     
      - Virtual network subscription: Default subscription
      
@@ -62,6 +66,8 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
 
     ![ws name.](media/a60.png)
     
+    > This will enable your storage account to domain join under Azure Active Domain Join services
+    
     
 8. Click on **Save**.
      
@@ -73,7 +79,7 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
     
     
     
-10. Click on **+File share**.
+10. Click on **+ File share**.
 
     ![ws name.](media/a63.png)
     
@@ -106,6 +112,8 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
 3. Select following configuration for role assignment and then click on **Save**.  
    
    - Role: **Storage File Data SMB Share Contributor**
+   
+   > There are three types of roles specified for the storage account i.e. *Storage Account contributer, Storage file data SMB share contributer, Storage File Data SMB share contributer*
    
    - Under **Select** search for **WVDUser** and click on both the users to select them.
    
@@ -145,7 +153,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
     ```
     #Variables
-    $storageAccountName = "NameofStorageAccount" 
+    $storageAccountName = "<NameofStorageAccount>" 
 
     #Create Directories
     $LabFilesDirectory = "C:\LabFiles"
@@ -191,7 +199,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 > The above script will create a new directory i.e. *C:\LabFiles* where it will download FSLogix Installation bundle and extract it. After extraction installation of FSLogix will begin. When configuring Profile Container registry settings are added here: Registry Key: *HKLM\SOFTWARE\FSLogix\Profiles*. When configuring Profile Container the entire contents of the registry will be redirected to the FSLogix Profile Container. 
 
 
-8. Now scroll up on the script you pasted and replace **NameofStorageAccount (for example: storageaccount204756)** in second line of script with the storage account name you created in *Task 1, step 9*.
+8. Now scroll up on the script you pasted and replace <**NameofStorageAccount**> (for example: storageaccount204756) in second line of script with the storage account name you created in *Task 1, step 9*.
 
    ![ws name.](media/a70.png)
    
