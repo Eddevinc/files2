@@ -2,7 +2,7 @@
 
 The Windows Virtual Desktop service recommends FSLogix profile containers as a user profile solution. FSLogix is designed to roam profiles in remote computing environments, such as Windows Virtual Desktop. It stores a complete user profile in a single container. At sign in, this container is dynamically attached to the computing environment using natively supported Virtual Hard Disk (VHD) and Hyper-V Virtual Hard disk (VHDX). The user profile is immediately available and appears in the system exactly like a native user profile. This article describes how FSLogix profile containers used with Azure Files function in Windows Virtual Desktop.
 
-## Task 1: Create Storage account and file share
+## **Task 1: Create Storage account and file share**
 
 In the following task we will be creating a storage account with a file share which will be used to store user profiles for FSlogix.
 
@@ -93,9 +93,9 @@ In the following task we will be creating a storage account with a file share wh
    ![ws name.](media/a64.png)
 
     
-## Task 2: Configure File share 
+## **Task 2: Configure File share**
 
-
+In this task we will give *Storage File Data SMB Share Contributor* permissions to WVDUser-01 and WVDUser-02 so that their profiles can be stored in the fileshare.
 
 1. Click on the file share you just created.
 
@@ -121,9 +121,11 @@ In the following task we will be creating a storage account with a file share wh
    
 
 
-## Task 3: Configure Session Hosts
+## **Task 3: Configure Session Hosts**
 
-A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** session host.
+
+
+A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** session host using a power shell script.
 
 1. In your Azure portal search for **Virtual** and click on **Virtual Machine**.
 
@@ -277,34 +279,41 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
     ![ws name.](media/a77.png)
     
-    > This means that user profile is being manaed by FSLogix.
+    > This means that user profile is being managed by FSLogix.
     
-23. Now return back to the Azure Portal and search for *storage account* and click on it.
+## Task 4: Verifing the User profiles stored in File share.
 
-    ![ws name.](media/a55.png)
-    
-    
-24. Click on the storage account you created in **Task 1 step 3**, then under settings blade click on  **Firewalls and virtual networks**.
+In this task we will be accessing the file share to verify the user profiles stored in *.vhd* format.
 
-    ![ws name.](media/a87.png)
-    
-25. Under **Allow access from** select **All networks** and click on **save icon**.
+1. Now return back to the Azure Portal and search for *storage account* and click on it.
 
-    ![ws name.](media/a88.png)
-    
-    > This will enable access of your storage account on the public network.
+   ![ws name.](media/a55.png)
     
     
-26. Now click on **Overview** and open **Fileshare**.
+2. Click on the storage account you created in **Task 1 step 3**, then under settings blade click on  **Firewalls and virtual networks**.
 
-    ![ws name.](media/a62.png)
+   ![ws name.](media/a87.png)
+    
+3. Under **Allow access from** select **All networks** and click on **save icon**.
+
+   ![ws name.](media/a88.png)
+    
+   > This will enable access of your storage account on public network so that you can see the user profiles stored in the fileshare.
     
     
-27. Click on the **userprofile** fileshare.
+4. Now click on **Overview** and open **Fileshare**.
 
-    ![ws name.](media/a65.png)
+   ![ws name.](media/a62.png)
     
+    
+5. Click on the **userprofile** fileshare.
 
-25. Now you will be able to see the user profiles data stored in the fileshares in a ***.vhd*** format.
+   ![ws name.](media/a65.png)
+    
+6. You will see the user folder created in the file share, click on the folder.
 
-    ![ws name.](media/.png)
+   ![ws name.](media/.png) 
+
+7. Now you will be able to see the user profiles data stored in the fileshares in a ***.vhd*** format.
+
+   ![ws name.](media/.png)
