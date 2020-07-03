@@ -101,9 +101,9 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    Click on **Next**.
 
-9. Click on **Review + Create** button.
+9. Make sure that both **All Global Administrator of the Azure AD Directory & Members of AAD DC Administrators group** boxes are unchecked. Then click on **Review + Create** button.
 
-    ![ws name.](media/j.png)
+    ![ws name.](media/a99.png)
 
 10. Now click on **Create** Button.
 
