@@ -25,7 +25,7 @@ Host pools are a collection of one or more identical virtual machines within Win
 
       - Host Pool Name: **WVD-HP-01**
 
-      - Location: Choose the location of the existing Resource Group.
+      - Location: *Choose the location of the existing Resource Group*.
       
       - Validation environmet: **No**
       
@@ -38,8 +38,8 @@ Host pools are a collection of one or more identical virtual machines within Win
       > **Note**: Max session Limit limits the simultaneous number of users on the same session host.
      
       - Load Balancing Algorithm: **Breadth First**
-      > **Note**: Load Balancing Algorithm are of 2 types: Breadth-first and Depth-first. 
-Breadth-first load balancing distributes new user sessions across all available session hosts in the host pool. Depth-first load balancing distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
+      > **Note**: Load Balancing Algorithm are of 2 types: *Breadth-first* and *Depth-first*. 
+Breadth-first* load balancing distributes new user sessions across all available session hosts in the host pool. *Depth-first* load balancing distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
      
    - Then click on **Review + Create**.
           
@@ -65,7 +65,7 @@ Breadth-first load balancing distributes new user sessions across all available 
 
      -  Host Pool Name: **WVD-HP-02** 
 
-     -  Location: Choose the location of the existing Resource Group.
+     -  Location: *Choose the location of the existing Resource Group*.
      
      - Validation environmet: **No**
    
