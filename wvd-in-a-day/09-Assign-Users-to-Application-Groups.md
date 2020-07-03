@@ -1,10 +1,15 @@
 # Exercise 9: Assign Users to Application Groups
 
-Assigning users to a specific application groups can allow users to have access to specific applications only.
+When we assign users to a specific application groups it gives the users the access to use specific applications deployed in that particular group.
    
    
 ## Assign Users to Application Groups
 
+In the following task we will be assigning users to specific application groups in following schema:
+
+WVDUser-01: WVD-AG-01, WVD-HP-01-DAG
+
+WVDUser-02: WVD-AG-01, WVD-HP-01-DAG, WVD-HP-02-DAG
 
 **A.** Assigning users to WVD-AG-01 application group.
 
@@ -71,6 +76,6 @@ Assigning users to a specific application groups can allow users to have access 
 
    ![ws name.](media/a44.png)
    
-> This will allow WVDUser-02 access to WVD-AG-02 application group.   
+> This will allow WVDUser-02 access to WVD-HP-02-DAG application group.   
 
 6. Click on **Next** button.
