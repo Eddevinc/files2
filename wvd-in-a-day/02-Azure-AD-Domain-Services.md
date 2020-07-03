@@ -3,7 +3,7 @@
 To deploy a Windows Virtual Desktop environment, we need a pre-created windows domain (e.g: contoso.com). This can be created by using one of the following methods:
 1.	Azure Active Directory Domain Services (AADDS)
 2.	Windows Active Directory
-In this lab, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (e.g: ***azurehol1057.onmicrosoft.com***)
+In this lab, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name(e.g: ***azurehol1057.onmicrosoft.com***)
 
 
 ### **Task 1: Create prerequisites for AADDS**
@@ -23,7 +23,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![](media/wvd2.png)
    
-> Refer the **Environment Details** tab for any other lab credentials/details.
+> **Note**: Refer the **Environment Details** tab for any other lab credentials/details.
   
    ![](media/wvd7.png)
 
@@ -43,11 +43,11 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/b.png)
    
-8. Under Settings blade Click on **Resource Providers**.
+8. Under Settings blade click on **Resource Providers**.
 
    ![ws name.](media/c.png)
    
-9. Now search for **Microsoft.AAD** and make sure Microsofr.ADD is **Registered**.
+9. Now search for **Microsoft.AAD** and make sure Microsoft.ADD is **Registered**.
 
    ![ws name.](media/d.png)
    
@@ -73,7 +73,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
     
 4. Configure Basics blade with following settings.
       
-   - Subscription: Select your subscription.
+   - Subscription: *Select the default subscription*.
    - Resource Group: Select **WVD-RG**
    - DNS domain name: **Default value**
    - Region: select **East US**
@@ -92,6 +92,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    - Name: **aadds-vnet**
    - Address range: **10.0.0.0/16**
+
+> **Note:** If 
 
    ![ws name.](media/h.png)
 
