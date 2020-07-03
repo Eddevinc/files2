@@ -75,31 +75,29 @@ These two agents will be used to register this virtual machine a part of session
    
 5. RDP window will open, click on **Connect**.
 
-   ![ws name.](media/198.png)
+   ![ws name.](media/a89.png)
    
    
-8. Click on **More choices**.
+6. Click on **More choices**.
 
-   ![ws name.](media/199.png)
+   ![ws name.](media/a90.png)
    
    
-9. Click on **Use a different account**.
+7. Click on **Use a different account**.
 
-   ![ws name.](media/200.png)
+   ![ws name.](media/a91.png)
    
    
-10. Enter your credentials.
+8. Enter your credentials.
+   
+     - Username: **domainjoinadmin**
+   
+     - Password: **Azure1234567**
+   
+     - Click on **OK**.
+   
+   ![ws name.](media/a92.png)
 
-    ![ws name.](media/201.png)
-   
-   
-     Username: **domainjoinadmin**
-   
-     Password: **Azure1234567**
-   
-     Click on **OK**.
-   
-   
    
 11. A new pop up window will open,click on **Yes**.
  
@@ -122,7 +120,7 @@ These two agents will be used to register this virtual machine a part of session
 
 
 
-14. **Copy** and **Paste** the following URL in your VM browser and **hit enter** to download ***Windows Virtual Desktop Agent***.
+14. **Copy** and **Paste** the following URL in your VM browser and **hit enter** to download **Windows Virtual Desktop Agent**.
  
         https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv
  
@@ -151,27 +149,19 @@ These two agents will be used to register this virtual machine a part of session
 18. Now minimise your VM RDP window and visit azure portal on your local machine.
 
 
-19. In Azure portal search for *host pools* and click on it.
+19. In Azure portal search for **Host Pools** and click on it.
 
-    ![ws name.](media/209.png)
+    ![ws name.](media/a93.png)
     
     
     
-20. Click on **WVD-HP-01**.
+20. Click on **WVD-HP-01** and then click on **Registration Key**.
  
-    ![ws name.](media/210.png)
-     
-     
-     
-21. Click on **Registration Key**.
+    ![ws name.](media/a94.png)
+   
+21. Copy the registration key by clicking on the **copy button** on the right corner.
 
-    ![ws name.](media/211.png)
-    
-    
-    
-22. Copy the registration key by clicking on the **copy button** on the right corner.
-
-    ![ws name.](media/212.png)
+    ![ws name.](media/a95.png)
     
     > This unique registration key will be enable the Virtual Machine to become session host under this particular WVD-HP-01 hostpool.
     
@@ -205,7 +195,7 @@ These two agents will be used to register this virtual machine a part of session
     
     
     
-28. Open your browser and **paste** the following URL in your browser and hit **enter** to download the  ***Windows Virtual Desktop Agent Bootloader***.
+28. Open your browser and **paste** the following URL in your browser and hit **enter** to download the  **Windows Virtual Desktop Agent Bootloader**.
 
 
         https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH
@@ -248,9 +238,9 @@ These two agents will be used to register this virtual machine a part of session
 ## Task 3: Verify registration on Host Pool
 
 
-01. In your local machine visit Azure portal and search for *host pools* and click on it.
+01. In your local machine visit Azure portal and search for **Host Pools** and click on it.
 
-    ![ws name.](media/223.png)
+    ![ws name.](media/a.png)
 
 
 
