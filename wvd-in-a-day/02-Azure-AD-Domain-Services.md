@@ -51,11 +51,11 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/d.png)
    
-> In case the **Microsoft.AAD is not registred** then follow the **step 10** *.
+> In case the **Microsoft.AAD is not registred** then follow **step 10**.
 
-10. Click on **Microsoft.AAD** Resource Provider and click on **Register**.
+10. Click on **Microsoft.AAD** Resource Provider and then click on **Register**.
 
-   ![ws name.](media/5.png)
+   ![ws name.](media/a97.png)
 
 ### **Task 2: Deploy AADDS**
 
