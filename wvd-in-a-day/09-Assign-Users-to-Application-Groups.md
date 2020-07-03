@@ -7,9 +7,9 @@ When we assign users to a specific application groups it gives the users the acc
 
 In the following task we will be assigning users to specific application groups in following schema:
 
-WVDUser-01: WVD-AG-01, WVD-HP-01-DAG
+*WVDUser-01*: WVD-AG-01, WVD-HP-01-DAG
 
-WVDUser-02: WVD-AG-01, WVD-HP-01-DAG, WVD-HP-02-DAG
+*WVDUser-02*: WVD-AG-01, WVD-HP-01-DAG, WVD-HP-02-DAG
 
 **A.** Assigning users to WVD-AG-01 application group.
 
