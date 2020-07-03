@@ -5,6 +5,9 @@ A workspace is a logical grouping of application groups in WVD. Each WVD applica
 
 ### **Task 1: Create Workspaces**
 
+We will be creating two workspaces, *WVD-WS-01* for WVDUser-01 and *WVD-WS-02* for WVDUser-02.
+
+
 1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
 
    ![ws name.](media/y.png)
