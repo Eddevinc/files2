@@ -90,8 +90,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 7. Configure your new virtual network with following settings and then click **Ok**.
 
-   - **Name**: **aadds-vnet**
-   - **Address range**: **10.0.0.0/16**
+   - Name: **aadds-vnet**
+   - Address range: **10.0.0.0/16**
 
   ![ws name.](media/h.png)
 
@@ -109,9 +109,9 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
     ![ws name.](media/k.png)
     
-11. A popup will appear, Click on **OK**.
+11. Click **OK** on getting a popup saying **You should know**.
 
-    ![ws name.](media/14.png)
+    ![ws name.](media/a98.png)
     
     **The Deployment will take approx 30 minutes to deploy. Till then continue with next step.**
 
@@ -188,10 +188,10 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/wvd11.png)
 
-4. Use exisiting **WVD-RG** resource group from the drop down and for:
+4. Use exisiting resource group - **WVD-RG** from the drop down and for:
 
-    - **storage account:** Create new and enter **sa{uniqueid}**, for example: sa204272.
-    - **file share:** Create new and enter **fs{uniqueid}**, for example: fs204272.
+    - Storage Account:** Create new and enter **sa{uniqueid}**, for example: sa204272.
+    - File Share: Create new and enter **fs{uniqueid}**, for example: fs204272.
     
    ![ws name.](media/wvd12.png)
 
@@ -223,7 +223,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/s.png)
 
-9. In Azure active directory page, click on **Users** under **Manage** blade .
+9. In Azure active directory page, click on **Users** present under **Manage** blade.
 
    ![ws name.](media/t.png)
    
