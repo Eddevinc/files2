@@ -29,9 +29,12 @@ Host pools are a collection of one or more identical virtual machines within Win
       
       - Validation environmet: **No**
       
+      > Validation host pools let you monitor service updates before rolling them out to your production environment.
+      
+      
    **B.** **Host Pool Type** – Defines the type of host pool. 
 
-      - **Host pool type**: **Pooled** 
+      - Host pool type: **Pooled** 
       >**Note**: Host Pools are of 2 types: Pooled and Personal.  Pooled is used to share the same Session Host (Virtual Machine) resources among multiple users, while Personal uses a dedicated Session host of individual user.
 
       - Max session Limit: **5**
