@@ -2,6 +2,11 @@
 
 ### **Task 1: Register the Application Groups to Workspace**
 
+In this task we will be registering Application groups to workspaces in following series:
+
+*WVD-WS-01*: WVD-AG-01 and WVD-HP-01-DAG
+
+*WVD-WS-02*: WVD-HP-02-DAG
 
 1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
 
