@@ -3,11 +3,12 @@
 Application Group is a logical grouping of applications installed on session hosts in the host pool. They are of two types:
 1.	Remote App
 2.	Desktop
+
 The default app group created for a new Windows Virtual Desktop host pool also publishes the full desktop. In addition, you can create one or more RemoteApp application groups for the host pool.
 
 ### **Task 1: Verify application group of type ‘Desktop’ is created by default**
 
-An application group of type ‘Desktop’ was created automatically while creating the Session Host in previous exercise. We will be verifying if that host pool is created automatically or not..
+Two application group of type ‘Desktop’ was created automatically while creating the host pool WVD-HP-01 and WVD-HP-02. We will be verifying those two application groups which are created automatically.
 
 
 1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
@@ -19,7 +20,9 @@ An application group of type ‘Desktop’ was created automatically while creat
    ![ws name.](media/a17.png)
   
   
-## Task 2: Create application groups of type Remote App
+## **Task 2: Create application groups of type Remote App**
+
+We will be creating a Remote app type application groups to deploy applications in our windows virtual desktop environment.
 
 1. In the Application group page click on **+ Add**.
 
@@ -33,9 +36,11 @@ An application group of type ‘Desktop’ was created automatically while creat
 
       - Host Pool: **WVD-HP-01** (*This application group will be created under WVD-HP-01 hostpool*)
 
-      - Location:  Choose the default location
+      - Location:  *Choose the default location*
 
       - Application Group Type: **RemoteApp** 
+      
+      > Application groups are of two types *Remote app** and *Desktop application**.
 
       - Application Group Name: **WVD-AG-01**
 
