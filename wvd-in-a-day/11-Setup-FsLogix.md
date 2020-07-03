@@ -73,7 +73,7 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
     
     
     
-10. Click on **+ File share**.
+10. Click on **+File share**.
 
     ![ws name.](media/a63.png)
     
@@ -255,9 +255,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
    - Password: **Azure1234567** and click on **Sign in**.
 
       ![ws name.](media/wvd43.png)
-  
-    
-    
+   
 20. Double click on the **WVD-HP-01-DAG** Desktop to launch it.
 
     ![ws name.](media/a75.png)
@@ -280,23 +278,23 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
     
 24. Click on the storage account you created in **Task 1 step 3**, then under settings blade click on  **Firewalls and virtual networks**.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a87.png)
     
-25. Under *Allow access from* select **All networks** and click on **save icon**.
+25. Under **Allow access from** select **All networks** and click on **save icon**.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a88.png)
     
     > This will enable access of your storage account on the public network.
     
     
 26. Now click on **Overview** and open **Fileshare**.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a62.png)
     
     
 27. Click on the **userprofile** fileshare.
 
-    ![ws name.](media/.png)
+    ![ws name.](media/a65.png)
     
 
 25. Now you will be able to see the user profiles data stored in the fileshares in a ***.vhd*** format.
