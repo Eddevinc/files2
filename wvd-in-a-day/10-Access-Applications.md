@@ -1,10 +1,14 @@
 # Exercise 10: Access Applications
 
+In this exercise we will be using browser and WVD-client to access our remote app and desktop applications we deployed in previous exercises.
+
 ## **Task 1: Access published applications via Web browser**
 
-### **Subtask 1: Access the published applications using browser**
+In the following task we will be accessing microsoft office word and desktop application with browser using WVDUser-01.
 
-Now as we have published Desktop and Applications in previous step, now we will be accessing them. 
+### **Subtask 1: Access the Remote app using browser**
+
+In this task we will be accesing the remote app i.e. microsoft office word with help of a browser using WVDUser-01. 
 
 1. Navigate to **Azure Active Directory**, then go to **Users**.
 
@@ -48,7 +52,9 @@ Now as we have published Desktop and Applications in previous step, now we will 
 
    ![ws name.](media/130.png)
 
-### **Subtask 2: Access the published Desktop using browser**
+### **Subtask 2: Access the published Desktop Application using browser**
+
+In this task we will access the desktop application i.e. WVD-HP-01-DAG with help of a browser using WVDUser-01
 
 1. Now on the top-left side click on **All Resources** and select **WVD-HP-01-DAG** Desktop.
 
@@ -73,9 +79,13 @@ Now as we have published Desktop and Applications in previous step, now we will 
    ![ws name.](media/wvd39.png)
 
 
-## **Task 2: Access published applications via Remote Desktop Client**
+## **Task 2: Access published applications via WVD-Client**
 
-### **Subtask 1: Access the published applications using WVD client**
+In the following task we will be accessing microsoft office word and desktop application with help of remote desktop client using WVDUser-01.
+
+### **Subtask 1: Access the published applications using WVD Client**
+
+In this task we will be accesing the remote app i.e. microsoft office word with help of WVD-client using WVDUser-02. 
    
 1. Download the **WVD Client** on your local machine from the following [**Link**](https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-and-10) and install **Windows 64-bit** version by clicking on it.
    
@@ -140,6 +150,9 @@ Now as we have published Desktop and Applications in previous step, now we will 
 14. Click on the **X** icon on the top right corner to close word.
 
 ### **Subtask 2: Access the Workspace Desktop using WVD Client**
+
+in this task we will access the desktop application i.e. WVD-HP-01-DAG with help of a WVD-Client using WVDUser-02.
+
 
 1. Now in the WVD client double click on the **WVD-HP-02-DAG** Desktop to access it. 
 
