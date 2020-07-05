@@ -3,14 +3,13 @@
 To deploy a Windows Virtual Desktop environment, we need a pre-created windows domain (e.g: contoso.com). This can be created by using one of the following methods:
 1.	Azure Active Directory Domain Services (AADDS)
 2.	Windows Active Directory
-In this lab, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name(e.g: ***azurehol1057.onmicrosoft.com***)
+In this lab, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (e.g: ***azurehol1057.onmicrosoft.com***)
 
 
 ### **Task 1: Create prerequisites for AADDS**
 
 **A.**	Register Microsoft.AAD Resource Provider
 The resource provider Microsoft.AAD should be registered in our subscription to deploy AADDS. If it is not already registered, we need to register it from the Azure portal.
-
 
 
 1. Navigate **Azure Portal** (https://portal.azure.com) in your browser. 
@@ -29,21 +28,21 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 4. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
 
-   ![](media/wvd3.png)
+   ![](media/a102.png)
 
 5. You may encounter a popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
 
    ![](media/wvd4.png)
 
-6. In Azure Portal search for **Subscription** and click on **Subscriptions**.
+6. In Azure Portal click on **Subscriptions** present under **Navigate**.
 
    ![ws name.](media/a.png)
    
-7. Click on your subscription.
+7. Open your =subscription by clicking on it.
 
    ![ws name.](media/b.png)
    
-8. Under Settings blade click on **Resource Providers**.
+8. Then under **Settings** blade click on **Resource Providers**.
 
    ![ws name.](media/c.png)
    
@@ -51,19 +50,19 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/d.png)
    
-> In case the **Microsoft.AAD is not registred** then follow **step 10**.
+> In case the **Microsoft.AAD** is not registred then follow **step 10**.
 
 10. Click on **Microsoft.AAD** Resource Provider and then click on **Register**.
 
-   ![ws name.](media/a97.png)
+   ![ws name.](media/a103.png)
 
 ### **Task 2: Deploy AADDS**
 
-1. On the Azure portal menu or from the Home page, select **Create a resource**.
+1. Select **Create a resource** from the Azure portal homepage.
 
    ![](media/wvd6.png)
 
-2. Enter Domain Services into the search bar, then choose Azure AD Domain Services from the search suggestions.
+2. Enter **Domain Services** into the search bar, then choose **Azure AD Domain Services** from the search suggestions.
 
    ![ws name.](media/e.png)
 
@@ -74,9 +73,9 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 4. Configure Basics blade with following settings.
       
    - Subscription: *Select the default subscription*.
-   - Resource Group: Select **WVD-RG**
-   - DNS domain name: **Default value**
-   - Region: select **East US**
+   - Resource Group: Select **WVD-RG** from the drop down.
+   - DNS domain name: *Default value*
+   - Region: **East US**, this should be same as the region of your resource group.
    - SKU**: **Standard**
    - Forest type: **User**
 
@@ -84,7 +83,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
        
 5. Then click **Next**.
 
-6. In Networking tab under **Virtual network**, Click on **Create new**.
+6. Now in **Networking** tab click on **Create new** under **Virtual network**.
         
    ![ws name.](media/wvd8.png)
 
@@ -97,82 +96,76 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/h.png)
 
-8. You will return to Networking tab, make sure subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
+8. Make sure the subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
 
    ![ws name.](media/i.png)
 
-   Click on **Next**.
+9. Click on **Next**.
 
-9. Make sure that both **All Global Administrator of the Azure AD Directory & Members of AAD DC Administrators group** boxes are unchecked. Then click on **Review + Create** button.
+10. Make sure that both **All Global Administrator of the Azure AD directory** & **Members of AAD DC Administrators group** boxes are unchecked. Then click on **Review + Create** button.
 
    ![ws name.](media/a99.png)
 
-10. Now click on **Create** Button.
+11. Now click on **Create** Button.
 
    ![ws name.](media/k.png)
     
-11. Click **OK** on getting a popup saying **You should know**.
+12. Click **OK** on getting a popup saying **You should know**.
 
    ![ws name.](media/a98.png)
-    
-    **The Deployment will take approx 30 minutes to deploy. Till then continue with next step.**
+   
+ >**Note:** The Deployment will take approx 30 minutes to deploy. Till then continue with next step.
 
-12. Now navigate to the **WVD-RG** , then go to **Overview** and open **aadds-vnet**.
+13. Now navigate to the **WVD-RG** , then go to **Overview** and open **aadds-vnet**.
 
    ![ws name.](media/wvd20.png)
 
-13. Select **Subnets** given under **Settings** blade, then click on **+Subnet** to add new subnet.
+14. Select **Subnets** given under **Settings** blade, then click on **+Subnet** to add new subnet.
 
    ![ws name.](media/wvd21.png)
 
-14. Now add following configuration and select **OK**:
+15. Now add following configuration and select **OK**:
 
     - Name: **sessionhosts-subnet**
     - Address Range: **10.0.1.0/24**
 
     ![ws name.](media/l.png)
 
-15. Once created it will appear under **Subnets** as shown below:
+16. Once created it will appear under **Subnets** as shown below:
 
    ![ws name.](media/m.png)
 
 ### **Task 3: Update Virtual Network DNS**
 
-> Wait for the deployment of Azure AD Domain Serive(i.e., previous task) to complete. Then only you can start Task 3. 
+ >**Note:** Wait for the deployment of Azure AD Domain Serive(i.e., previous task) to complete. Then only you can start Task 3. 
 
-1. After deployment completes, go back to Azure portal home, select **Resource Groups** under **Navigate**.
+1. After deployment completes, go back to Azure portal, select **Resource Groups** under **Navigate**.
     
    ![ws name.](media/n.png)
     
-2. Now click on your **WVD-RG** resource group.
+2. Now click on your **WVD-RG** resource group to open it.
 
    ![ws name.](media/o.png)
     
-3. Click on **first NIC card**.
+3. In the resource group there are two NIC cards.
 
-   ![ws name.](media/p.png)
-    
-4. Note down the **Private IP** of first NIC card.
+  ![ws name.](media/a104.png)
+
+4. Open both the NIC cards and copy and paste their **Private IP**.
 
    ![ws name.](media/wvd24.png)
-    
-5. Now go back to your **WVD-RG** resource group and click on **second NIC card**.
-
-   ![ws name.](media/q.png)
-    
-6. Note down the **Private IP** of the second NIC card.
-
+   
    ![ws name.](media/wvd25.png)
     
-7. Go back to the **WVD-RG** resource group, and click on **aadds-vnet**.
+5. Go back to the **WVD-RG** resource group and click on **aadds-vnet**.
 
    ![ws name.](media/r.png)
     
-8. Now under **Settings** blade click on **DNS servers**. Then select **custom** and paste the IP address of first and second NIC card noted in step 19 and 21.
+6. Now under **Settings** blade click on **DNS servers**. Then select **custom** and paste the IP address of first and second NIC card you copied in earlier step.
 
    ![ws name.](media/wvd19.png)
      
-9. Click on **Save**.
+7. Click on **Save**.
      
    ![ws name.](media/wvd9.png)
 
@@ -180,7 +173,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 1. In your azure portal, click on the **Cloud Shell** icon.
 
-   ![ws name.](media/38.png)
+   ![ws name.](media/a105.png)
    
 2. In the Cloud Shell window that opens at the bottom of your browser window, select **PowerShell**.
 
@@ -192,8 +185,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 4. Use exisiting resource group - **WVD-RG** from the drop down and for:
 
-    - Storage Account:** Create new and enter **sa{uniqueid}**, for example: sa204272.
-    - File Share: Create new and enter **fs{uniqueid}**, for example: fs204272.
+    - Storage Account: Select **Create new** and enter **sa{uniqueid}**, for example: sa204272.
+    - File Share: Select **Create new** and enter **fs{uniqueid}**, for example: fs204272.
     
    ![ws name.](media/wvd12.png)
 
@@ -201,7 +194,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/40.png)
 
-6. Now copy and paste the following script:
+6. Now copy and paste the following script in the console and hit enter to run it:
 
    ```
    $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
@@ -221,7 +214,9 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/wvd22.png)
 
-8. You can verify this by searching for **Azure Active Directory** in the search bar in Azure portal and then click on it.
+8. You can verify this by navigating to Azure Active Directory.
+
+9. On the homepage search for Azure Active in the search bar and then select **Azure Active Directory**.
 
    ![ws name.](media/s.png)
 
@@ -233,9 +228,13 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
     ![ws name.](media/wvd13.png)
 
+11. Copy and Paste the usernames for all three users in notepad.
+
+  >**Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
+
 ### **Task 5: Add membership for DomainJoinAdmin User**
 
-1. In Azure active directory page, click on **Users** under **Manage** blade .
+1. Navigate back to Azure active directory page, click on **Users** under **Manage** blade .
 
    ![ws name.](media/t.png)
    
@@ -272,10 +271,10 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
   ![ws name.](media/wvd23.png)
 
- > Wait for few seconds for the script to execute.
+  >**Note:** Wait for few seconds for the script to execute.
    
-3. Output of the script will look like this.
+3. Output of the script will be similar to the one shown below.
 
   ![ws name.](media/42.png)
 
-4. Click **Next** on the bottom right of this page.
+4. Click on the **Next** button.
