@@ -1,25 +1,25 @@
 # **Exercise 13: Load Balancing methods**
 
 
-## **Task 1: Understand the Load balancing methods in Host Pools**
+### **Task 1: Understand the Load balancing methods in Host Pools**
 
 
 While configuring  a hostpool, we can select load balancing methods as per the needs.
 
 There are two types of load balancing methods:
 
-1. **Breath first**: Breadth-first load balancing distributes new user sessions across all available session hosts in the host pool. 
+ **1. Breath first**: Breadth-first load balancing distributes new user sessions across all available session hosts in the host pool. 
 
-2. **Depth first**:  Depth-first load balancing distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
-
-
-## **Task 2: Change and experience Load Balancing methods**
+ **2. Depth first**:  Depth-first load balancing distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
 
 
-**A**. Whole creating WVD-HP-01 host pool we selected load blalancing method as *Breath first*, Now we are going to log into both the the session hosts created inside the WVD-HP-01 host pool and see the user distribution.
+### **Task 2: Change and experience Load Balancing methods**
 
 
-> You are already logged into WVD-HP-01-DAG using WVDUser01 when you performed ***Exercise 11, Task 2, Step 20*** so all we need to do is log into WVD-HP-01-DAG using WVDUser02.
+**A**. While creating WVD-HP-01 host pool we selected load blalancing method as *Breath first*, Now we are going to log into both the the session hosts created inside the WVD-HP-01 host pool and see the user distribution.
+
+
+ >**Note:** You are already logged into WVD-HP-01-DAG using WVDUser01 when you performed ***Exercise 11, Task 2, Step 20*** so all we need to do is log into WVD-HP-01-DAG using WVDUser02.
 
 1. In your local machine go to **Start** and search for **Remote desktop** and open the application with exact icon as shown below.
 
@@ -70,7 +70,7 @@ There are two types of load balancing methods:
    
 10. Now click on **WVD-HP01-SH-1** and verify which user has been assigned to the particular session host and click on **Log off all active users**, then click on the **X** icon on the top right corner to return back to the session host page.
 
-    ![ws name.](media/.png)
+   ![ws name.](media/.png)
     
     > we need to log off users from session hosts so  that when the users login back to the session host, they are divided based on the depth first load balancing method as shown in sub task *B*.
    
@@ -90,11 +90,11 @@ There are two types of load balancing methods:
 
    - Username: Put username **WVD User-01** which you copied in previous step (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.
    
-      ![ws name.](media/wvd42.png)
+   ![ws name.](media/wvd42.png)
 
    - Password: **Azure1234567** and click on **Sign in**.
 
-      ![ws name.](media/wvd43.png)
+   ![ws name.](media/wvd43.png)
       
       
 4. Select **WVD-HP-01-DAG** Desktop.
@@ -167,4 +167,4 @@ There are two types of load balancing methods:
    
 10. Now click on the session host with 2 active session and verify that both users have been assigned to the particular session host. 
 
-    ![ws name.](media/.png)
+   ![ws name.](media/.png)
