@@ -3,7 +3,7 @@
 To deploy a Windows Virtual Desktop environment, we need a pre-created windows domain (e.g: contoso.com). This can be created by using one of the following methods:
 1.	Azure Active Directory Domain Services (AADDS)
 2.	Windows Active Directory
-In this lab, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (e.g: ***azurehol1057.onmicrosoft.com***)
+In this exercise, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (e.g: ***azurehol1057.onmicrosoft.com***)
 
 
 ### **Task 1: Create prerequisites for AADDS**
