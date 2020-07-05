@@ -35,7 +35,7 @@ In this task we will be creating two session hosts i.e. WVD-HP01-SH-0 and WVD-HP
 
      - Virtual machine size: **Standard DS1_V2**. *Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below*
    
-     ![ws name.](media/wvd35.png)
+   ![ws name.](media/wvd35.png)
 
      - Number of VMs: **2**
    
@@ -49,7 +49,7 @@ In this task we will be creating two session hosts i.e. WVD-HP01-SH-0 and WVD-HP
 
      - Use managed disks: **Yes**
    
-     ![ws name.](media/a8.png)
+   ![ws name.](media/a8.png)
      
    
   **B**. Network and Security 
@@ -108,7 +108,7 @@ In this task we will be deploying a session host i.e. WVD-HP02-0 under WVD-HP-02
 
      - Virtual machine size: **Standard DS1_V2**. *Click on **Change Size**, then select **DS1_V2** and click on **Select** as shown below*
    
-    ![ws name.](media/wvd35.png)
+   ![ws name.](media/wvd35.png)
       
      - Number of VMs: **1** 
    
@@ -122,7 +122,7 @@ In this task we will be deploying a session host i.e. WVD-HP02-0 under WVD-HP-02
 
      - Use managed disks: **Yes** 
    
-     ![ws name.](media/a14.png)
+   ![ws name.](media/a14.png)
 
   **B**. Network and Security 
    - Subnet: *Choose **sessionhosts-subnet (10.0.1.0/24)** from the dropdown*.
