@@ -3,7 +3,7 @@
 Host pools are a collection of one or more identical virtual machines within Windows Virtual Desktop environments. Each host pool can contain an app group that users can interact with as they would on a physical desktop.
 
 
-## **Task 1: Create a Host Pool of ‘Pooled’ type**
+### **Task 1: Create a Host Pool of ‘Pooled’ type**
 
 Host pools are a collection of one or more identical virtual machines within Windows Virtual Desktop environments. Each host pool can contain an app group that users can interact with as they would on a physical desktop. 
 
