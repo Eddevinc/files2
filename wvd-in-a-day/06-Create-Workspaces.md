@@ -5,10 +5,10 @@ A workspace is a logical grouping of application groups in WVD. Each WVD applica
 
 ### **Task 1: Create Workspaces**
 
-We will be creating two workspaces, *WVD-WS-01* for WVDUser-01 and *WVD-WS-02* for WVDUser-02.
+In this task we will be creating two workspaces, *WVD-WS-01* for WVDUser-01 and *WVD-WS-02* for WVDUser-02.
 
 
-1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
+1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop** from the suggestions.
 
    ![ws name.](media/y.png)
   
@@ -18,17 +18,13 @@ We will be creating two workspaces, *WVD-WS-01* for WVDUser-01 and *WVD-WS-02* f
   
 3. Configure the worspace with following parameters.:
 
-   - Subscription:  **Default Subscription** 
-   
-   - Resource Group: **WVD-RG** - existing resource group.
-
+   - Subscription: *Select the default subscription*.
+   - Resource Group: *Select **WVD-RG** from the drop down*.
    - Workspace name: **WVD-WS-01**
-
-   - Location: **Default location of resource group**
-   
+   - Location: **East US**, *this should be same as the location of your resource group*.  
    - Click on **Review + create**.
  
-    ![ws name.](media/a22.png)
+   ![ws name.](media/a22.png)
 
 6. Click on **Create**.
  
@@ -40,14 +36,10 @@ We will be creating two workspaces, *WVD-WS-01* for WVDUser-01 and *WVD-WS-02* f
 
 8. Configure the worspace with following parameters.
 
-   - Subscription:  **Default Subscription**
-   
-   - Resource Group: **WVD-RG**
-
+   - Subscription: *Select the default subscription*.
+   - Resource Group: *Select **WVD-RG** from the drop down*.
    - Workspace name: **WVD-WS-02**
-
-   - Location: **Default location of resource group**
-   
+   - Location: **East US**, *this should be same as the location of your resource group*.  
    - Click on **Review + create**.
 
    ![ws name.](media/a24.png)
