@@ -20,13 +20,9 @@ Host pools are a collection of one or more identical virtual machines within Win
    **A.** **Project Details –** Defines the environment 
 
       - Subscription: *Choose the default subscription*.
-
       - Resource Group: *Select **WVD-RG** from the drop down*.
-
       - Host Pool Name: **WVD-HP-01**
-
-      - Location: East US, *basically this should be same as the region of your resource group*.
-      
+      - Location: East US, *basically this should be same as the region of your resource group*.      
       - Validation environmet: **No**
       
    >**Note:** Validation host pools let you monitor service updates before rolling them out to your production environment.
@@ -66,21 +62,15 @@ Breadth-first* load balancing distributes new user sessions across all available
    **A.** **Project Details –** Defines the environment 
 
       - Subscription: *Choose the default subscription*.
-
       - Resource Group: *Select **WVD-RG** from the drop down*.
-
      -  Host Pool Name: **WVD-HP-02** 
-
-     -  Location: East US, *basically this should be same as the region of your resource group*.
-     
+     -  Location: East US, *basically this should be same as the region of your resource group*.     
      - Validation environmet: **No**
    
    **B.** **Host Pool Type –** Defines the type of host pool. 
 
-     - Host pool type: **Personal**
-     
+     - Host pool type: **Personal**     
      - Assignment type: **Automatic**
-     
      - Then click on **Review + Create**
      
    ![ws name.](media/a3.png)
