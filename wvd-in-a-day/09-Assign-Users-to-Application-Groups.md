@@ -3,13 +3,13 @@
 When we assign users to a specific application groups it gives the users the access to use specific applications deployed in that particular group.
    
    
-## Assign Users to Application Groups
+### **Assign Users to Application Groups**
 
 In the following task we will be assigning users to specific application groups in following schema:
 
-WVDUser-01: *WVD-AG-01, WVD-HP-01-DAG*
+ **1. WVDUser-01:** *WVD-AG-01, WVD-HP-01-DAG*
 
-WVDUser-02: *WVD-AG-01, WVD-HP-01-DAG, WVD-HP-02-DAG*
+ **2. WVDUser-02:** *WVD-AG-01, WVD-HP-01-DAG, WVD-HP-02-DAG*
 
 
 
@@ -36,7 +36,7 @@ WVDUser-02: *WVD-AG-01, WVD-HP-01-DAG, WVD-HP-02-DAG*
 
    ![ws name.](media/a38.png)
 
-> This will allow both WVDUser-1 and WVDUser-02 access to WVD-AG-01 application group.
+ >**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-AG-01 application group.
 
 **B.** Assigning users to WVD-HP-01-DAG application group.
 
@@ -57,7 +57,7 @@ WVDUser-02: *WVD-AG-01, WVD-HP-01-DAG, WVD-HP-02-DAG*
    ![ws name.](media/a38.png)
    
    
-> This will allow both WVDUser-1 and WVDUser-02 access to WVD-HP-01-DAG application group.
+ >**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-HP-01-DAG application group.
 
 **C.** Assigning users to WVD-HP-02-DAG application group.
 
@@ -78,6 +78,6 @@ WVDUser-02: *WVD-AG-01, WVD-HP-01-DAG, WVD-HP-02-DAG*
 
    ![ws name.](media/a44.png)
    
-> This will allow WVDUser-02 access to WVD-HP-02-DAG application group.   
+ >**Note:** This will allow WVDUser-02 access to WVD-HP-02-DAG application group.   
 
-6. Click on **Next** button.
+6. Click on the **Next** button.
