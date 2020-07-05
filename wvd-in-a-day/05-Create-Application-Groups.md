@@ -31,13 +31,9 @@ In this task we will be creating a Remote app type application groups to deploy 
 2. On the **Basics** section, fill the parameters as below: 
    
       - Subscription: *Select the default subscription*.
-
       - Resource Group: *Select **WVD-RG** from the drop down*.
-
       - Host Pool: **WVD-HP-01** (*This application group will be created under WVD-HP-01 hostpool*)
-
       - Location: **East US**, *this should be same as the region of your resource group*.
-
       - Application Group Type: **RemoteApp** 
       
  >**Note:** Application groups are of two types **Remote app** and **Desktop application**.
