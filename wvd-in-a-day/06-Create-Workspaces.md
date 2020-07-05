@@ -48,4 +48,4 @@ In this task we will be creating two workspaces, *WVD-WS-01* for WVDUser-01 and 
  
    ![ws name.](media/a25.png)
  
-10. Click on **Next** button.
+10. Click on the **Next** button.
