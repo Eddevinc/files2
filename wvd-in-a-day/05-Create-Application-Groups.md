@@ -42,9 +42,9 @@ In this task we will be creating a Remote app type application groups to deploy 
       
  >**Note:** Application groups are of two types **Remote app** and **Desktop application**.
 
-      - Application Group Name: **WVD-AG-01**
+   - Application Group Name: **WVD-AG-01**
 
-      - Click on **Review + create**
+   - Click on **Review + create**
   
    ![ws name.](media/a19.png)
 
