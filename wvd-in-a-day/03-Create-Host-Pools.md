@@ -7,41 +7,44 @@ Host pools are a collection of one or more identical virtual machines within Win
 
 Host pools are a collection of one or more identical virtual machines within Windows Virtual Desktop environments. Each host pool can contain an app group that users can interact with as they would on a physical desktop. 
 
-1. Navigate to Azure portal and search for **Windows Virtual Desktop** in the search bar and you will see a resource that shows up in the same name. Click on it. 
+1. Navigate to **Azure portal** and search for Windowsin the search bar and select **Windows Virtual Desktop** from the suggestions.
 
    ![ws name.](media/y.png)
 
-2. In the management tab, select **Host pools** and then on **+ Add** to add new Host Pool.
+2. Now select **Host pools** under **Manage** blade and then click on **+ Add** to add new Host Pool.
 
    ![ws name.](media/z.png)
 
 3. Under Basics configure Host pool with following values.
     
-   **A.** **Project Details** – Defines the environment 
+   **A.** **Project Details –** Defines the environment 
 
-      - Subscription: Choose the **default subscription**.
+      - Subscription: *Choose the default subscription*.
 
-      - Resource Group: Choose the existing Resource Group that is **WVD-RG**.
+      - Resource Group: *Select **WVD-RG** from the drop down*.
 
       - Host Pool Name: **WVD-HP-01**
 
-      - Location: *Choose the location of the existing Resource Group*.
+      - Location: East US, *basically this should be same as the region of your resource group*.
       
       - Validation environmet: **No**
       
-      > Validation host pools let you monitor service updates before rolling them out to your production environment.
+   >**Note:** Validation host pools let you monitor service updates before rolling them out to your production environment.
       
       
-   **B.** **Host Pool Type** – Defines the type of host pool. 
+   **B.** **Host Pool Type –** Defines the type of host pool. 
 
       - Host pool type: **Pooled** 
-      >**Note**: Host Pools are of 2 types: Pooled and Personal.  Pooled is used to share the same Session Host (Virtual Machine) resources among multiple users, while Personal uses a dedicated Session host of individual user.
+      
+      >**Note:** Host Pools are of 2 types: Pooled and Personal.  Pooled is used to share the same Session Host (Virtual Machine) resources among multiple users, while Personal uses a dedicated Session host of individual user.
 
       - Max session Limit: **5**
-      > **Note**: Max session Limit limits the simultaneous number of users on the same session host.
+      
+      > **Note:** Max session Limit limits the simultaneous number of users on the same session host.
      
       - Load Balancing Algorithm: **Breadth First**
-      > **Note**: Load Balancing Algorithm are of 2 types: *Breadth-first* and *Depth-first*. 
+      
+      > **Note:** Load Balancing Algorithm are of 2 types: *Breadth-first* and *Depth-first*. 
 Breadth-first* load balancing distributes new user sessions across all available session hosts in the host pool. *Depth-first* load balancing distributes new user sessions to an available session host with the highest number of connections but has not reached its maximum session limit threshold.
      
    - Then click on **Review + Create**.
@@ -60,19 +63,19 @@ Breadth-first* load balancing distributes new user sessions across all available
 
 2. Under Basics configure Host pool with following values.
   
-   **A.** Project Details – Defines the environment 
+   **A.** **Project Details –** Defines the environment 
 
-      - Subscription: Choose the **default subscription**.
+      - Subscription: *Choose the default subscription*.
 
-      - Resource Group: Choose the default existing Resource Group that is **WVD-RG**.
+      - Resource Group: *Select **WVD-RG** from the drop down*.
 
      -  Host Pool Name: **WVD-HP-02** 
 
-     -  Location: *Choose the location of the existing Resource Group*.
+     -  Location: East US, *basically this should be same as the region of your resource group*.
      
      - Validation environmet: **No**
    
-   **B.** Host Pool Type – Defines the type of host pool. 
+   **B.** **Host Pool Type –** Defines the type of host pool. 
 
      - Host pool type: **Personal**
      
