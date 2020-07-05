@@ -4,7 +4,7 @@ Application Group is a logical grouping of applications installed on session hos
 1.	Remote App
 2.	Desktop
 
-The default app group created for a new Windows Virtual Desktop host pool also publishes the full desktop. In addition, you can create one or more RemoteApplication groups for the host pool.
+The default application group created for a new Windows Virtual Desktop host pool also publishes the full desktop. In addition, you can create one or more RemoteApplication groups for the host pool.
 
 ### **Task 1: Review application group of type ‘Desktop’ that is created by default**
 
@@ -20,7 +20,7 @@ Two application group of type ‘Desktop’ was created automatically while crea
    ![ws name.](media/a17.png)
   
   
-## **Task 2: Create application groups of type Remote App**
+### **Task 2: Create application groups of type Remote Application**
 
 In this task we will be creating a Remote app type application groups to deploy applications in our windows virtual desktop environment.
 
