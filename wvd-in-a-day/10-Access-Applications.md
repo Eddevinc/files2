@@ -6,9 +6,9 @@ In this exercise we will be using browser and WVD-client to access our remote ap
 
 In the following task we will be accessing microsoft office word and desktop application with browser using WVDUser-01.
 
-### **Subtask 1: Access the Remote app using browser**
+### **Subtask 1: Access the published 'Remote Application' using browser**
 
-In this task we will be accesing the remote app i.e. microsoft office word with help of a browser using WVDUser-01. 
+In this task we will be accesing the remote application i.e. microsoft office word with help of a browser using WVDUser-01. 
 
 1. Navigate to **Azure Active Directory**, then go to **Users**.
 
@@ -22,11 +22,11 @@ In this task we will be accesing the remote app i.e. microsoft office word with 
 
    - Username: Put username **WVD User-01** which you copied in previous step (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.
    
-      ![ws name.](media/wvd42.png)
+   ![ws name.](media/wvd42.png)
 
    - Password: **Azure1234567** and click on **Sign in**.
 
-      ![ws name.](media/wvd43.png)
+   ![ws name.](media/wvd43.png)
   
 
 4. Now you will be inside the WVD dashboard with all the Desktop and Applications assigned to WVDUser01 accesable. Click on any one of the applications to access it. 
@@ -45,14 +45,14 @@ In this task we will be accesing the remote app i.e. microsoft office word with 
    
    - Password: **Azure1234567**
 
-   ![ws name.](media/a47.png)
+   ![ws name.](media/a47.png
    
    
 7. Your application will launch.
 
    ![ws name.](media/130.png)
 
-### **Subtask 2: Access the published Desktop Application using browser**
+### **Subtask 2: Access the published 'Desktop Application' using browser**
 
 In this task we will access the desktop application i.e. WVD-HP-01-DAG with help of a browser using WVDUser-01
 
@@ -83,9 +83,9 @@ In this task we will access the desktop application i.e. WVD-HP-01-DAG with help
 
 In the following task we will be accessing microsoft office word and desktop application with help of remote desktop client using WVDUser-01.
 
-### **Subtask 1: Access the published applications using WVD Client**
+### **Subtask 1: Access the published 'Remote Applications' using WVD Client**
 
-In this task we will be accesing the remote app i.e. microsoft office word with help of WVD-client using WVDUser-02. 
+In this task we will be accesing the remote application i.e. microsoft office word with help of WVD-client using WVDUser-02. 
    
 1. Download the **WVD Client** on your local machine from the following [**Link**](https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-and-10) and install **Windows 64-bit** version by clicking on it.
    
@@ -115,7 +115,7 @@ In this task we will be accesing the remote app i.e. microsoft office word with 
 
    - Password: **Azure1234567** and click on **Sign in**.
    
-    ![ws name.](media/wvd44.png)
+   ![ws name.](media/wvd44.png)
  
 8. Make sure to **uncheck** Allow my organization to manage my device and then click on **Yes**.
 
@@ -149,7 +149,7 @@ In this task we will be accesing the remote app i.e. microsoft office word with 
    
 14. Click on the **X** icon on the top right corner to close word.
 
-### **Subtask 2: Access the Workspace Desktop using WVD Client**
+### **Subtask 2: Access the published 'Desktop Application' using WVD Client**
 
 in this task we will access the desktop application i.e. WVD-HP-01-DAG with help of a WVD-Client using WVDUser-02.
 
