@@ -4,11 +4,10 @@
 
 In this task we will be registering Application groups to workspaces in following series:
 
-WVD-WS-01: *WVD-AG-01* and *WVD-HP-01-DAG*
+  - **WVD-WS-01:** *WVD-AG-01* and *WVD-HP-01-DAG*
+  - **WVD-WS-02:** *WVD-HP-02-DAG*
 
-WVD-WS-02: *WVD-HP-02-DAG*
-
-1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
+1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop** from the suggestions.
 
    ![ws name.](media/y.png)
    
@@ -23,26 +22,26 @@ WVD-WS-02: *WVD-HP-02-DAG*
 
 4. Click on **Select**.
 
-   ![ws name.](media/a228.png)
+   ![ws name.](media/a28.png)
 
 5. Click on the **X** icon to go back to workspaces.
 
-   ![ws name.](media/95.png)   
+   ![ws name.](media/a106.png)   
    
 6. Now click on **WVD-WS-02** workspace.
 
-    ![ws name.](media/a29.png)
+   ![ws name.](media/a29.png)
     
-11. On the WVD-WS-01 window under manage blade, click on **Application groups** and then click on **+ Add**.
+11. Then click on **Application groups** present under **Manage** blade and click on **+ Add**.
 
-    ![ws name.](media/a30.png)
+   ![ws name.](media/a30.png)
          
-12. Click on **WVD-HP-02-DAG** to add it to the **WVD-WS-02** workspace.
+12. Click on **+** sign to add **WVD-HP-02-DAG** to the **WVD-WS-02** workspace.
 
    ![ws name.](media/wvd17.png)
  
-14. Click on **Select**.
+14. Then click on **Select**.
 
-    ![ws name.](media/a31.png)
+   ![ws name.](media/a31.png)
   
 15. Click on **Next** button.
