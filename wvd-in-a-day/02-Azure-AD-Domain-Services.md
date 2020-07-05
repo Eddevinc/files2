@@ -73,9 +73,9 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 4. Configure Basics blade with following settings.
       
    - Subscription: *Select the default subscription*.
-   - Resource Group: Select **WVD-RG** from the drop down.
+   - Resource Group: *Select **WVD-RG** from the drop down*.
    - DNS domain name: *Default value*
-   - Region: **East US**, this should be same as the region of your resource group.
+   - Region: **East US**, *this should be same as the region of your resource group*.
    - SKU**: **Standard**
    - Forest type: **User**
 
