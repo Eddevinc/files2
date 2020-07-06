@@ -152,9 +152,9 @@ These two agents will be used to register this virtual machine a part of session
 
 21. On your keyboard press the following combination of keys.
 
-    **Ctrl + A**: To select the current text in the box.
+    **Backspace**: To remove the current text in the box.
     
-    **Ctrl + V**: To replace the text inside the box with the key you copied.
+    **Ctrl + V**: To paste the key inside the box which you copied from WVD-HP-01 host pool.
     
 22. Click on **Next**.
 
@@ -202,7 +202,7 @@ These two agents will be used to register this virtual machine a part of session
 
 1. In your local machine visit Azure portal and search for **Host Pools** and click on it.
 
-   ![ws name.](media/a.png)
+   ![ws name.](media/w5.png)
 
 
 
