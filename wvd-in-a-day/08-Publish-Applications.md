@@ -14,7 +14,7 @@ There are two ways to publish an application:
 In the following task we will be publishing Microsoft Office excel using start menu option. Here we can select the applications to be deployed from list of applications provided.
 
 
-1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop**.
+1. Navigate to Azure portal, then search for *Windows* in search bar and select **Windows Virtual Desktop**.
 
    ![ws name.](media/y.png)
    
