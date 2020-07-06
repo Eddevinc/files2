@@ -197,7 +197,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
  
 9. Click on **Run** to execute the script. Wait for sometime for the script to execute. It will show a output saying **Script Executed successfully**.
 
-   ![ws name.](media/a84.png)
+   ![ws name.](media/w1.png)
    
 10. Navigate ro virtual machine and click on **WVD-HP01-SH-1**.
 
@@ -218,7 +218,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
  
 14. Click on **Run** to execute the script. Wait for sometime for the script to execute. It will show a output saying **Script Executed successfully**.
 
-   ![ws name.](media/a84.png)
+   ![ws name.](media/w1.png)
 
   
 15. Now search for Windows in the search bar and select **Windows Virtual Desktop** from the suggestions.
@@ -251,20 +251,20 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
    ![ws name.](media/wvd43.png)
    
-20. Double click on the **WVD-HP-01-DAG** Desktop to launch it.
+20. Click on the **WVD-HP-01-DAG** Desktop to launch it.
 
    ![ws name.](media/a75.png)
     
 21. Enter your **Credentials** to access the desktop.
 
-   ![ws name.](media/a52.png)
+   ![ws name.](media/w2.png)
     
     
 22. Now you can see the desktop saying ***Please wait for the FSLogix Apps Services***.
 
    ![ws name.](media/a77.png)
     
-    > This means that user profile is being managed by FSLogix.
+   > This means that user profile is being managed by FSLogix.
     
 ### **Task 4: Verifing the User profiles stored in File share.**
 
@@ -297,8 +297,8 @@ In this task we will be accessing the file share to verify the user profiles sto
     
 6. You will see the user folder created in the file share, click on the folder.
 
-   ![ws name.](media/.png) 
+   ![ws name.](media/w3.png) 
 
 7. Now you will be able to see the user profiles data stored in the fileshares in a ***.vhd*** format.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w4.png)
