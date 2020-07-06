@@ -19,7 +19,7 @@ There are two types of load balancing methods:
 **A**. While creating WVD-HP-01 host pool we selected load blalancing method as *Breath first*, Now we are going to log into both the the session hosts created inside the WVD-HP-01 host pool and see the user distribution.
 
 
- >**Note:** You are already logged into WVD-HP-01-DAG using WVDUser01 when you performed ***Exercise 11, Task 2, Step 20*** so all we need to do is log into WVD-HP-01-DAG using WVDUser02.
+ >**Note:** You are already logged into WVD-HP-01-DAG using WVDUser01 when you performed ***Exercise 11, Task 2, Step 20***, if that session is closed then visit `aka.ms/wvdarmweb` and click on WVD-HP-01-DAG and login with *WVDUser-01* credentials.
 
 1. In your local machine go to **Start** and search for **Remote desktop** and open the application with exact icon as shown below.
 
@@ -32,10 +32,10 @@ There are two types of load balancing methods:
 
 3. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
+   - Username: Put the username of **WVD User-02** (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**).
    - Password: **Azure1234567**
    
-   ![ws name.](media/a52.png)
+   ![ws name.](media/w6.png)
    
 
 4. Your virtual Desktop will launch. 
@@ -45,30 +45,30 @@ There are two types of load balancing methods:
 
 5. Return back to azure portal on your browser and search for host pool and click on it.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w5.png)
    
    
 6. Now click on **WVD-HP-01** hostpool to access it.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w7.png)
    
    
 7. Under Manage blade, click on **Session hosts**.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w8.png)
    
    
-8. Now as you can see both session host *WVD-HP01-SH-0* and *WVD-HP01-SH-1* have 1 Active sessions each.
+8. Now as you can see two session host have one Active sessions each.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w11.png)
    
    > This shows how users are divided into 2 different session host under *Breath first load balancing methods*.
    
-9. Click on **WVD-HP01-SH-0** and verify which user has been assigned to the particular session host and click on **Log off all active users**, then click on the **X** icon on the top right corner to return back to the session host page.
+9. Click on first session with a active session host and verify which user has been assigned to the particular session host and click on **Log off all active users**, then click on the **X** icon on the top right corner to return back to the session host page.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w12.png)
    
-10. Now click on **WVD-HP01-SH-1** and verify which user has been assigned to the particular session host and click on **Log off all active users**, then click on the **X** icon on the top right corner to return back to the session host page.
+10. Now click on second session hosts with a active session host and verify which user has been assigned to the particular session host and click on **Log off all active users**, then click on the **X** icon on the top right corner to return back to the session host page.
 
    ![ws name.](media/.png)
     
@@ -157,14 +157,14 @@ There are two types of load balancing methods:
    ![ws name.](media/.png)
    
    
-8. Now as you can any one of the session host from  *WVD-HP01-SH-0* or *WVD-HP01-SH-1* will have 2 Active sessions.
+8. Now as you can any one of the session host from  *WVD-HP01-SH-0* or *WVD-HP01-SH-1* will have 2 Active sessions, click on it.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w9.png)
    
    > This shows how both users are asigned into the same session host as *maximum limit per session was set to 5* under *Depth first load balancing method*
  that means first 5 users will be assigned to the the same session host, then the sixth user will be assigned to another session host.
  
    
-10. Now click on the session host with 2 active session and verify that both users have been assigned to the particular session host. 
+10. Verify that both users have been assigned to the particular session host. 
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w10.png)
