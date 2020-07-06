@@ -11,7 +11,7 @@ The default application group created for a new Windows Virtual Desktop host poo
 Two application group of type ‘Desktop’ was created automatically while creating the host pool WVD-HP-01 and WVD-HP-02. We will be reviewing those two application groups here.
 
 
-1. Navigate to Azure portal, then search for **Windows** in search bar and select **Windows Virtual Desktop** from the suggestions.
+1. Navigate to Azure portal, then search for *Windows* in search bar and select **Windows Virtual Desktop** from the suggestions.
 
    ![ws name.](media/y.png)
    
