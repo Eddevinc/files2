@@ -151,9 +151,9 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
     
 3. In the resource group there are two NIC cards.
 
-  ![ws name.](media/a104.png)
+   ![ws name.](media/a104.png)
 
-4. Open both the NIC cards and copy and paste their **Private IP**.
+4. Open both the NIC cards and copy their **Private IP**.
 
    ![ws name.](media/wvd24.png)
    
@@ -172,6 +172,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
    ![ws name.](media/wvd9.png)
 
 ### **Task 4: Create new AD users**
+
+In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *WVDUser-02* to access the Windows virtual desktop and *DomainJoinAdmin* to domain join session hosts.
 
 1. In your azure portal, click on the **Cloud Shell** icon.
 
