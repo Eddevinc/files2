@@ -54,7 +54,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 10. Click on **Microsoft.AAD** Resource Provider and then click on **Register**.
 
-   ![ws name.](media/a103.png)
+    ![ws name.](media/a103.png)
 
 ### **Task 2: Deploy AADDS**
 
@@ -91,11 +91,11 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    - Name: **aadds-vnet**
    - Address range: **10.0.0.0/16**
-
-> **Note:** If 
+   
 
    ![ws name.](media/h.png)
 
+   > This subnet will be used to deploy Azure Active Domain Service.
 8. Make sure the subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
 
    ![ws name.](media/i.png)
@@ -134,6 +134,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 16. Once created it will appear under **Subnets** as shown below:
 
    ![ws name.](media/m.png)
+   
+   > **sessionhosts-subnet** will be used for the purpose of deploying session hosts.
 
 ### **Task 3: Update Virtual Network DNS**
 
@@ -210,6 +212,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
    New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $password -UserPrincipalName "wvduser-02@$domain"
    ```
 
+> The above script will create three users i.e. *WVDUser-01*, *WVDUser-02* and *DomainJoinAdmin* and set their passwords to "*Azure1234567*". DomainJoinAdmin user will be used to domain join session hosts to the AADDS.
+
 7. You will get output in the similar form shown below:
 
    ![ws name.](media/wvd22.png)
@@ -234,6 +238,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 ### **Task 5: Add membership for DomainJoinAdmin User**
 
+In this task we will be adding "*DomainJoinAdmin*" to *AAD DC Administrators* group which will enable this user to domain join session hosts to the Azure Active Directory Domain Services.
+
 1. Navigate back to Azure active directory page, click on **Users** under **Manage** blade .
 
    ![ws name.](media/t.png)
@@ -242,7 +248,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/wvd34.png)
 
-3. Select **Groups** under **Manage**, then click on **+Add Membership**. 
+3. Select **Groups** under **Manage**, then click on **+ Add Membership**. 
 
    ![ws name.](media/u.png)
 
@@ -268,6 +274,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
        Update-AzADUser -UserPrincipalName $_ -Password $password
    }
    ```
+
+  > The above script will reset the passwords for WVDUser-01, WVDUser-02 and DomainJoinAdmin to Azure1234567, as user needs to reset password after registering to AADDS.
 
   ![ws name.](media/wvd23.png)
 
