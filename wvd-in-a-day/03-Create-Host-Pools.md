@@ -7,7 +7,7 @@ Host pools are a collection of one or more identical virtual machines within Win
 
 Host pools are a collection of one or more identical virtual machines within Windows Virtual Desktop environments. Each host pool can contain an app group that users can interact with as they would on a physical desktop. 
 
-1. Navigate to **Azure portal** and search for Windowsin the search bar and select **Windows Virtual Desktop** from the suggestions.
+1. Navigate to **Azure portal** and search for *Windows virtual desktop* in the search bar and select **Windows Virtual Desktop** from the suggestions.
 
    ![ws name.](media/y.png)
 
@@ -22,7 +22,7 @@ Host pools are a collection of one or more identical virtual machines within Win
       - Subscription: *Choose the default subscription*.
       - Resource Group: *Select **WVD-RG** from the drop down*.
       - Host Pool Name: **WVD-HP-01**
-      - Location: East US, *basically this should be same as the region of your resource group*.      
+      - Location: **East US**, *basically this should be same as the region of your resource group*.      
       - Validation environmet: **No**
       
    >**Note:** Validation host pools let you monitor service updates before rolling them out to your production environment.
@@ -64,13 +64,16 @@ Breadth-first* load balancing distributes new user sessions across all available
       - Subscription: *Choose the default subscription*.
       - Resource Group: *Select **WVD-RG** from the drop down*.
      -  Host Pool Name: **WVD-HP-02** 
-     -  Location: East US, *basically this should be same as the region of your resource group*.     
+     -  Location: *East US*, *basically this should be same as the region of your resource group*.     
      - Validation environmet: **No**
    
    **B.** **Host Pool Type –** Defines the type of host pool. 
 
      - Host pool type: **Personal**     
      - Assignment type: **Automatic**
+     
+     > Assignment are of two types: *Automatic* and *Direct*. In *Automatic assignment* the service will select an available host and assign it to the user. In *Direct assignment* admin selects a specific host to assign to a user.
+     
      - Then click on **Review + Create**
      
    ![ws name.](media/a3.png)
