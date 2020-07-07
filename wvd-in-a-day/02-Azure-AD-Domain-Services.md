@@ -136,10 +136,13 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
    ![ws name.](media/m.png)
    
    > **sessionhosts-subnet** will be used for the purpose of deploying session hosts.
+   
+   >**Note:** Wait for the deployment of Azure AD Domain Serive(i.e., previous task) to complete. Then only you can start Task 3. 
 
 ### **Task 3: Update Virtual Network DNS**
 
- >**Note:** Wait for the deployment of Azure AD Domain Serive(i.e., previous task) to complete. Then only you can start Task 3. 
+In this task we will be copying private IP address of the two network interface cards created while deploying AADDS and use it to configure DNS server of *aadds-vnet*.
+By default, Virtual Network uses Azure's own DNS servers to resolve the DNS queries. Since we have deployed AADDS, this queries should now be pointed to the new DNS servers, for AADDS to function properly.
 
 1. After deployment completes, go back to Azure portal, select **Resource Groups** under **Navigate**.
     
@@ -235,6 +238,8 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
     ![ws name.](media/wvd13.png)
 
 11. Copy and Paste the usernames for all three users in notepad.
+
+    [ws name.](media/w13.png)
 
   >**Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
 
