@@ -45,7 +45,7 @@ In this task we will be accesing the remote application i.e. microsoft office wo
    
    - Password: **Azure1234567**
 
-   ![ws name.](media/a47.png
+   ![ws name.](media/a47.png)
    
    
 7. Your application will launch.
