@@ -72,19 +72,19 @@ There are two types of load balancing methods:
 
    ![ws name.](media/.png)
     
-    > we need to log off users from session hosts so  that when the users login back to the session host, they are divided based on the depth first load balancing method as shown in sub task *B*.
+   > we need to log off users from session hosts so that when the users login back to the session host, they are divided based on the depth first load balancing method as shown in sub task *B*.
    
 **B.** Now we will change the load balanching method of WVD-HP-01 host pool to *Depth first* and see how users are divided between session hosts.
 
 
 1. In WVD-HP-01 page under Settings blade click on **Properties**.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w14.png)
    
    
 2. Change the load balancing algorithm to **Depth-first** then click on **Save icon**.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w15.png)
    
 3. Now paste this link ```aka.ms/wvdarmweb``` in your browser and enter your **credentials** to login. 
 
@@ -125,11 +125,11 @@ There are two types of load balancing methods:
    ![ws name.](media/137.png)
    
 
-2. Now in the WVD client double click on the **WVD-HP-01-DAG** Desktop to access it. 
+9. Now in the WVD client double click on the **WVD-HP-01-DAG** Desktop to access it. 
 
-   ![ws name.](media/a53.png)
+   ![ws name.](media/w6.png)
 
-3. Enter your **credentials** to access the desktop and click on **Submit**.
+10. Enter your **credentials** to access the desktop and click on **Submit**.
 
    - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**)
    - Password: **Azure1234567**
@@ -137,27 +137,27 @@ There are two types of load balancing methods:
    ![ws name.](media/a52.png)
    
 
-4. Your virtual desktop will launch. 
+11. Your virtual desktop will launch. 
 
    ![ws name.](media/a54.png) 
 
 
-5. Return back to azure portal on your browser and search for host pool and click on it.
+12. Return back to azure portal on your browser and search for host pool and click on it.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w5.png)
    
    
-6. Now click on **WVD-HP-01** hostpool to access it.
+13. Now click on **WVD-HP-01** hostpool to access it.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w7.png)
    
    
-7. Under Manage blade, click on **Session hosts**.
+14. Under Manage blade, click on **Session hosts**.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w8.png)
    
    
-8. Now as you can any one of the session host from  *WVD-HP01-SH-0* or *WVD-HP01-SH-1* will have 2 Active sessions, click on it.
+15. Now as you can any one of the session host from  *WVD-HP01-SH-0* or *WVD-HP01-SH-1* will have 2 Active sessions, click on it.
 
    ![ws name.](media/w9.png)
    
@@ -165,6 +165,6 @@ There are two types of load balancing methods:
  that means first 5 users will be assigned to the the same session host, then the sixth user will be assigned to another session host.
  
    
-10. Verify that both users have been assigned to the particular session host. 
+16. Verify that both users have been assigned to the particular session host. 
 
    ![ws name.](media/w10.png)
