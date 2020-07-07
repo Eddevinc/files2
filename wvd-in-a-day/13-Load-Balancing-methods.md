@@ -70,7 +70,7 @@ There are two types of load balancing methods:
    
 10. Now click on second session hosts with a active session host and verify which user has been assigned to the particular session host and click on **Log off all active users**, then click on the **X** icon on the top right corner to return back to the session host page.
 
-   ![ws name.](media/.png)
+   ![ws name.](media/w16.png)
     
    > we need to log off users from session hosts so that when the users login back to the session host, they are divided based on the depth first load balancing method as shown in sub task *B*.
    
