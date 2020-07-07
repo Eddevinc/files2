@@ -97,7 +97,7 @@ In this task we will be creating a Azure Active Directory Domain Services.
 
    ![ws name.](media/h.png)
 
-   > This subnet will be used to deploy Azure Active Domain Service.
+   > This subnet will be used to deploy Azure Active Directory Domain Service.
 8. Make sure the subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
 
    ![ws name.](media/i.png)
