@@ -241,7 +241,7 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
 
 11. Copy and Paste the usernames for all three users in notepad.
 
-    [ws name.](media/w13.png)
+    ![ws name.](media/w13.png)
 
   >**Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
 
