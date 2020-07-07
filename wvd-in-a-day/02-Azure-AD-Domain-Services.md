@@ -203,7 +203,7 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
 
    ![ws name.](media/40.png)
 
-6. Now copy and paste the following script in the console and hit enter to run it:
+6. Now copy and paste the following script in the console and hit **Enter** to run it completely:
 
    ```
    $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
