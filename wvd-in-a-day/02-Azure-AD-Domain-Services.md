@@ -58,7 +58,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 ### **Task 2: Deploy AADDS**
 
-In this task we will we creating a Azure Active Directory Domain Services.
+In this task we will be creating a Azure Active Directory Domain Services.
 
 1. Select **Create a resource** from the Azure portal homepage.
 
@@ -137,7 +137,7 @@ In this task we will we creating a Azure Active Directory Domain Services.
 
    ![ws name.](media/m.png)
    
-   > **sessionhosts-subnet** will be used for the purpose of deploying session hosts.
+   > **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
    
    >**Note:** Wait for the deployment of Azure AD Domain Serive(i.e., previous task) to complete. Then only you can start Task 3. 
 
