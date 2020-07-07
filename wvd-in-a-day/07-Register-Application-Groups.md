@@ -20,28 +20,30 @@ In this task we will be registering Application groups to workspaces in followin
 
    ![ws name.](media/a27.png)
 
-4. Click on **Select**.
+4. Click on **+** icon next to **WVD-AG-01** and **WVD-HP-01-DAG**.
+
+5. Click on **Select**.
 
    ![ws name.](media/a28.png)
 
-5. Click on the **X** icon to go back to workspaces.
+6. Click on the **X** icon to go back to workspaces.
 
    ![ws name.](media/a106.png)   
    
-6. Now click on **WVD-WS-02** workspace.
+7. Now click on **WVD-WS-02** workspace.
 
    ![ws name.](media/a29.png)
     
-11. Then click on **Application groups** present under **Manage** blade and click on **+ Add**.
+8. Then click on **Application groups** present under **Manage** blade and click on **+ Add**.
 
    ![ws name.](media/a30.png)
          
-12. Click on **+** sign to add **WVD-HP-02-DAG** to the **WVD-WS-02** workspace.
+9. Click on **+** sign to add **WVD-HP-02-DAG** to the **WVD-WS-02** workspace.
 
    ![ws name.](media/wvd17.png)
  
-14. Then click on **Select**.
+10. Then click on **Select**.
 
    ![ws name.](media/a31.png)
   
-15. Click on **Next** button.
+11. Click on **Next** button.
