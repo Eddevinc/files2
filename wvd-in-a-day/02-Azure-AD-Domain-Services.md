@@ -58,6 +58,8 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
 ### **Task 2: Deploy AADDS**
 
+In this task we will we creating a Azure Active Directory Domain Services.
+
 1. Select **Create a resource** from the Azure portal homepage.
 
    ![](media/wvd6.png)
@@ -176,7 +178,7 @@ By default, Virtual Network uses Azure's own DNS servers to resolve the DNS quer
 
 ### **Task 4: Create new AD users**
 
-In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *WVDUser-02* to access the Windows virtual desktop and *DomainJoinAdmin* to domain join session hosts.
+In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *WVDUser-02* to access the windows virtual desktop and *DomainJoinAdmin* to domain join session hosts.
 
 1. In your azure portal, click on the **Cloud Shell** icon.
 
