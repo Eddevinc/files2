@@ -28,14 +28,14 @@ There are two types of load balancing methods:
 
 2. Now in the WVD client double click on the **WVD-HP-01-DAG** Desktop to access it. 
 
-   ![ws name.](media/a53.png)
+   ![ws name.](media/w6.png)
 
 3. Enter your **credentials** to access the application and click on **Submit**.
 
    - Username: Put the username of **WVD User-02** (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**).
    - Password: **Azure1234567**
    
-   ![ws name.](media/w6.png)
+   ![ws name.](media/a52.png)
    
 
 4. Your virtual Desktop will launch. 
