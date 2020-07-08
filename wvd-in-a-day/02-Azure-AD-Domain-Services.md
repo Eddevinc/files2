@@ -39,7 +39,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/a.png)
    
-7. Open your =subscription by clicking on it.
+7. Open your **Subscription** by clicking on it.
 
    ![ws name.](media/b.png)
    
@@ -51,7 +51,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/d.png)
    
-> In case the **Microsoft.AAD** is not registred then follow **step 10**.
+>**Note:** In case the **Microsoft.AAD** is not registred then follow **step 10**.
 
 10. Click on **Microsoft.AAD** Resource Provider and then click on **Register**.
 
@@ -79,7 +79,7 @@ In this task we will be creating a Azure Active Directory Domain Services.
    - Resource Group: *Select **WVD-RG** from the drop down*.
    - DNS domain name: *Default value*
    - Region: **East US**, *this should be same as the region of your resource group*.
-   - SKU**: **Standard**
+   - SKU: **Standard**
    - Forest type: **User**
 
    ![ws name.](media/g.png)
@@ -93,11 +93,12 @@ In this task we will be creating a Azure Active Directory Domain Services.
 7. Configure your new virtual network with following settings and then click **Ok**.
 
    - Name: **aadds-vnet**
-   - Address range: *By default the address range will be **10.0.0.0/24**,so make it -* **10.0.0.0/16**
+   - Address range: *By default the address range will be **10.0.0.0/24**, so make it -* **10.0.0.0/16**
    
    Under **Subents**, add the following:
    - Subnet name: **aadds-subnet**
    - Address range: **10.0.0.0/24**
+
 >**Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
 
    ![ws name.](media/h.png)
@@ -134,6 +135,7 @@ In this task we will be creating a Azure Active Directory Domain Services.
 
     - Name: **sessionhosts-subnet**
     - Address Range: **10.0.1.0/24**
+
 >**Note:** **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
     
    ![ws name.](media/l.png)
