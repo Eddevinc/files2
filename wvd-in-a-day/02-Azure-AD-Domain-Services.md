@@ -220,7 +220,7 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
    New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $password -UserPrincipalName "wvduser-02@$domain"
    ```
 
-> The above script will create three users i.e. *WVDUser-01*, *WVDUser-02* and *DomainJoinAdmin* and set their passwords to "*Azure1234567*". DomainJoinAdmin user will be used to domain join session hosts to the AADDS.
+ >**Note:** The above script will create three users i.e. *WVDUser-01*, *WVDUser-02* and *DomainJoinAdmin* and set their passwords to "*Azure1234567*". DomainJoinAdmin user will be used to domain join session hosts to the AADDS.
 
 7. You will get output in the similar form shown below:
 
