@@ -44,25 +44,18 @@ In this task we will be creating two session hosts i.e. WVD-HP01-SH-0 and WVD-HP
    
    ![ws name.](media/a8.png)
      
-   
-   **B**. Network and Security
-   
-     - Subnet: *Choose **sessionhosts-subnet (10.0.1.0/24)** from the dropdown*.  
-     
-     - Leave all other values on default.
- 
-   **C**. Domain and Administrator account 
- 
-     - Specify Domain or Unit: **No**
-     
-     - AD domain join UPN: *Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.*
-     
-     - Password: **Azure1234567**
-     
-     - Confirm Password: **Azure1234567** 
-     
-     - Click on **Review + create**
+  **B**. Network and Security 
+   - Subnet: *Choose **sessionhosts-subnet (10.0.1.0/24)** from the dropdown*.     
+   - Leave all other values on default.
+    
+  **C**. Domain and Administrator account 
 
+   - Specify Domain or Unit: **No** 
+   - AD domain join UPN: *Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.*
+   - Password: **Azure1234567**
+   - Confirm Password: **Azure1234567**   
+   - Click on **Review + create**
+ 
    ![ws name.](media/a9.png)   
    
 6. Click on **Create**.
