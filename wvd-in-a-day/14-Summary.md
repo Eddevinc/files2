@@ -28,7 +28,7 @@
 - Configuring load balancing methods i.e. *Breath first* and *Depth first* in your host pool to obtain required efficiency in your WVD environment.
 
 
-## **Why Windows virtual Desktop?**
+## **Why Windows Virtual Desktop?**
 
 Gartner expects that by 2023, 30% of all the on-premises VDI users will access a workspace in the cloud using DaaS!
 
