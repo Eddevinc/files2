@@ -11,9 +11,9 @@ The default application group created for a new Windows Virtual Desktop host poo
 Two application group of type ‘Desktop’ was created automatically while creating the host pool WVD-HP-01 and WVD-HP-02. We will be reviewing those two application groups here.
 
 
-1. Navigate to Azure portal, then search for *Windows* in search bar and select **Windows Virtual Desktop** from the suggestions.
+1. Navigate to Azure portal, then search for *Windows virtual* in search bar and select **Windows Virtual Desktop** from the suggestions.
 
-   ![ws name.](media/y.png)
+   ![ws name.](media/a109.png)
    
 2. Click on **Application Groups** and review that application group named **WVD-HP-01-DAG** and **WVD-HP-02-DAG** are already present here.
 
@@ -36,7 +36,7 @@ In this task we will be creating a Remote app type application groups to deploy 
       - Location: **East US**, *this should be same as the region of your resource group*.
       - Application Group Type: **RemoteApp** 
       
- >**Note:** Application groups are of two types **Remote app** and **Desktop application**.
+>**Note:** Application groups are of two types **Remote app** and **Desktop application**.
 
    - Application Group Name: **WVD-AG-01**
 
