@@ -144,7 +144,7 @@ In this task we will be creating a Azure Active Directory Domain Services.
 
 ### **Task 3: Update Virtual Network DNS**
 
-In this task we will be copying private IP address of the two network interface cards created while deploying AADDS and use it to configure DNS server of *aadds-vnet*.
+In this task we will be using private IP address of the two network interface cards created while deploying AADDS and use it to configure DNS server of *aadds-vnet*.
 By default, Virtual Network uses Azure's own DNS servers to resolve the DNS queries. Since we have deployed AADDS, this queries should now be pointed to the new DNS servers, for AADDS to function properly.
 
 1. After deployment completes, go back to Azure portal, select **Resource Groups** under **Navigate**.
