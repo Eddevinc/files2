@@ -304,7 +304,6 @@ In this task we will be accessing the file share to verify the user profiles sto
 
    ![ws name.](media/a65.png)
 
-6. Click on the **Next** button.
 6. You will see the user folder created in the file share, click on the folder.
 
    ![ws name.](media/w3.png) 
@@ -312,3 +311,5 @@ In this task we will be accessing the file share to verify the user profiles sto
 7. Now you will be able to see the user profiles data stored in the fileshares in a ***.vhd*** format.
 
    ![ws name.](media/w4.png)
+
+8. Click on the **Next** button.
