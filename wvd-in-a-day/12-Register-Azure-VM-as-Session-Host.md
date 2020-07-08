@@ -1,6 +1,6 @@
 # Exercise 12: Register Azure VM as Session Host
 
-In the following exercise, we will be creating a virtual machine which will automatically domain join by running a script in cloud shell.
+In the following exercise, we will be creating a virtual machine which will automatically domain join by running a script in Cloud shell.
 After Deployment of virtual machine we will establish a RDP connection to the virtual machine and register the virtual machine as a session host under *WVD-HP-01* hostpool.
 
 
@@ -20,7 +20,7 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
     -existingVNETName "aadds-vnet" -existingSubnetName "sessionhosts-subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
 
        
- >**Note:** The above script will be used to create a virtual machine.
+>**Note:** The above script will be used to create a virtual machine.
 
 
 2. In Azure portal click on the **Cloud Shell button** on top and wait for the cloud shell to connect.
@@ -32,13 +32,13 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 
    ![ws name.](media/wvd54.png)
    
- >**Note:** Wait for sometime for the script to execute.
+>**Note:** Wait for sometime for the script to execute.
    
 4. After the execution completes the output will look as following.
 
    ![ws name.](media/wvd55.png)
 
- >**Note:** Wait for few more minutes for the deployment of virtual machine to complete.
+>**Note:** Wait for few more minutes for the deployment of virtual machine to complete.
 
 
 ### **Task 2: Install Agents on VM and Register**
@@ -63,7 +63,7 @@ These two agents will be used to register this virtual machine a part of session
 
    ![ws name.](media/a82.png)
    
- >**Note:** A file named **WVD-VM-01.rdp** will download.
+>**Note:** A file named **WVD-VM-01.rdp** will download.
   
 4. Click on the downloaded file to open.
 
@@ -98,7 +98,7 @@ These two agents will be used to register this virtual machine a part of session
  
    ![ws name.](media/202.png)
     
- >**Note:** RDP Connection with your VM will be established.
+>**Note:** RDP Connection with your VM will be established.
     
     
 10. In the Virtual Machine window click on **Accept**.
@@ -118,7 +118,7 @@ These two agents will be used to register this virtual machine a part of session
    
 13. There will be a popup in the bottom of the browser asking to - **Run**, **Save** or **Cancel** the downloaded setup. Therefore choose **Run**.
  
-   ![ws name.](media/206.png)
+   ![ws name.](media/a114.png)
 
 14. Click on **Next** when the installer opens. 
 
@@ -143,7 +143,7 @@ These two agents will be used to register this virtual machine a part of session
 
    ![ws name.](media/a95.png)
     
- >**Note:** This unique registration key will be enable the Virtual Machine to become session host under this particular WVD-HP-01 hostpool.
+>**Note:** This unique registration key will be enable the Virtual Machine to become session host under this particular WVD-HP-01 hostpool.
     
 20. Go back to the VM RDP window, and click inside the box opened in the installer.
 
@@ -170,7 +170,7 @@ These two agents will be used to register this virtual machine a part of session
     
 25. Open your browser and **paste** the following URL in your browser and hit **enter** to download the  **Windows Virtual Desktop Agent Bootloader**.
 
-```https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH ```      
+    ```https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH ```      
 
    ![ws name.](media/217.png)
  
@@ -220,3 +220,5 @@ These two agents will be used to register this virtual machine a part of session
 4. Verify that **WVD-VM-01** is added to the **WVD-HP-01 hostpool**.
 
    ![ws name.](media/226.png) 
+
+5. Click on the **Next** button.
