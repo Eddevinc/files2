@@ -168,3 +168,5 @@ There are two types of load balancing methods:
 16. Verify that both users have been assigned to the particular session host. 
 
    ![ws name.](media/w10.png)
+
+17. Click on the **Next**button.
