@@ -28,6 +28,14 @@
 - Configuring load balancing methods i.e. *Breath first* and *Depth first* in your host pool to obtain required efficiency in your WVD environment.
 
 
+## **Why Windows virtual Desktop?**
+
+Gartner expects that by 2023, 30% of all the on-premises VDI users will access a workspace in the cloud using DaaS!
+
+The yearly VDI Like A Pro survey lists Windows Virtual Desktop as number one as a response to the question below. With remote working more popular than ever due to the current circumstances this is still unexpected. This yearly research is a global initiative for and by the entire EUC community and answers independently how the market looks like.
+
+![ws name.](media/w18.png)
+
 ## **Windows Virtual Desktop on Azure**
 
 For those who are looking to lift and shift their on-premises desktops, servers, and applications to the Cloud, Apps4Rent offers simple pricing for fully-managed Cloud desktops based on Azure Windows Virtual Desktop (WVD) technology. Take advantage of Windows 10 multi-session capabilities; improve performance of Office 365 applications; and have the immense scale of Azure resources at your command. 
