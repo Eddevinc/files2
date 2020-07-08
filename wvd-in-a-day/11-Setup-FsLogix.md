@@ -17,27 +17,39 @@ In the following task we will be creating a storage account with a file share wh
 3. Use the following configuration for the storage account.
    
    - Subscription: *Select the default subscription*.
-   - Resource Group: *Select **WVD-RG** from the drop down*.   
-   - Storage account name: **storageaccount{unique-id}**, for example: storageaacount204756 (*copy your unique id from environment details tab*)   
-   - Location: **East US**, *this should be same as the location of your resource group*.   
+   
+   - Resource Group: *Select **WVD-RG** from the drop down*. 
+   
+   - Storage account name: **storageaccount{unique-id}**, for example: storageaacount204756 (*copy your unique id from environment details tab*)
+   
+   - Location: **East US**, *this should be same as the location of your resource group*.  
+   
    - Performance: **Standard**   
-   - Account kind: **StorageV2(general purpose v2)**   
-   - Replication: **Read-access-geo-redundant storage (RA-GRS)**  
+   
+   - Account kind: **StorageV2(general purpose v2)**
+   
+   - Replication: **Read-access-geo-redundant storage (RA-GRS)**
+   
    - Access tier(default): **Hot**
+   
    - Then click on **Next: Networking**
    
    ![ws name.](media/a56.png)
    
 4. Under networking tab use following configuration.
     
-     - Connectivity method: **Public endpoint(selected networks)**
+  - Connectivity method: **Public endpoint(selected networks)**
      
 >**Note:** This will make sure that your storage account is not accesable from public network making it more secure.
     
   - Virtual network subscription: *Select the default subscription*.
+  
   - Virtual Network: **aadds-vnet**
+  
   - Subnets: **SessionHost(10.0.2.0/24)**
+  
   - Leave the rest to default settings.
+  
   - Click on **Review + Create**.
      
    ![ws name.](media/a57.png)
