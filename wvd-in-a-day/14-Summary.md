@@ -1,55 +1,53 @@
 # **Summary**
 
 
-## **What is Windows Virtual Desktop?**
+## **We covered certain aspects through this 'WVD Professional' lab guide:**
 
-Windows Virtual Desktop is a desktop and app virtualization service that runs on the cloud.
+- Deploying *Azure Active Directory Domain Services* (AADDS) and configuring it to be used with windows virtual desktop.
 
-### Here's what you can do when you run Windows Virtual Desktop on Azure:
+- Creating hostpool of *Pooled and Personal* type and utilising it as per the needs of the user/ organisation environment.
 
-- Set up a multi-session Windows 10 deployment that delivers a full Windows 10 with scalability.
+- Deploying *session hosts* i.e. vitual machines and using them to deploy applications and windows desktop environment.
 
-- Virtualize Microsoft 365 Apps for enterprise and optimize it to run in multi-user virtual scenarios.
+- Creating application group of type *Remote app* and *using default desktop application group*.
 
-- Provide Windows 7 virtual desktops with free Extended Security Updates.
+- Creating *workspaces* to have a isolated/ differentiated environment for the user while using windows virtual desktop. 
 
-- Bring your existing Remote Desktop Services (RDS) and Windows Server desktops and apps to any computer.
+- *Regiistering application groups to the workspace* for assigning/ replacing the applications used by the user in one go.
 
-- Virtualize both desktops and apps.
+- Publishing applications using *start menu* and *file path* in the remote app type application groups.
 
-- Manage Windows 10, Windows Server, and Windows 7 desktops and apps with a unified management experience.
+- Assigning users to the application groups to allow/ restrict users fom using certain applications.
 
+- Accessing windows virtual desktop and published applications through browser and wvd-client application.
 
-## **Key capabilities**
+- Setting up *FSLogix* and how FSLogix profile containers are used with Azure Files function in Windows Virtual Desktop.
 
-### With Windows Virtual Desktop, you can set up a scalable and flexible environment:
+- Registering a virtual machine as a session host under specific host pool to be used in a windows virtual desktop environment.
 
-- Create a full desktop virtualization environment in your Azure subscription without having to run any additional gateway servers.
-
-- Publish as many host pools as you need to accommodate your diverse workloads.
-
-- Bring your own image for production workloads or test from the Azure Gallery.
-
-- Reduce costs with pooled, multi-session resources. With the new Windows 10 Enterprise multi-session capability exclusive to Windows Virtual Desktop and Remote Desktop Session Host (RDSH) role on Windows Server, you can greatly reduce the number of virtual machines and operating system (OS) overhead while still providing the same resources to your users.
-
-- Provide individual ownership through personal (persistent) desktops.
+- Configuring load balancing methods i.e. *Breath first* and *Depth first* in your host pool to obtain required efficiency in your WVD environment.
 
 
-### You can deploy and manage virtual desktops:
+## **Windows Virtual Desktop on Azure**
 
-- Use the Windows Virtual Desktop PowerShell and REST interfaces to configure the host pools, create app groups, assign users, and publish resources.
-
-- Publish full desktop or individual remote apps from a single host pool, create individual app groups for different sets of users, or even assign users to multiple app groups to reduce the number of images.
-
-- As you manage your environment, use built-in delegated access to assign roles and collect diagnostics to understand various configuration or user errors.
-
-- Use the new Diagnostics service to troubleshoot errors.
-
-- Only manage the image and virtual machines, not the infrastructure. You don't need to personally manage the Remote Desktop roles like you do with Remote Desktop Services, just the virtual machines in your Azure subscription.
+For those who are looking to lift and shift their on-premises desktops, servers, and applications to the Cloud, Apps4Rent offers simple pricing for fully-managed Cloud desktops based on Azure Windows Virtual Desktop (WVD) technology. Take advantage of Windows 10 multi-session capabilities; improve performance of Office 365 applications; and have the immense scale of Azure resources at your command. 
 
 
-### You can also assign and connect users to your virtual desktops:
+## **Benifits**
 
-- Once assigned, users can launch any Windows Virtual Desktop client to connect users to their published Windows desktops and applications. Connect from any device through either a native application on your device or the Windows Virtual Desktop HTML5 web client.
+### *Simple and easy to manage*
 
-- Securely establish users through reverse connections to the service, so you never have to leave any inbound ports open.
+All the applications & operating systems layers are deeply tied together. The way users work in a Windows Virtual Desktop feels natural as the user experience is consistent throughout with the same look-and-feel of a physical desktop.
+
+### *Multi-session Windows 10 virtual desktop experience*
+
+Get anywhere anytime access from any device. Get the only multi-session Windows 10 desktop environment in Azure. Configure the limits to the number of users available per session as per the user/ organisation needs.
+
+### *Office 365 Applications*
+
+With multi-session virtual desktop options, you can use Office 365 applications. Users get the most productive virtualized environment with Windows Virtual Desktop.
+
+
+### *Most compliance certifications*
+
+Due to Microsoft's strict policies for user data protection, it invests heavily in cyber security. Azure has most compliance certifications than any other cloud service. Hence, security is guaranteed by Microsoft.
