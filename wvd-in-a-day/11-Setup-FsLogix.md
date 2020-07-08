@@ -292,7 +292,7 @@ In this task we will be accessing the file share to verify the user profiles sto
 
    ![ws name.](media/a88.png)
     
-   > This will enable access of your storage account on public network so that you can see the user profiles stored in the fileshare.
+>**Note:** This will enable access of your storage account on public network so that you can see the user profiles stored in the fileshare.
     
     
 4. Now click on **Overview** and open **Fileshare**.
@@ -303,7 +303,8 @@ In this task we will be accessing the file share to verify the user profiles sto
 5. Click on the **userprofile** fileshare.
 
    ![ws name.](media/a65.png)
-    
+
+6. Click on the **Next** button.
 6. You will see the user folder created in the file share, click on the folder.
 
    ![ws name.](media/w3.png) 
