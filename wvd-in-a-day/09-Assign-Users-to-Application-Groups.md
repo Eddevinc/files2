@@ -36,7 +36,7 @@ In the following task we will be assigning users to specific application groups 
 
    ![ws name.](media/a38.png)
 
- >**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-AG-01 application group.
+>**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-AG-01 application group.
 
 **B.** Assigning users to WVD-HP-01-DAG application group.
 
@@ -57,7 +57,7 @@ In the following task we will be assigning users to specific application groups 
    ![ws name.](media/a38.png)
    
    
- >**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-HP-01-DAG application group.
+>**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-HP-01-DAG application group.
 
 **C.** Assigning users to WVD-HP-02-DAG application group.
 
@@ -78,6 +78,6 @@ In the following task we will be assigning users to specific application groups 
 
    ![ws name.](media/a44.png)
    
- >**Note:** This will allow WVDUser-02 access to WVD-HP-02-DAG application group.   
+>**Note:** This will allow WVDUser-02 access to WVD-HP-02-DAG application group.   
 
 6. Click on the **Next** button.
