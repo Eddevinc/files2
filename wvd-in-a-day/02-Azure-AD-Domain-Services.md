@@ -287,7 +287,7 @@ In this task we will be adding "*DomainJoinAdmin*" to *AAD DC Administrators* gr
    }
    ```
 
-  > The above script will reset the passwords for WVDUser-01, WVDUser-02 and DomainJoinAdmin to Azure1234567, as user needs to reset password after registering to AADDS.
+>**Note:** The above script will reset the passwords for WVDUser-01, WVDUser-02 and DomainJoinAdmin to Azure1234567, as user needs to reset password after registering to AADDS.
 
   ![ws name.](media/wvd23.png)
 
