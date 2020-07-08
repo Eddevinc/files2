@@ -169,4 +169,4 @@ There are two types of load balancing methods:
 
    ![ws name.](media/w10.png)
 
-17. Click on the **Next**button.
+17. Click on the **Next** button.
