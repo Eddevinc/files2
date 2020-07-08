@@ -117,9 +117,9 @@ In this task we will be accesing the remote application i.e. microsoft office wo
    
    ![ws name.](media/wvd44.png)
  
-8. Make sure to **uncheck** Allow my organization to manage my device and then click on **Yes**.
+8. Make sure to **uncheck** Allow my organization to manage my device and then click on **No, sign in to this app only**.
 
-   ![ws name.](media/a50.png)
+   ![ws name.](media/w17.png)
     
     
 9. Now click on **Done** for **You're all set**.
