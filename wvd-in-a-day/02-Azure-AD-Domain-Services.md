@@ -92,13 +92,16 @@ In this task we will be creating a Azure Active Directory Domain Services.
 7. Configure your new virtual network with following settings and then click **Ok**.
 
    - Name: **aadds-vnet**
-   - Address range: **10.0.0.0/16**
+   - Address range: *By default the address range will be **10.0.0.0/24**,so make it -* **10.0.0.0/16**
    
+   Under **Subents**, add the following:
+   - Subnet name: **aadds-subnet**
+   - Address range: **10.0.0.0/24**
+ >**Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
 
    ![ws name.](media/h.png)
 
-   > This subnet will be used to deploy Azure Active Directory Domain Service.
-8. Make sure the subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected by default.
+8. Make sure the subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected against **Subnet**.
 
    ![ws name.](media/i.png)
 
@@ -130,16 +133,14 @@ In this task we will be creating a Azure Active Directory Domain Services.
 
     - Name: **sessionhosts-subnet**
     - Address Range: **10.0.1.0/24**
-
+ >**Note:** **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
     ![ws name.](media/l.png)
 
 16. Once created it will appear under **Subnets** as shown below:
 
    ![ws name.](media/m.png)
-   
-   > **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
-   
-   >**Note:** Wait for the deployment of Azure AD Domain Serive(i.e., previous task) to complete. Then only you can start Task 3. 
+  
+ >**Note:** Wait for the deployment of Azure Active Directory Domain Serive to complete. Then only you can start Task 3. 
 
 ### **Task 3: Update Virtual Network DNS**
 
