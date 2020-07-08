@@ -54,6 +54,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/13-Load-Balancing-methods.md",
         "Order": 13
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Eddevinc/files2/master/wvd-in-a-day/14-Summary.md",
+        "Order": 14
       }
     ]
   }
