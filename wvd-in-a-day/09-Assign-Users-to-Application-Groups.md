@@ -16,9 +16,9 @@ In the following task we will be assigning users to specific application groups 
 **A.** Assigning users to WVD-AG-01 application group.
 
 
-1. Navigate to Azure portal, then search for *Windows* in search bar and select **Windows Virtual Desktop**.
+1. Navigate to Azure portal, then search for *Windows virtual* in search bar and select **Windows Virtual Desktop**.
 
-   ![ws name.](media/y.png)
+   ![ws name.](media/a109.png)
    
 2. Now click on **Application groups** and then click on the **WVD-AG-01** application group.
 
