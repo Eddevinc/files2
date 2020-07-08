@@ -19,7 +19,7 @@ There are two types of load balancing methods:
 **A**. While creating WVD-HP-01 host pool we selected load blalancing method as *Breath first*, Now we are going to log into both the the session hosts created inside the WVD-HP-01 host pool and see the user distribution.
 
 
- >**Note:** You are already logged into WVD-HP-01-DAG using WVDUser01 when you performed ***Exercise 11, Task 2, Step 20***, if that session is closed then visit `aka.ms/wvdarmweb` and click on WVD-HP-01-DAG and login with *WVDUser-01* credentials.
+>**Note:** You are already logged into WVD-HP-01-DAG using WVDUser01 when you performed ***Exercise 11, Task 2, Step 20***, if that session is closed then visit `aka.ms/wvdarmweb` and click on WVD-HP-01-DAG and login with *WVDUser-01* credentials.
 
 1. In your local machine go to **Start** and search for **Remote desktop** and open the application with exact icon as shown below.
 
@@ -62,9 +62,9 @@ There are two types of load balancing methods:
 
    ![ws name.](media/w11.png)
    
-   > This shows how users are divided into 2 different session host under *Breath first load balancing methods*.
+>**Note:** This shows how users are divided into 2 different session host under *Breath first load balancing methods*.
    
-9. Click on first session with a active session host and verify which user has been assigned to the particular session host and click on **Log off all active users**, then click on the **X** icon on the top right corner to return back to the session host page.
+9. Click on first session with one active session host and verify which user has been assigned to the particular session host and click on **Log off all active users**, then click on the **X** icon on the top right corner to return back to the session host page.
 
    ![ws name.](media/w12.png)
    
@@ -72,7 +72,7 @@ There are two types of load balancing methods:
 
    ![ws name.](media/w16.png)
     
-   > we need to log off users from session hosts so that when the users login back to the session host, they are divided based on the depth first load balancing method as shown in sub task *B*.
+>**Note:** Wneed to log off users from session hosts so that when the users login back to the session host, they are divided based on the depth first load balancing method as shown in sub task *B*.
    
 **B.** Now we will change the load balanching method of WVD-HP-01 host pool to *Depth first* and see how users are divided between session hosts.
 
@@ -161,7 +161,7 @@ There are two types of load balancing methods:
 
    ![ws name.](media/w9.png)
    
-   > This shows how both users are asigned into the same session host as *maximum limit per session was set to 5* under *Depth first load balancing method*
+>**Note:** This shows how both users are asigned into the same session host as *maximum limit per session was set to 5* under *Depth first load balancing method*
  that means first 5 users will be assigned to the the same session host, then the sixth user will be assigned to another session host.
  
    
