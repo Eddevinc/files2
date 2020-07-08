@@ -7,9 +7,9 @@ Session hosts are virtual machines created under host pools in which users can s
 
 In this task we will be creating two session hosts i.e. WVD-HP01-SH-0 and WVD-HP01-SH-1 under WVD-HP-01 host pool which is of pooled type.
 
-1. Navigate to Azure portal, then search for *Windows* in search bar and select **Windows Virtual Desktop** from the suggestions.
+1. Navigate to Azure portal, then search for *Windows virtual* in search bar and select **Windows Virtual Desktop** from the suggestions.
 
-   ![ws name.](media/y.png)
+   ![ws name.](media/a109.png)
      
 2. Click on **Host pools** and select **WVD-HP-01** to open it.
 
@@ -38,24 +38,24 @@ In this task we will be creating two session hosts i.e. WVD-HP01-SH-0 and WVD-HP
      - Number of VMs: **2**   
      - Name prefix: **WVD-HP01-SH** 
      - Image type: **Gallery**
-     - Image: **Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus**(choose from dropdown) 
+     - Image: **Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus** *(choose from dropdown)* 
      - OS disk type: **Standard SSD**
      - Use managed disks: **Yes**
    
    ![ws name.](media/a8.png)
      
    
-  **B**. Network and Security 
-   - Subnet: *Choose **sessionhosts-subnet (10.0.1.0/24)** from the dropdown*.     
-   - Leave all other values on default.
+   **B**. Network and Security 
+     - Subnet: *Choose **sessionhosts-subnet (10.0.1.0/24)** from the dropdown*.     
+     - Leave all other values on default.
  
- **C**. Domain and Administrator account 
+   **C**. Domain and Administrator account 
  
-   - Specify Domain or Unit: **No**
-   - AD domain join UPN: *Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.*
-   - Password: **Azure1234567**
-   - Confirm Password: **Azure1234567**  
-   - Click on **Review + create**
+     - Specify Domain or Unit: **No**
+     - AD domain join UPN: *Paste username of **DomainJoinAdminUser**,for example: DomainJoinAdminUser@azurehol1055.onmicrosoft.com.*
+     - Password: **Azure1234567**
+     - Confirm Password: **Azure1234567**  
+     - Click on **Review + create**
 
    ![ws name.](media/a9.png)   
    
@@ -122,4 +122,4 @@ In this task we will be deploying a session host i.e. WVD-HP02-0 under WVD-HP-02
 
    ![ws name.](media/a16.png)
 
-9. Click on the **Next** button.
+9. Once the deployment of session host succeeds, click on the **Next** button.
