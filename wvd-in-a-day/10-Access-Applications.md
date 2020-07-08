@@ -111,7 +111,7 @@ In this task we will be accesing the remote application i.e. microsoft office wo
 
    - Username: Put the username of **WVD User-02** which you copied in previous task (for example: **WVDUser-02@azurehol1055.onmicrosoft.com**), then click on **Next**
    
-    ![ws name.](media/wvd40.png)
+   ![ws name.](media/wvd40.png)
 
    - Password: **Azure1234567** and click on **Sign in**.
    
