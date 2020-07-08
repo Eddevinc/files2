@@ -5,7 +5,7 @@
 
 - Deploying *Azure Active Directory Domain Services* (AADDS) and configuring it to be used with windows virtual desktop.
 
-- Creating hostpool of *Pooled and Personal* type and utilising it as per the needs of the user/ organisation environment.
+- Creating host pools of *Pooled and Personal* type and utilising it as per the needs of the user/ organisations needs.
 
 - Deploying *session hosts* i.e. vitual machines and using them to deploy applications and windows desktop environment.
 
@@ -13,7 +13,7 @@
 
 - Creating *workspaces* to have a isolated/ differentiated environment for the user while using windows virtual desktop. 
 
-- *Regiistering application groups to the workspace* for assigning/ replacing the applications used by the user in one go.
+- *Registering application groups to the workspace* for assigning/ replacing set of applications used by the user in one go.
 
 - Publishing applications using *start menu* and *file path* in the remote app type application groups.
 
