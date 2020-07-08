@@ -9,6 +9,7 @@ In this exercise, we are using AADDS, which is an Azure PaaS resource. It will h
 ### **Task 1: Create prerequisites for AADDS**
 
 **A.**	Register Microsoft.AAD Resource Provider
+
 The resource provider Microsoft.AAD should be registered in our subscription to deploy AADDS. If it is not already registered, we need to register it from the Azure portal.
 
 
