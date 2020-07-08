@@ -97,7 +97,7 @@ In this task we will be creating a Azure Active Directory Domain Services.
    Under **Subents**, add the following:
    - Subnet name: **aadds-subnet**
    - Address range: **10.0.0.0/24**
- >**Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
+>**Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
 
    ![ws name.](media/h.png)
 
@@ -119,7 +119,7 @@ In this task we will be creating a Azure Active Directory Domain Services.
 
    ![ws name.](media/a98.png)
    
- >**Note:** The Deployment will take approx 30 minutes to deploy. Till then continue with next step.
+>**Note:** The Deployment will take approx 30 minutes to deploy. Till then continue with next step.
 
 13. Now navigate to the **WVD-RG** , then go to **Overview** and open **aadds-vnet**.
 
@@ -133,14 +133,15 @@ In this task we will be creating a Azure Active Directory Domain Services.
 
     - Name: **sessionhosts-subnet**
     - Address Range: **10.0.1.0/24**
- >**Note:** **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
-    ![ws name.](media/l.png)
+>**Note:** **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
+    
+   ![ws name.](media/l.png)
 
 16. Once created it will appear under **Subnets** as shown below:
 
-   ![ws name.](media/m.png)
+  ![ws name.](media/m.png)
   
- >**Note:** Wait for the deployment of Azure Active Directory Domain Serive to complete. Then only you can start Task 3. 
+>**Note:** Wait for the deployment of Azure Active Directory Domain Serive to complete. Then only you can start Task 3. 
 
 ### **Task 3: Update Virtual Network DNS**
 
@@ -220,7 +221,7 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
    New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $password -UserPrincipalName "wvduser-02@$domain"
    ```
 
- >**Note:** The above script will create three users i.e. *WVDUser-01*, *WVDUser-02* and *DomainJoinAdmin* and set their passwords to "*Azure1234567*". DomainJoinAdmin user will be used to domain join session hosts to the AADDS.
+>**Note:** The above script will create three users i.e. *WVDUser-01*, *WVDUser-02* and *DomainJoinAdmin* and set their passwords to "*Azure1234567*". DomainJoinAdmin user will be used to domain join session hosts to the AADDS.
 
 7. You will get output in the similar form shown below:
 
@@ -228,23 +229,23 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
 
 8. You can verify this by navigating to Azure Active Directory.
 
-9. On the homepage search for Azure Active in the search bar and then select **Azure Active Directory**.
+9. On the homepage search for *Azure Active* in the search bar and then select **Azure Active Directory**.
 
    ![ws name.](media/s.png)
 
-9. In Azure active directory page, click on **Users** present under **Manage** blade.
+9. Then click on **Users** present under **Manage** blade.
 
    ![ws name.](media/t.png)
    
-10. Here you can review the users created.
+10. Under **All users (Preview)** you can review the users created.
 
-    ![ws name.](media/wvd13.png)
+    ![ws name.](media/a108.png)
 
 11. Copy and Paste the usernames for all three users in notepad.
 
     ![ws name.](media/w13.png)
 
-  >**Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
+>**Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
 
 ### **Task 5: Add membership for DomainJoinAdmin User**
 
@@ -289,7 +290,7 @@ In this task we will be adding "*DomainJoinAdmin*" to *AAD DC Administrators* gr
 
   ![ws name.](media/wvd23.png)
 
-  >**Note:** Wait for few seconds for the script to execute.
+>**Note:** Wait for few seconds for the script to execute.
    
 3. Output of the script will be similar to the one shown below.
 
