@@ -6,7 +6,7 @@ The Windows Virtual Desktop service recommends FSLogix profile containers as a u
 
 In the following task we will be creating a storage account with a file share which will be used to store user profiles for FSlogix.
 
-1. In your Azure portal search for storage and select **storage account** from the suggestions.
+1. In your Azure portal search for *storage* and select **storage account** from the suggestions.
 
    ![ws name.](media/a55.png)
    
@@ -18,7 +18,7 @@ In the following task we will be creating a storage account with a file share wh
    
    - Subscription: *Select the default subscription*.
    - Resource Group: *Select **WVD-RG** from the drop down*.   
-   - Storage account name: **storageaccount{unique-id}** (*copy your unique id from environment details tab*)   
+   - Storage account name: **storageaccount{unique-id}**, for example: storageaacount204756 (*copy your unique id from environment details tab*)   
    - Location: **East US**, *this should be same as the location of your resource group*.   
    - Performance: **Standard**   
    - Account kind: **StorageV2(general purpose v2)**   
@@ -32,16 +32,12 @@ In the following task we will be creating a storage account with a file share wh
     
      - Connectivity method: **Public endpoint(selected networks)**
      
- >**Note:** This will make sure that your storage account is not accesable from public network making it more secure.
+>**Note:** This will make sure that your storage account is not accesable from public network making it more secure.
     
   - Virtual network subscription: *Select the default subscription*.
-
   - Virtual Network: **aadds-vnet**
-
   - Subnets: **SessionHost(10.0.2.0/24)**
-
   - Leave the rest to default settings.
-
   - Click on **Review + Create**.
      
    ![ws name.](media/a57.png)
@@ -58,7 +54,7 @@ In the following task we will be creating a storage account with a file share wh
 
    ![ws name.](media/a60.png)
     
- >**Note:** This will enable your storage account to domain join under Azure Active Domain Join services
+>**Note:** This will enable your storage account to domain join under Azure Active Domain Join services
     
     
 8. Then click on **Save**.
@@ -105,6 +101,7 @@ In this task we will give *Storage File Data SMB Share Contributor* permissions 
  >**Note:** There are three types of roles specified for the storage account i.e. *Storage Account contributor, Storage file data SMB share contributor, Storage File Data SMB share contributor*
    
    - Under **Select** search for **WVDUser** and click on both the users to select them.
+   - Then click on **Save**.
    
    ![ws name.](media/a66.png)
    
@@ -116,7 +113,7 @@ In this task we will give *Storage File Data SMB Share Contributor* permissions 
 
 A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** session host using a power shell script.
 
-1. In your Azure portal search for **Virtual** in the search bar and click on **Virtual Machine** from the suggestions.
+1. In your Azure portal search for *Virtual* in the search bar and click on **Virtual Machine** from the suggestions.
 
    ![ws name.](media/a67.png)
       
@@ -192,12 +189,12 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
 8. Now scroll up on the script you pasted and replace **{NameofStorageAccount}** (for example: storageaccount204756) with the storage account name you created earlier. Make sure to remove the curly braces.
 
-   ![ws name.](media/a70.png)
+   ![ws name.](media/a113.png)
       
  
 9. Click on **Run** to execute the script. Wait for sometime for the script to execute. It will show a output saying **Script Executed successfully**.
 
-   ![ws name.](media/w1.png)
+   ![ws name.](media/a112.png)
    
 10. Navigate ro virtual machine and click on **WVD-HP01-SH-1**.
 
@@ -213,17 +210,17 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
 13. Now scroll up on the script you pasted and replace **{NameofStorageAccount}** (for example: storageaccount204756) with the storage account name you created earlier. Make sure to remove the curly braces.
 
-   ![ws name.](media/a70.png)
+   ![ws name.](media/a113.png)
       
  
 14. Click on **Run** to execute the script. Wait for sometime for the script to execute. It will show a output saying **Script Executed successfully**.
 
-   ![ws name.](media/w1.png)
+   ![ws name.](media/a112.png)
 
   
-15. Now search for Windows in the search bar and select **Windows Virtual Desktop** from the suggestions.
+15. Now search for *Windows virtual* in the search bar and select **Windows Virtual Desktop** from the suggestions.
 
-   ![ws name.](media/y.png)
+   ![ws name.](media/a109.png)
    
    
 16. Click on **Users**, then in the search bar search for **WVDUser** then click on **WVDUser-01**.
@@ -238,7 +235,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
    ![ws name.](media/a73.png)
 
- >**Note:** This will logoff both the session host so that when the users sign in again to the session host the Fxlogix will start functioning.
+>**Note:** This will logoff both the session host so that when the users sign in again to the session host the Fxlogix will start functioning.
     
     
 19. Now paste this link ```aka.ms/wvdarmweb``` in your browser and enter your **credentials** to login. 
@@ -264,7 +261,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
    ![ws name.](media/a77.png)
     
-   > This means that user profile is being managed by FSLogix.
+>**Note:** This means that user profile is being managed by FSLogix.
     
 ### **Task 4: Verifing the User profiles stored in File share.**
 
