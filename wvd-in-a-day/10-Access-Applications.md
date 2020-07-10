@@ -20,11 +20,11 @@ In this task we will be accesing the remote application i.e. microsoft office wo
 
 3. Now paste this link ```aka.ms/wvdarmweb``` in your browser and enter your **credentials** to login. 
 
-   - Username: Put username **WVD User-01** which you copied in previous step (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.
+   - Username: *Put username* **WVD User-01** *which you copied in previous step (for example: **WVDUser-01@azurehol1055.onmicrosoft.com**). Then click on **Next**.*
    
    ![ws name.](media/wvd42.png)
 
-   - Password: **Azure1234567** and click on **Sign in**.
+   - Password: **Azure1234567** *and click on* **Sign in**.
 
    ![ws name.](media/wvd43.png)
   
