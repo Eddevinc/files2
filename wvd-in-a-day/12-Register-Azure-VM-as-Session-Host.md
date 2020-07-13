@@ -16,7 +16,7 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
     #Deploy Template
     $UserPasswordhash = ConvertTo-SecureString $adminPassword -AsPlainText -Force
     New-AzResourceGroupDeployment -ResourceGroupName "WVD-RG" `
-    -TemplateUri "https://akipersistantstg.blob.core.windows.net/wvdinaday/deployVM.json" `
+    -TemplateUri "https://experienceazure.blob.core.windows.net/templates/wvd/deployVM.json" `
     -existingVNETName "aadds-vnet" -existingSubnetName "sessionhosts-subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
 
        
