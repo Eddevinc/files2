@@ -103,7 +103,7 @@ In this task we will be creating a Azure Active Directory Domain Services.
 
    ![ws name.](media/h.png)
 
-8. Make sure the subnet **(new)aads-subnet-01 (10.0.0.0/24)** is selected against **Subnet**.
+8. Make sure the subnet **(new)aadds-subnet-01 (10.0.0.0/24)** is selected against **Subnet**.
 
    ![ws name.](media/i.png)
 
@@ -278,7 +278,7 @@ In this task we will be adding "*DomainJoinAdmin*" to *AAD DC Administrators* gr
 
 1. Now we will run a script to change passwords for the users created.
 
-2. Copy and paste the following script and hit enter.
+2. Copy and paste the following script and hit **Enter**.
 
    ```
    $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
