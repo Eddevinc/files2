@@ -161,7 +161,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
     New-Item -Path "$LabFilesDirectory\FSLogix" -ItemType Directory |Out-Null
 
     #Download FSLogix Installation bundle
-    Invoke-WebRequest -Uri "https://akipersistantstg.blob.core.windows.net/fslogix/FSLogix_Apps_Installation.zip" -OutFile "$LabFilesDirectory\FSLogix_Apps_Installation.zip"
+    Invoke-WebRequest -Uri "https://experienceazure.blob.core.windows.net/templates/wvd/FSLogix_Apps_Installation.zip" -OutFile "$LabFilesDirectory\wvd\FSLogix_Apps_Installation.zip"
 
     #Extract the downloaded FSLogix bundle
     function Expand-ZIPFile($file, $destination){
