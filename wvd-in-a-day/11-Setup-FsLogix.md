@@ -208,6 +208,8 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
 
    ![ws name.](media/a112.png)
    
+   > It will take around five minutes for the script to execute.
+   
 10. Navigate ro virtual machine and click on **WVD-HP01-SH-1**.
 
    ![ws name.](media/a85.png)
