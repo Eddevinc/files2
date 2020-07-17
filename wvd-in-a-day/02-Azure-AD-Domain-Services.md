@@ -23,7 +23,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![](media/wvd2.png)
    
-> **Note**: Refer the **Environment Details** tab for any other lab credentials/details.
+   > **Note**: Refer the **Environment Details** tab for any other lab credentials/details.
   
    ![](media/wvd7.png)
 
