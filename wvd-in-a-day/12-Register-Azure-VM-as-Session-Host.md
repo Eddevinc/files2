@@ -8,16 +8,16 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 
 1. **Copy** the following script.
 
-    $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
-    $password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
-    $adminUserName = "domainjoinadmin@$domain"
-    $adminPassword = "Azure1234567"
+       $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
+       $password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
+       $adminUserName = "domainjoinadmin@$domain"
+       $adminPassword = "Azure1234567"
 
-    #Deploy Template
-    $UserPasswordhash = ConvertTo-SecureString $adminPassword -AsPlainText -Force
-    New-AzResourceGroupDeployment -ResourceGroupName "WVD-RG" `
-    -TemplateUri "https://experienceazure.blob.core.windows.net/templates/wvd/deployVM.json" `
-    -existingVNETName "aadds-vnet" -existingSubnetName "sessionhosts-subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
+       #Deploy Template
+       $UserPasswordhash = ConvertTo-SecureString $adminPassword -AsPlainText -Force
+       New-AzResourceGroupDeployment -ResourceGroupName "WVD-RG" `
+       -TemplateUri "https://experienceazure.blob.core.windows.net/templates/wvd/deployVM.json" `
+       -existingVNETName "aadds-vnet" -existingSubnetName "sessionhosts-subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
 
        
 >**Note:** The above script will be used to create a virtual machine.
