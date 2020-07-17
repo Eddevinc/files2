@@ -300,3 +300,11 @@ In this task we will be adding "*DomainJoinAdmin*" to *AAD DC Administrators* gr
    ![ws name.](media/42.png)
 
 4. Click on the **Next** button.
+
+
+
+
+
+
+
+
