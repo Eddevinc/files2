@@ -51,7 +51,7 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/d.png)
    
->**Note:** In case the **Microsoft.AAD** is not registred then follow **step 10**.
+   >**Note:** In case the **Microsoft.AAD** is not registred then follow **step 10**.
 
 10. Click on **Microsoft.AAD** Resource Provider and then click on **Register**.
 
@@ -99,7 +99,7 @@ In this task we will be creating a Azure Active Directory Domain Services.
    - Subnet name: **aadds-subnet**
    - Address range: **10.0.0.0/24**
 
->**Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
+   >**Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
 
    ![ws name.](media/h.png)
 
@@ -111,40 +111,40 @@ In this task we will be creating a Azure Active Directory Domain Services.
 
 10. Make sure that both **All Global Administrator of the Azure AD directory** & **Members of AAD DC Administrators group** boxes are unchecked. Then click on **Review + Create** button.
 
-   ![ws name.](media/a99.png)
+    ![ws name.](media/a99.png)
 
 11. Now click on **Create** Button.
 
-   ![ws name.](media/k.png)
+    ![ws name.](media/k.png)
     
 12. Click **OK** on getting a popup saying **You should know**.
 
-   ![ws name.](media/a98.png)
+    ![ws name.](media/a98.png)
    
->**Note:** The Deployment will take approx 30 minutes to deploy. Till then continue with next step.
+    >**Note:** The Deployment will take approx 30 minutes to deploy. Till then continue with next step.
 
 13. Now navigate to the **WVD-RG** , then go to **Overview** and open **aadds-vnet**.
 
-   ![ws name.](media/wvd20.png)
+    ![ws name.](media/wvd20.png)
 
 14. Select **Subnets** given under **Settings** blade, then click on **+Subnet** to add new subnet.
 
-   ![ws name.](media/wvd21.png)
+    ![ws name.](media/wvd21.png)
 
 15. Now add following configuration and select **OK**:
 
     - Name: **sessionhosts-subnet**
     - Address Range: **10.0.1.0/24**
 
->**Note:** **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
+    >**Note:** **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
     
-   ![ws name.](media/l.png)
+    ![ws name.](media/l.png)
 
 16. Once created it will appear under **Subnets** as shown below:
 
-  ![ws name.](media/m.png)
+    ![ws name.](media/m.png)
   
->**Note:** Wait for the deployment of Azure Active Directory Domain Serive to complete. Then only you can start Task 3. 
+    >**Note:** Wait for the deployment of Azure Active Directory Domain Serive to complete. Then only you can start Task 3. 
 
 ### **Task 3: Update Virtual Network DNS**
 
@@ -248,7 +248,7 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
 
     ![ws name.](media/w13.png)
 
->**Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
+    >**Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
 
 ### **Task 5: Add membership for DomainJoinAdmin User**
 
@@ -289,14 +289,14 @@ In this task we will be adding "*DomainJoinAdmin*" to *AAD DC Administrators* gr
    }
    ```
 
->**Note:** The above script will reset the passwords for WVDUser-01, WVDUser-02 and DomainJoinAdmin to Azure1234567, as user needs to reset password after registering to AADDS.
+   >**Note:** The above script will reset the passwords for WVDUser-01, WVDUser-02 and DomainJoinAdmin to Azure1234567, as user needs to reset password after registering to AADDS.
 
-  ![ws name.](media/wvd23.png)
+   ![ws name.](media/wvd23.png)
 
->**Note:** Wait for few seconds for the script to execute.
+   >**Note:** Wait for few seconds for the script to execute.
    
 3. Output of the script will be similar to the one shown below.
 
-  ![ws name.](media/42.png)
+   ![ws name.](media/42.png)
 
 4. Click on the **Next** button.
