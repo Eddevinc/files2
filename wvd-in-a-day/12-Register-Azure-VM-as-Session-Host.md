@@ -20,7 +20,7 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
     -existingVNETName "aadds-vnet" -existingSubnetName "sessionhosts-subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
 
        
->**Note:** The above script will be used to create a virtual machine.
+   >**Note:** The above script will be used to create a virtual machine.
 
 
 2. In Azure portal click on the **Cloud Shell button** on top and wait for the cloud shell to connect.
@@ -32,13 +32,13 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 
    ![ws name.](media/wvd54.png)
    
->**Note:** Wait for sometime for the script to execute.
+   >**Note:** Wait for sometime for the script to execute.
    
 4. After the execution completes the output will look as following.
 
    ![ws name.](media/wvd55.png)
 
->**Note:** Wait for few more minutes for the deployment of virtual machine to complete.
+   >**Note:** Wait for few more minutes for the deployment of virtual machine to complete.
 
 
 ### **Task 2: Install Agents on VM and Register**
@@ -63,7 +63,7 @@ These two agents will be used to register this virtual machine a part of session
 
    ![ws name.](media/a82.png)
    
->**Note:** A file named **WVD-VM-01.rdp** will download.
+   >**Note:** A file named **WVD-VM-01.rdp** will download.
   
 4. Click on the downloaded file to open.
 
@@ -98,57 +98,57 @@ These two agents will be used to register this virtual machine a part of session
  
    ![ws name.](media/202.png)
     
->**Note:** RDP Connection with your VM will be established.
+   >**Note:** RDP Connection with your VM will be established.
     
     
 10. In the Virtual Machine window click on **Accept**.
  
-   ![ws name.](media/203.png)
+    ![ws name.](media/203.png)
    
 11. In your VM desktop double click on **Microsoft edge** icon to open it.
  
-   ![ws name.](media/204.png)
+    ![ws name.](media/204.png)
    
 12. **Copy** and **Paste** the following URL in your VM browser and **hit enter** to download **Windows Virtual Desktop Agent**.
  
         https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv
  
-   ![ws name.](media/205.png)
+    ![ws name.](media/205.png)
     
    
 13. There will be a popup in the bottom of the browser asking to - **Run**, **Save** or **Cancel** the downloaded setup. Therefore choose **Run**.
  
-   ![ws name.](media/a114.png)
+    ![ws name.](media/a114.png)
 
 14. Click on **Next** when the installer opens. 
 
-   ![ws name.](media/207.png)
+    ![ws name.](media/207.png)
         
 15. Check the box saying **I accept the terms in the License Agreement** and click on **Next**.
 
-   ![ws name.](media/208.png)
+    ![ws name.](media/208.png)
     
 16. Now minimise your VM RDP window and go back to Azure portal on your local machine.
 
 
 17. In Azure portal search for **Host Pools** and click on it.
 
-   ![ws name.](media/a93.png)
+    ![ws name.](media/a93.png)
    
 18. Click on **WVD-HP-01** and then click on **Registration Key**.
  
-   ![ws name.](media/a94.png)
+    ![ws name.](media/a94.png)
    
 19. Copy the registration key by clicking on the **copy button** on the right corner.
 
-   ![ws name.](media/a95.png)
+    ![ws name.](media/a95.png)
     
->**Note:** This unique registration key will be enable the Virtual Machine to become session host under this particular WVD-HP-01 hostpool.
+    >**Note:** This unique registration key will be enable the Virtual Machine to become session host under this particular WVD-HP-01 hostpool.
     
 20. Go back to the VM RDP window, and click inside the box opened in the installer.
 
-   ![ws name.](media/213.png)
-     
+    ![ws name.](media/213.png)
+      
 
 21. On your keyboard press the following combination of keys.
 
@@ -158,15 +158,15 @@ These two agents will be used to register this virtual machine a part of session
     
 22. Click on **Next**.
 
-   ![ws name.](media/214.png)
+    ![ws name.](media/214.png)
      
 23. Click on **Install**.
 
-   ![ws name.](media/215.png)
+    ![ws name.](media/215.png)
     
 24. Then click on **Finish**.
 
-   ![ws name.](media/216.png)   
+    ![ws name.](media/216.png)   
     
 25. Open your browser and **paste** the following URL in your browser and hit **enter** to download the  **Windows Virtual Desktop Agent Bootloader**.
 
@@ -176,24 +176,24 @@ These two agents will be used to register this virtual machine a part of session
  
 26. There will be a popup in the bottom of the browser asking to - **Run**, **Save** or **Cancel** the downloaded setup. Therefore choose **Run**.
 
-   ![ws name.](media/218.png)
+    ![ws name.](media/218.png)
     
 27. Click on **Next** when the installer opens.
 
-   ![ws name.](media/219.png)
+    ![ws name.](media/219.png)
    
 28. Check the box saying **I accept the terms in the License Agreement** and click on **Next**.
 
-   ![ws name.](media/220.png)
+    ![ws name.](media/220.png)
    
 29. Click on **Install**.
 
-   ![ws name.](media/221.png)
+    ![ws name.](media/221.png)
     
     
 30. Then click on **Finish**.
 
-   ![ws name.](media/222.png)
+    ![ws name.](media/222.png)
     
   
   
@@ -222,3 +222,9 @@ These two agents will be used to register this virtual machine a part of session
    ![ws name.](media/226.png) 
 
 5. Click on the **Next** button.
+
+
+
+
+
+
