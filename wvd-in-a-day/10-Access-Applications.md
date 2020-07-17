@@ -128,12 +128,12 @@ In this task we will be accesing the remote application i.e. microsoft office wo
 
 10. Now you will be inside the WVD dashboard with all the desktop and applications assigned to **WVDUser02**. Double click on any one of the applications to access it. 
 
-   ![ws name.](media/142.png)
+    ![ws name.](media/142.png)
 
 
 11. Click on **Allow** for the prompt.
 
-   ![ws name.](media/143.png)
+    ![ws name.](media/143.png)
 
 
 12. Enter your **credentials** to access the application and click on **Submit**.
