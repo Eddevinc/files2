@@ -6,7 +6,7 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
 
 ### **Task 1: Create a Vm using Cloud Shell**
 
-1 **Copy** the following script.
+1. **Copy** the following script.
 
     $domain = ((Get-AzADUser | where {$_.Type -eq "Member"}).UserPrincipalName.Split('@'))[1]
     $password= ConvertTo-SecureString "Azure1234567" -AsPlainText -Force
@@ -20,7 +20,7 @@ After Deployment of virtual machine we will establish a RDP connection to the vi
     -existingVNETName "aadds-vnet" -existingSubnetName "sessionhosts-subnet" -adminUsername $adminUserName -adminPassword $UserPasswordhash
 
        
-   >**Note:** The above script will be used to create a virtual machine.
+>**Note:** The above script will be used to create a virtual machine.
 
 
 2. In Azure portal click on the **Cloud Shell button** on top and wait for the cloud shell to connect.
