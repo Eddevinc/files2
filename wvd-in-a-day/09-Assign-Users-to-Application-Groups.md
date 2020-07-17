@@ -24,19 +24,19 @@ In the following task we will be assigning users to specific application groups 
 
    ![ws name.](media/a32.png)
   
-4. Click on **Assignments**, then click on **+ Add**.
+3. Click on **Assignments**, then click on **+ Add**.
 
    ![ws name.](media/a36.png)
   
-5. In search bar search for **WVD** and select **both** the users the users by clicking on them.
+4. In search bar search for **WVD** and select **both** the users the users by clicking on them.
 
    ![ws name.](media/a37.png)
    
-6. Once selected they will show up under **Selected items**, then click on **Select**.
+5. Once selected they will show up under **Selected items**, then click on **Select**.
 
    ![ws name.](media/a38.png)
 
->**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-AG-01 application group.
+   >**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-AG-01 application group.
 
 **B.** Assigning users to WVD-HP-01-DAG application group.
 
@@ -57,7 +57,7 @@ In the following task we will be assigning users to specific application groups 
    ![ws name.](media/a38.png)
    
    
->**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-HP-01-DAG application group.
+   >**Note:** This will allow both WVDUser-1 and WVDUser-02 access to WVD-HP-01-DAG application group.
 
 **C.** Assigning users to WVD-HP-02-DAG application group.
 
@@ -78,6 +78,9 @@ In the following task we will be assigning users to specific application groups 
 
    ![ws name.](media/a44.png)
    
->**Note:** This will allow WVDUser-02 access to WVD-HP-02-DAG application group.   
+   >**Note:** This will allow WVDUser-02 access to WVD-HP-02-DAG application group.   
 
 6. Click on the **Next** button.
+
+
+
