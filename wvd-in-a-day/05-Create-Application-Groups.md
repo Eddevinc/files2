@@ -36,11 +36,11 @@ In this task we will be creating a Remote app type application groups to deploy 
       - Location: **East US**, *this should be same as the region of your resource group*.
       - Application Group Type: **RemoteApp** 
       
->**Note:** Application groups are of two types **Remote app** and **Desktop application**.
+      >**Note:** Application groups are of two types **Remote app** and **Desktop application**.
 
-   - Application Group Name: **WVD-AG-01**
+      - Application Group Name: **WVD-AG-01**
 
-   - Click on **Review + create**
+      - Click on **Review + create**
   
    ![ws name.](media/a19.png)
 
@@ -49,3 +49,8 @@ In this task we will be creating a Remote app type application groups to deploy 
    ![ws name.](media/a20.png)
    
 4. Click on the **Next** button.
+
+
+
+
+
