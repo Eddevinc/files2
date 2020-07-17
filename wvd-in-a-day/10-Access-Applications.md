@@ -151,7 +151,7 @@ In this task we will be accesing the remote application i.e. microsoft office wo
 
 ### **Subtask 2: Access the published 'Desktop Application' using WVD Client**
 
-in this task we will access the desktop application i.e. WVD-HP-01-DAG with help of a WVD-Client using WVDUser-02.
+In this task we will access the desktop application i.e. WVD-HP-01-DAG with help of a WVD-Client using WVDUser-02.
 
 
 1. Now in the WVD client double click on the **WVD-HP-02-DAG** Desktop to access it. 
@@ -172,3 +172,7 @@ in this task we will access the desktop application i.e. WVD-HP-01-DAG with help
 
 
 5. Click on the **Next** button.
+
+
+
+
