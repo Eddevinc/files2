@@ -25,7 +25,7 @@ Host pools are a collection of one or more identical virtual machines within Win
    - Location: **East US**, *basically this should be same as the region of your resource group*.      
    - Validation environmet: **No**
       
->**Note:** Validation host pools let you monitor service updates before rolling them out to your production environment.
+   >**Note:** Validation host pools let you monitor service updates before rolling them out to your production environment.
       
       
   **B.** **Host Pool Type –** Defines the type of host pool. 
@@ -73,9 +73,9 @@ Host pools are a collection of one or more identical virtual machines within Win
   - Host pool type: **Personal**     
   - Assignment type: **Automatic**
      
->**Note:** Assignment are of two types: *Automatic* and *Direct*. 
-> - In *Automatic assignment* the service will select an available host and assign it to the user. 
-> - In *Direct assignment* admin selects a specific host to assign to a user.
+  >**Note:** Assignment are of two types: *Automatic* and *Direct*. 
+  > - In *Automatic assignment* the service will select an available host and assign it to the user. 
+  > - In *Direct assignment* admin selects a specific host to assign to a user.
      
   - Then click on **Review + Create**
      
@@ -83,6 +83,6 @@ Host pools are a collection of one or more identical virtual machines within Win
      
 6. Click on **Create**.
  
-    ![ws name.](media/a4.png)
+   ![ws name.](media/a4.png)
      
 7. Once the deployment of host pool succeeds, click on the **Next** button.
