@@ -1,4 +1,4 @@
-# Exercise 10: Access Applications
+# Exercise 10: Access Applications and Desktop
 
 In this exercise we will be using browser and WVD-client to access our remote app and desktop applications we deployed in previous exercises.
 
