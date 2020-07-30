@@ -277,7 +277,7 @@ A. In this task we will install and configure FsLogix in the **WVD-HP01-SH-0** s
     
     >**Note:** This means that user profile is being managed by FSLogix.
     
-### **Task 4: Verifing the User profiles stored in File share.**
+### **Task 4: Verifying the User profiles stored in File share.**
 
 In this task we will be accessing the file share to verify the user profiles stored in *.vhd* format.
 
