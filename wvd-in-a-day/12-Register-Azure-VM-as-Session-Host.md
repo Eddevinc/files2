@@ -1,10 +1,10 @@
-# Exercise 12: Register Azure VM as Session Host
+# Exercise 12: Register Azure Virtual Machine as Session Host
 
 In the following exercise, we will be creating a virtual machine which will automatically domain join by running a script in Cloud shell.
 After Deployment of virtual machine we will establish a RDP connection to the virtual machine and register the virtual machine as a session host under *WVD-HP-01* hostpool.
 
 
-### **Task 1: Create a Vm using Cloud Shell**
+### **Task 1: Create a Virtual Machine using Cloud Shell**
 
 1. **Copy** the following script.
 
