@@ -1,4 +1,4 @@
-# Exercise 2: Azure AD Domain Services 
+# Exercise 2: Azure AD Domain Services (AADDS)
 
 To deploy a Windows Virtual Desktop environment, we need a pre-created windows domain (e.g: contoso.com). This can be created by using one of the following methods:
 1.	Azure Active Directory Domain Services (AADDS)
