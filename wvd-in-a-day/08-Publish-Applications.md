@@ -35,7 +35,7 @@ In the following task we will be publishing Microsoft Office excel using start m
    ![ws name.](media/a34.png)
    
    
-### **Task 2: Publish Applications from using File Path**
+### **Task 2: Publish Applications using File Path**
 
 Here we will deploy Microsoft office word by manually providing the path of the word application file which will be in *.exe* format, and also manually providing path of the icon for the application.
 
