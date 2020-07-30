@@ -3,7 +3,7 @@
 Session hosts are virtual machines created under host pools in which users can sign in ane access ther remote or Desktop application.
 
 
-### **Task 1: Deploy 2 Windows 10 Enterprise multi-session Session Hosts to ‘Pooled’ Host Pool**
+### **Task 1: Deploy  Windows 10 Enterprise multi-session Session Hosts to ‘Pooled’ Host Pool**
 
 In this task we will be creating two session hosts i.e. WVD-HP01-SH-0 and WVD-HP01-SH-1 under WVD-HP-01 host pool which is of pooled type.
 
