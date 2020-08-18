@@ -1,8 +1,11 @@
 # Exercise 2: Azure AD Domain Services (AADDS)
 
-To deploy a Windows Virtual Desktop environment, we need a pre-created windows domain (e.g: contoso.com). This can be created by using one of the following methods:
+To deploy a Windows Virtual Desktop environment, we need a pre-created windows domain (for example: contoso.com). This can be achieved using one of the following ways:
+
 1.	Azure Active Directory Domain Services (AADDS)
 2.	Windows Active Directory
+
+
 In this exercise, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (e.g: ***azurehol1057.onmicrosoft.com***)
 
 
@@ -13,47 +16,44 @@ In this exercise, we are using AADDS, which is an Azure PaaS resource. It will h
 The resource provider Microsoft.AAD should be registered in our subscription to deploy AADDS. If it is not already registered, we need to register it from the Azure portal.
 
 
-1. Navigate **Azure Portal** (https://portal.azure.com) in your browser. 
+1. Open **Azure Portal** (https://portal.azure.com) in your browser. 
 
-2. Login to Azure with the username **<inject key="AzureAdUserEmail" />**
+2. Login to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
 
    ![](media/wvd1.png)
 
 3. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
    ![](media/wvd2.png)
-   
-   > **Note**: Refer the **Environment Details** tab for any other lab credentials/details.
-  
-   ![](media/wvd7.png)
 
-4. There will be a pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+> **Note:** 
+> - If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+>
+>  ![](media/a102.png)
+>   
+> - If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+>
+>  ![](media/wvd4.png)
 
-   ![](media/a102.png)
-
-5. You may encounter a popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
-
-   ![](media/wvd4.png)
-
-6. In Azure Portal click on **Subscriptions** present under **Navigate**.
+4. In Azure Portal click on **Subscriptions** present under **Navigate**.
 
    ![ws name.](media/a.png)
    
-7. Open your **Subscription** by clicking on it.
+5. Open your **Subscription** by clicking on it.
 
    ![ws name.](media/b.png)
    
-8. Then under **Settings** blade click on **Resource Providers**.
+6. Then under **Settings** blade click on **Resource Providers**.
 
    ![ws name.](media/c.png)
    
-9. Now search for **Microsoft.AAD** and make sure Microsoft.ADD is **Registered**.
+7. Now search for **Microsoft.AAD** and make sure Microsoft.ADD is **Registered**.
 
    ![ws name.](media/d.png)
    
    >**Note:** In case the **Microsoft.AAD** is not registred then follow **step 10**.
 
-10. Click on **Microsoft.AAD** Resource Provider and then click on **Register**.
+8. Click on **Microsoft.AAD** Resource Provider and then click on **Register**.
 
     ![ws name.](media/a103.png)
 
