@@ -15,7 +15,7 @@ WVD offers support for a lot of Azure VM sizes. One of the interesting features 
 
 ### **Hostpools**
 
-A host pool is a collection of Azure virtual machines that register to Windows Virtual Desktop as session hosts when you run the Windows Virtual Desktop agent. All session host virtual machines in a host pool should be sourced from the same image for a consistent user experience. 
+A host pool is a collection of Azure virtual machines that register to Windows Virtual Desktop as session hosts when you run the Windows Virtual Desktop agent. All session host virtual machines in a host pool should be sourced from the same image for consistent user experience. 
 
 A host pool can be one of two types: 
 
@@ -46,10 +46,10 @@ To publish resources to users, you must assign them to application groups. When 
 
 ### **Workspaces**
 
-A workspace is a logical grouping of application groups in Windows Virtual Desktop. Each Windows Virtual Desktop application group must be associated with a workspace for users to see the remote applications and desktops published to them. 
+A workspace is a logical grouping of application groups in the Windows Virtual Desktop. Each Windows Virtual Desktop application group must be associated with a workspace for users to see the remote applications and desktops published to them. 
 
 ### **End Users** 
 
 After you've assigned users to their application groups, they can connect to a Windows Virtual Desktop deployment with any of the Windows Virtual Desktop clients. 
 
-Click on **Next** button.
+Click on the **Next** button.
