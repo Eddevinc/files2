@@ -6,12 +6,11 @@ To deploy a Windows Virtual Desktop environment, we need a pre-created windows d
 2.	Windows Active Directory
 
 
-In this exercise, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (e.g: ***azurehol1057.onmicrosoft.com***)
+In this exercise, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (for example: ***azurehol1057.onmicrosoft.com***)
 
+Now we will start creating prerequisites for AADDS.
 
-### **Task 1: Create prerequisites for AADDS**
-
-**A.**	Register Microsoft.AAD Resource Provider
+### **Task 1: Register Microsoft.AAD Resource Provider**
 
 The resource provider Microsoft.AAD should be registered in our subscription to deploy AADDS. If it is not already registered, we need to register it from the Azure portal.
 
@@ -53,13 +52,13 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
    
    >**Note:** In case the **Microsoft.AAD** is not registred then follow **step 10**.
 
-8. Click on **Microsoft.AAD** Resource Provider and then click on **Register**.
+8. Click on **Microsoft.AAD** Resource Provider and then click on **Register**. It will take a minute to get registered, you can click on *Refresh* to check the status.
 
     ![ws name.](media/a103.png)
 
 ### **Task 2: Deploy AADDS**
 
-In this task we will be creating a Azure Active Directory Domain Services.
+In this task we will be creating Azure Active Directory Domain Services.
 
 1. Select **Create a resource** from the Azure portal homepage.
 
