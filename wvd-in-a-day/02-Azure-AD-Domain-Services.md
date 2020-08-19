@@ -6,13 +6,11 @@ To deploy a Windows Virtual Desktop environment, we need a pre-created windows d
 2.	Windows Active Directory
 
 
-In this exercise, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (for example: ***azurehol1057.onmicrosoft.com***)
-
-Now we will start creating prerequisites for AADDS.
+In this exercise, we are using AADDS, which is an Azure PaaS resource. It will host the Windows domain needed to create the WVD session hosts. By default, the domain name used in AADDS will be your Azure Tenant name (for example: If your lab user account is *odl_user_189588@azurehol1057.onmicrosoft.com*, the domain will be *azurehol1057.onmicrosoft.com*).
 
 ### **Task 1: Register Microsoft.AAD Resource Provider**
 
-The resource provider Microsoft.AAD should be registered in our subscription to deploy AADDS. If it is not already registered, we need to register it from the Azure portal.
+In this task we will create prerequisites for AADDS. The resource provider Microsoft.AAD should be registered in our subscription to deploy AADDS. If it is not already registered, we need to register it from the Azure portal.
 
 
 1. Open **Azure Portal** (https://portal.azure.com) in your browser. 
@@ -50,107 +48,104 @@ The resource provider Microsoft.AAD should be registered in our subscription to 
 
    ![ws name.](media/d.png)
    
-   >**Note:** In case the **Microsoft.AAD** is not registred then follow **step 10**.
+> **Note:** In case the **Microsoft.AAD** is not registred then follow **step 8**.
 
-8. Click on **Microsoft.AAD** Resource Provider and then click on **Register**. It will take a minute to get registered, you can click on *Refresh* to check the status.
+8. Click on **Microsoft.AAD** Resource Provider and then click on **Register**. It will take a minute to get registered, you can click on *Refresh* to check the status. Once *Microsoft.AAD* gets registered, then move to the next task.
 
     ![ws name.](media/a103.png)
 
 ### **Task 2: Deploy AADDS**
 
-In this task we will be creating Azure Active Directory Domain Services.
+In this task we will create Azure Active Directory Domain Services.
 
-1. Select **Create a resource** from the Azure portal homepage.
+1. On Azure portal homepage, click on **Create a resource** that is present below **Azure Services.**
 
-   ![](media/wvd6.png)
+   ![](media/w18.png)
 
 2. Enter **Domain Services** into the search bar, then choose **Azure AD Domain Services** from the search suggestions.
 
-   ![ws name.](media/e.png)
+   ![ws name.](media/w19.png)
 
 3. On the Azure AD Domain Services page, click on **Create**.
 
    ![ws name.](media/f.png)
     
-4. Configure Basics blade with following settings.
+4. Now configure the Basics blade with following settings:
       
    - Subscription: *Select the default subscription*.
    - Resource Group: *Select **WVD-RG** from the drop down*.
-   - DNS domain name: *Default value*
+   - DNS domain name: *Leave to default value*
    - Region: **East US**, *this should be same as the region of your resource group*.
    - SKU: **Standard**
    - Forest type: **User**
+   - Click on **Next**.
 
-   ![ws name.](media/g.png)
-       
-5. Then click **Next**.
+   ![ws name.](media/g.png)       
 
-6. Now in **Networking** tab click on **Create new** under **Virtual network**.
+5. Now in **Networking** tab click on **Create new** under **Virtual network**.
         
-   ![ws name.](media/wvd8.png)
+   ![ws name.](media/w20.png)
 
-7. Configure your new virtual network with following settings and then click **Ok**.
+6. Configure your new virtual network with following settings and then click **Ok**.
 
    - Name: **aadds-vnet**
-   - Address range: *By default the address range will be **10.0.0.0/24**, so make it -* **10.0.0.0/16**
+   - Address range: *By default the address range will be set to **10.0.0.0/24**, so edit and make it -* **10.0.0.0/16**
    
    Under **Subents**, add the following:
    - Subnet name: **aadds-subnet**
    - Address range: **10.0.0.0/24**
 
-   >**Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
+> **Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
 
    ![ws name.](media/h.png)
 
-8. Make sure the subnet **(new)aadds-subnet-01 (10.0.0.0/24)** is selected against **Subnet**.
+7. Check that **(new)aadds-subnet-01 (10.0.0.0/24)** is selected against **Subnet**. Then click on **Next**.
 
    ![ws name.](media/i.png)
 
-9. Click on **Next**.
-
-10. Make sure that both **All Global Administrator of the Azure AD directory** & **Members of AAD DC Administrators group** boxes are unchecked. Then click on **Review + Create** button.
+8. Make sure that both *All Global Administrator of the Azure AD directory* & *Members of AAD DC Administrators group* boxes are **unchecked**. Then click on **Review + Create** button.
 
     ![ws name.](media/a99.png)
 
-11. Now click on **Create** Button.
+10. Now click on **Create** Button.
 
     ![ws name.](media/k.png)
     
-12. Click **OK** on getting a popup saying **You should know**.
+11. Click **OK** on the popup saying **You should know**.
 
     ![ws name.](media/a98.png)
    
-    >**Note:** The Deployment will take approx 30 minutes to deploy. Till then continue with next step.
+> **Note:** The Deployment will take approx 30 minutes to deploy. Till then continue with next step.
 
-13. Now navigate to the **WVD-RG** , then go to **Overview** and open **aadds-vnet**.
+12. Now navigate to the **WVD-RG**, then go to **Overview** and open your virtual network i.e., **aadds-vnet**.
 
     ![ws name.](media/wvd20.png)
 
-14. Select **Subnets** given under **Settings** blade, then click on **+Subnet** to add new subnet.
+13. Select **Subnets** given under **Settings** blade, then click on **+Subnet** to add new subnet.
 
     ![ws name.](media/wvd21.png)
 
-15. Now add following configuration and select **OK**:
+14. Add the following configurations and then click on **OK** :
 
     - Name: **sessionhosts-subnet**
     - Address Range: **10.0.1.0/24**
 
-    >**Note:** **sessionhosts-subnet** will be used for the purpose of deploying resources related to session hosts.
+> **Note:** *sessionhosts-subnet* will be used for the purpose of deploying resources related to session hosts.
     
-    ![ws name.](media/l.png)
+   ![ws name.](media/l.png)
 
-16. Once created it will appear under **Subnets** as shown below:
+15. Once the subnet is created, it will appear under **Subnets** as shown below:
 
     ![ws name.](media/m.png)
   
-    >**Note:** Wait for the deployment of Azure Active Directory Domain Serive to complete. Then only you can start Task 3. 
+> **Note:** Wait for the deployment of Azure Active Directory Domain Serive to complete. Once the deployment succeeds, then you can move to Task 3. 
 
 ### **Task 3: Update Virtual Network DNS**
 
-In this task we will be using private IP address of the two network interface cards created while deploying AADDS and use it to configure DNS server of *aadds-vnet*.
+In this task we will use private IP address of the two network interface cards created while deploying AADDS and use it to configure DNS server of *aadds-vnet*.
 By default, Virtual Network uses Azure's own DNS servers to resolve the DNS queries. Since we have deployed AADDS, this queries should now be pointed to the new DNS servers, for AADDS to function properly.
 
-1. After deployment completes, go back to Azure portal, select **Resource Groups** under **Navigate**.
+1. Go to Azure portal and select **Resource Groups** under **Navigate**.
     
    ![ws name.](media/n.png)
     
@@ -162,18 +157,21 @@ By default, Virtual Network uses Azure's own DNS servers to resolve the DNS quer
 
    ![ws name.](media/a104.png)
 
-4. Open both the NIC cards and copy their **Private IP**.
+4. Open both the NIC cards and copy their **Private IP** in a text editor.
 
    ![ws name.](media/wvd24.png)
    
    ![ws name.](media/wvd25.png)
     
-5. Go back to the **WVD-RG** resource group and click on **aadds-vnet**.
+5. Go back to the **WVD-RG** resource group and open the virtual network i.e., **aadds-vnet**.
 
    ![ws name.](media/r.png)
     
-6. Now under **Settings** blade click on **DNS servers**. Then select **custom** and paste the IP address of first and second NIC card you copied in earlier step.
-
+6. Now under **Settings** blade click on **DNS servers**, then add the following configuration:
+     
+     - DNS Servers: **Custom**
+     - Add DNS Server: **10.0.0.4** & **10.0.0.5** (*paste the IP addresses of both the NIC cards that you copied in the earlier step*)
+     
    ![ws name.](media/wvd19.png)
      
 7. Click on **Save**.
@@ -182,9 +180,9 @@ By default, Virtual Network uses Azure's own DNS servers to resolve the DNS quer
 
 ### **Task 4: Create new AD users**
 
-In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *WVDUser-02* to access the windows virtual desktop and *DomainJoinAdmin* to domain join session hosts.
+In this task we will use cloud shell to create three users i.e., *WVDUser-01*, *WVDUser-02* to access the windows virtual desktop and *DomainJoinAdmin* to domain join session hosts.
 
-1. In your azure portal, click on the **Cloud Shell** icon.
+1. In Azure portal, click on the **Cloud Shell** icon.
 
    ![ws name.](media/a105.png)
    
@@ -223,7 +221,7 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
    New-AzADUser -DisplayName "WVD User-02" -MailNickname "WVDUser-02" -Password $password -UserPrincipalName "wvduser-02@$domain"
    ```
 
->**Note:** The above script will create three users i.e. *WVDUser-01*, *WVDUser-02* and *DomainJoinAdmin* and set their passwords to "*Azure1234567*". DomainJoinAdmin user will be used to domain join session hosts to the AADDS.
+> **Note:** The above script will create three users i.e., *WVDUser-01*, *WVDUser-02* and *DomainJoinAdmin* and set their passwords to "*Azure1234567*". DomainJoinAdmin user will be used to domain join session hosts to the AADDS.
 
 7. You will get output in the similar form shown below:
 
@@ -247,11 +245,11 @@ In this task we will use cloud shell to create three users i.e. *WVDUser-01*, *W
 
     ![ws name.](media/w13.png)
 
-    >**Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
+> **Note:** Make sure to copy paste the the usernames of the users as you will need this throughout the lab.
 
 ### **Task 5: Add membership for DomainJoinAdmin User**
 
-In this task we will be adding "*DomainJoinAdmin*" to *AAD DC Administrators* group which will enable this user to domain join session hosts to the Azure Active Directory Domain Services.
+In this task we will add "*DomainJoinAdmin*" to *AAD DC Administrators* group which will enable this user to domain join session hosts to the Azure Active Directory Domain Services.
 
 1. Navigate back to Azure active directory page, click on **Users** under **Manage** blade .
 
@@ -288,22 +286,15 @@ In this task we will be adding "*DomainJoinAdmin*" to *AAD DC Administrators* gr
    }
    ```
 
-   >**Note:** The above script will reset the passwords for WVDUser-01, WVDUser-02 and DomainJoinAdmin to Azure1234567, as user needs to reset password after registering to AADDS.
+> **Note:** The above script will reset the passwords for WVDUser-01, WVDUser-02 and DomainJoinAdmin to Azure1234567, as user needs to reset password after registering to AADDS.
 
    ![ws name.](media/wvd23.png)
 
-   >**Note:** Wait for few seconds for the script to execute.
+> **Note:** Wait for few seconds for the script to execute.
    
 3. Output of the script will be similar to the one shown below.
 
    ![ws name.](media/42.png)
 
-4. Click on the **Next** button.
-
-
-
-
-
-
-
+4. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
