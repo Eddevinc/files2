@@ -94,10 +94,11 @@ In this task we will create Azure Active Directory Domain Services.
    Under **Subents**, add the following:
    - Subnet name: **aadds-subnet**
    - Address range: **10.0.0.0/24**
+   
+   
+   ![ws name.](media/h.png)
 
 > **Note:** This subnet will be used to deploy Azure Active Directory Domain Service.  
-
-   ![ws name.](media/h.png)
 
 7. Check that **(new)aadds-subnet-01 (10.0.0.0/24)** is selected against **Subnet**. Then click on **Next**.
 
@@ -129,10 +130,10 @@ In this task we will create Azure Active Directory Domain Services.
 
     - Name: **sessionhosts-subnet**
     - Address Range: **10.0.1.0/24**
-
-> **Note:** *sessionhosts-subnet* will be used for the purpose of deploying resources related to session hosts.
     
    ![ws name.](media/l.png)
+
+> **Note:** *sessionhosts-subnet* will be used for the purpose of deploying resources related to session hosts.
 
 15. Once the subnet is created, it will appear under **Subnets** as shown below:
 
