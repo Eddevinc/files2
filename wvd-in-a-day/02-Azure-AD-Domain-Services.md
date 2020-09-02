@@ -274,7 +274,7 @@ In this task we will add "*DomainJoinAdmin*" to *AAD DC Administrators* group wh
 
 ### **Task 6: Change passwords for the users created**
 
-1. Now we will run a script to change passwords for the users created.
+1. Now we will run a script to change passwords for the users created, as user needs to reset password after registering to AADDS.
 
 2. Copy and paste the following script and hit **Enter**.
 
@@ -286,10 +286,8 @@ In this task we will add "*DomainJoinAdmin*" to *AAD DC Administrators* group wh
        Update-AzADUser -UserPrincipalName $_ -Password $password
    }
    ```
-
-> **Note:** The above script will reset the passwords for WVDUser-01, WVDUser-02 and DomainJoinAdmin to Azure1234567, as user needs to reset password after registering to AADDS.
-
-   ![ws name.](media/wvd23.png)
+   
+    ![ws name.](media/wvd23.png)
 
 > **Note:** Wait for few seconds for the script to execute.
    
