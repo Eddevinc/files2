@@ -38,7 +38,7 @@ In this task we will be creating two session hosts i.e. WVD-HP01-SH-0 and WVD-HP
      - Number of VMs: **2**   
      - Name prefix: **WVD-HP01-SH** 
      - Image type: **Gallery**
-     - Image: **Windows 10 Enterprise multi-session, version 1909 + Office 365 ProPlus** *(choose from dropdown)* 
+     - Image: **Windows 10 Enterprise multi-session, version 1909 + Microsoft 365 Apps** *(choose from dropdown)* 
      - OS disk type: **Standard SSD**
      - Use managed disks: **Yes**
    
